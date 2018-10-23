@@ -32,6 +32,8 @@ public class Dame extends Humain {
     
 
     public void seFaireEnlever (Brigand brigand){
+    	this.estKidnappee =true;
     	
+
     }
 }

@@ -10,60 +10,60 @@ package western;
  * @author Robin
  */
 public abstract class Humain {
-    private String Nom;
-    private String Prenom;
-    private String Nickname;
-    private int Age;
+    private String nom;
+    private String prenom;
+    private String nickname;
+    private int age;
     
     
     
     public Humain (String pNom, String pPrenom, String pNickname, int pAge)
     {
-        this.Nom=pNom;
-        this.Prenom=pPrenom;
-        this.Nickname=pNickname;
-        this.Age=pAge;
+        this.nom=pNom;
+        this.prenom=pPrenom;
+        this.nickname=pNickname;
+        this.age=pAge;
         
        
     }
     
     public String getNom()
     {
-        return Nom;
+        return nom;
     }
     
     public String getPrenom()
     {
-        return Prenom;
+        return prenom;
     }
     
     public String getSurnom()
     {
-        return Nickname;
+        return nickname;
     }
     public int getAge()
     {
-        return Age;
+        return age;
     }
     
     public void setNom(String nom)
     {
-        this.Nom=nom;
+        this.nom=nom;
     }
     
     public void setPrenom(String prenom)
     {
-        this.Prenom=prenom;
+        this.prenom=prenom;
     }
     
     public void setSurnom(String surnom)
     {
-        this.Nickname=surnom;
+        this.nickname=surnom;
     }
     
     public void setAge(int age)
     {
-        this.Age=age;
+        this.age=age;
     }
     
     public void sePresenter()
@@ -73,5 +73,8 @@ public abstract class Humain {
         
     }
     
+    public void talk(String parole){
+        System.out.println(this.prenom+" "+this.nom+" : "+parole);
+    }
 }
 
