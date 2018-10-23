@@ -68,8 +68,9 @@ public abstract class Humain {
     
     public void sePresenter()
     {
-        System.out.println("Hey, salut toi, je suis "+ Prenom +" "+ Nom +", mais tu peux aussi m'appeler " + Prenom + " THE " + Nickname+ "!!");
-        System.out.println("Alors pas mal pour quelqu'un qui a " + Age +" ans, hein !!");
+        System.out.println("Hey, salut, je suis "+ Prenom +" "+ Nom +", mais tu peux aussi m'appeler " + Prenom + " THE " + Nickname+ "!!");
+        System.out.println("Alors, regarde mon beau visage, pas mal pour quelqu'un de " + Age +" ans, hein !!");
+        
     }
     
 }
