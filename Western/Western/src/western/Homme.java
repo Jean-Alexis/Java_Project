@@ -29,6 +29,19 @@ public abstract class Homme extends Humain {
         System.out.println("Bonjour c'est"+this.getPrenom()+" Bien ou quoi la street ? J'ai une "+arme+" et je suis en forme ah oui ?"+sante+" et j'ai "+ force + " de force !");
     }
 
+    public void annoncerArme(){
+        talk("Attention ! Je suis en possession d'un "+this.arme);
+    }
+
+    public int getForce(){
+        return this.force;
+    }
+    
+    public void setForce(String nom){
+        this.nom=nom;
+    }
+    public void tirer(Homme personnage)
+
     
     
     
