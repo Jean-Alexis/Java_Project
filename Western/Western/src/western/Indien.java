@@ -21,7 +21,7 @@ public class Indien extends Homme {
     @Override
     public void sePresenter() {
         super.sePresenter();
-        System.out.println("j'ai quand même "+plumes+" plumes, je suis beaucoup trop hype !! Un vrai indien sa mère");
+        talk("Tous les matins je brosse mes plumes ! "+plumes+" plumes à brosser tous les jours, ça prend du temps !");
     }
     
 }

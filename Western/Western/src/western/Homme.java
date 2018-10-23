@@ -26,7 +26,7 @@ public abstract class Homme extends Humain {
     @Override
     public void sePresenter() {
         super.sePresenter();
-        System.out.println("Bonjour c'est"+this.getPrenom()+" Bien ou quoi la street ? J'ai une "+arme+" et je suis en forme ah oui ?"+sante+" et j'ai "+ force + " de force !");
+        talk(" Ca c'est bien un prénom de bonhomme ! En plus de ça, j'ai une "+arme+", pas mal comme arme hein ! Regarde, j'ai "+ force + " de force, pas mal hein !");
     }
 
     public void annoncerArme(){

@@ -17,7 +17,7 @@ public class Western {
     public static void main(String[] args) {
         // TODO code application logic here
         Indien robin =new Indien("Ghys","Robin","Beau-goss",20,"Tokarev",4,true,17);
-        robin.talk("salut");
+
     }
 
 }   
