@@ -12,27 +12,28 @@ package western;
 public class Dame extends Humain {
     private String couleurRobe; 
     private boolean estKidnappee;
+   
 
     //contructeur sans position -> de base spawn dans la maison
-    public Dame(String pNom, String pPrenom, int pAge, String pCouleurRobe){
-    	super(pNom, pPrenom, pAge);
+    public Dame(String pNom, String pPrenom, String pSurnom, int pAge, String pCouleurRobe){
+    	super(pNom, pPrenom, pSurnom, pAge);
     	this.couleurRobe=pCouleurRobe;
-    	this.position= Position.MAISON;
-
-    	sePresenter();
+        this.estKidnappee= false;
+    	super.setPosition(Position.MAISON);
+    	super.sePresenter();
 
     }
     //constructeur avec position
-    public Dame(String pNom, String pPrenom, int pAge,Position pPosition, String pCouleurRobe){
-    	super(pNom, pPrenom, pAge, pPosition);
+    public Dame(String pNom, String pPrenom,String pSurnom, int pAge,Position pPosition, String pCouleurRobe){
+    	super(pNom, pPrenom,pSurnom, pPosition, pAge);
+        this.estKidnappee=false;
     	this.couleurRobe=pCouleurRobe;
-
-    	sePresenter();
+    	super.sePresenter();
     }
     
 
     public void seFaireEnlever (Brigand brigand){
-    	this.estKidnappee =true;
+    	this.estKidnappee = true;
     	
 
     }

@@ -15,7 +15,7 @@ public class Indien extends Homme {
     public Indien( String pNom, String pPrenom, String pSurnom, int pAge, String pArme, int pForce,boolean pSante, int pPlumes) {
         super(pNom, pPrenom, pSurnom, pAge, pArme, pForce, pSante);
         this.plumes=pPlumes; 
-        sePresenter();
+        
     }
     
     @Override

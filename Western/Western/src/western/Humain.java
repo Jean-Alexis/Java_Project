@@ -12,65 +12,49 @@ package western;
 public abstract class Humain {
     private String nom;
     private String prenom;
-    private String nickname;
+    private String surnom;
+    private Position position;
     private int age;
     
     
-    
-    public Humain (String pNom, String pPrenom, String pNickname, int pAge)
-    {
+    //constructeur avec tous les champs renseignés
+    public Humain (String pNom, String pPrenom, String pSurnom, Position pPosition, int pAge){
         this.nom=pNom;
         this.prenom=pPrenom;
-        this.nickname=pNickname;
-        this.age=pAge;
-        
-       
+        this.surnom=pSurnom;
+        this.age=pAge;  
+        this.position=pPosition;  
+    }
+    //constructeur sans position -> position spawn = RUE
+    public Humain (String pNom, String pPrenom,String pSurnom, int pAge){
+        this.nom=pNom;
+        this.prenom=pPrenom;
+        this.surnom=pSurnom;
+        this.age=pAge; 
+        this.position=Position.RUE;
     }
     
-    public String getNom()
-    {
-        return nom;
-    }
     
-    public String getPrenom()
-    {
-        return prenom;
-    }
+    //mutateurs et accesseurs
+    public String getNom(){return this.nom;}
     
-    public String getSurnom()
-    {
-        return nickname;
-    }
-    public int getAge()
-    {
-        return age;
-    }
+    public String getPrenom(){return this.prenom;}
+    public void setPrenom(String prenom){this.prenom=prenom;}
+  
+    public String getSurnom(){return this.surnom;}
+    public void setSurnom(String surnom){this.surnom=surnom;}
     
-    public void setNom(String nom)
-    {
-        this.nom=nom;
-    }
+    public int getAge(){return this.age;}
+    public void setAge(int age){this.age=age;}
     
-    public void setPrenom(String prenom)
-    {
-        this.prenom=prenom;
-    }
+    public Position getPosition(){return this.position;}
+    public void setPosition(Position position){this.position=position;}
     
-    public void setSurnom(String surnom)
-    {
-        this.nickname=surnom;
-    }
     
-    public void setAge(int age)
-    {
-        this.age=age;
-    }
-    
-    public void sePresenter()
-    {
-        
-        talk(("Hey, salut, je suis "+ prenom +" "+ nom +", mais tu peux aussi m'appeler " + prenom + " THE " + nickname+ "!! Alors, regarde mon beau visage, pas mal pour quelqu'un de " + age +" ans, hein !!"));
-        
+    //fonction inhérentes à la classe humain
+    public void sePresenter(){
+        talk(("Hey, salut, je suis "+ prenom +" "+ nom +", mais tu peux aussi m'appeler " + 
+                prenom + " THE " + surnom+ "!! Alors, regarde mon beau visage, pas mal pour quelqu'un de " + age +" ans, hein !!"));      
     }
     
     public void talk(String parole){
