@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Robin
+ * @author Robin JA
  */
 public class Western {
 
@@ -17,28 +17,66 @@ public class Western {
      * @param args the command line arguments
      */
     
+    /*######################   DOC   ########################################################
+    
+    - Echelle de force: 1 à 9             1-tres faible     4-moyenne      9-invincible
+    - On peut initier un combat avec combat(perso1,perso2) - c'est le perso1 qui l'initie -
+    - a l'issue d'un combat, la personne tuée va au cimmetiere
+    - On peut faire renaitre un perso avec jesusDeNazareth(perso)
+    
+    #######################################################################################*/
+    
+    static ArrayList< Homme > cimmetiere = new ArrayList<>(); // tableau de personnes mortes
     
     public static void main(String[] args) {
-        ArrayList< Homme > cimmetiere = new ArrayList<>(); // tableau de personnes mortes
         
-        Indien robin =new Indien("Ghys","Robin","Beau-goss",20,"Tokarev",3,true,19);
-        Indien JA =new Indien("Hermel","JA","dieu",21,"pistolet",7,true,17);
+        //Création des personnages
+        Indien robin =new Indien("Ghys","Robin","Beau-goss",20,"Tokarev",5,true,19);
+        Indien ja =new Indien("Hermel","JA","dieu",21,"pistolet",9,true,17);
+        Indien leo = new Indien("denden","Leo","MichelT", 21, "pistolet a eau",5, true, 3);
         //Dame robinne = new Dame("Ghyse","Robinne",20,"bleu");
+        System.out.println("");
         
-        JA.annoncerArme();
-        robin.annoncerArme();
         
-        //JA.tirer(robin);
+        combat(ja, leo);
         
-        if (JA.tirer(robin)== true){
-            cimmetiere.add(robin);
+        combat(ja, robin);
+        combat(robin,leo);
+        System.out.println("personnes mortes :");
+        for (int i = 0; i <cimmetiere.size(); i++) {
+         
+            System.out.println(cimmetiere.get(i).getPrenom());
         }
-        else {
-            cimmetiere.add(JA);
-        }
+        jesusDeNazareth(leo);
         
-        JA.tirer(robin);
+       
+       
+        //afficher cimmetiere
+        System.out.println("personnes mortes :");
+        for (int i = 0; i <cimmetiere.size(); i++) {
+         
+            System.out.println(cimmetiere.get(i).getPrenom());
+        }
+       
+        
+       
     }
+    public static void combat (Homme homme1,Homme homme2){
+        int combat = homme1.tirer(homme2);
+        if (combat==1){cimmetiere.add(homme2);}
+        else if(combat==0){cimmetiere.add(homme1);}
+    }
+    
+    public static void jesusDeNazareth (Homme homme){
+        System.out.println(homme.getPrenom()+" renait de ses cendres.");
+        homme.setSante(true);
+        for(int i=0;i<cimmetiere.size();i++) {
+            if(cimmetiere.get(i).equals(homme)) {
+                cimmetiere.remove(i);
+            }
+        }
+    }
+    
 
 }   
 

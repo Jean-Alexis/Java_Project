@@ -58,10 +58,10 @@ public abstract class Homme extends Humain {
     
     
     // Tirer sur on personnage (un homme contre un homme), retourne vrai si le tireur gagne
-    public boolean tirer(Homme personnage){
+    public int tirer(Homme personnage){
         if(this.sante==false || personnage.sante==false){
             System.out.println("Un des personnages est déjà mort, ils ne peuvent se tirer dessus !");
-            return false;
+            return -1;
         }
         else{
         
@@ -81,38 +81,31 @@ public abstract class Homme extends Humain {
                 if (personnage instanceof Indien){ //si on tire sur un indien
 
                     if ( nombreAleatoirePersonnage >= (10-personnage.getForce()) ){
-                        System.out.println("vainqueur Robin "+nombreAleatoirePersonnage+" >= "+ (10-personnage.getForce()) );
                         vainqueurPersonnage = true;
-
                     }
-
                     if ( nombreAleatoireTireur >= (10-this.getForce()) ){
-                        System.out.println("vainqueur JA "+nombreAleatoireTireur+" >= "+ (10-this.getForce()) );
                         vainqueurTireur = true;
-
                     }
-
-
-                    //if((vainqueurPersonnage==true && vainqueurTireur==true)|| (vainqueurPersonnage==false && vainqueurTireur== false) ){
-                    if ( vainqueurPersonnage != vainqueurTireur){
-                        flag=true;
+         
+                    if ( vainqueurPersonnage == vainqueurTireur){
+                        flag=false;
                     }
                     else{
-                        flag=false;
+                        flag=true;
                     }
                 }
             }
             if(vainqueurPersonnage==true){
-                System.out.println(this.getPrenom()+" a voulu tirer sur "+personnage.getPrenom()+
-                    ", à l'issue du combat "+this.getPrenom()+" est mort !"); 
+                System.out.println(this.getPrenom()+" a voulu tirer sur "+personnage.getPrenom()+ ", qui s'est défendu," +
+                    " à l'issue du combat "+this.getPrenom()+" est mort !"); 
                 this.setSante(false);
             }
             else if(vainqueurTireur==true){
-                System.out.println(this.getPrenom()+" a voulu tirer sur "+personnage.getPrenom()+
-                    ", à l'issue du combat "+personnage.getPrenom()+" est mort !");  
+                System.out.println(this.getPrenom()+" a voulu tirer sur "+personnage.getPrenom()+ ", qui s'est défendu," +
+                    " à l'issue du combat "+personnage.getPrenom()+" est mort !");  
                 personnage.setSante(false);
             }
-            return vainqueurTireur;
+            return ((vainqueurTireur==true)? 1 :0);
         }
         
     }// fin Tirer
