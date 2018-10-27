@@ -20,7 +20,7 @@ public class Dame extends Humain {
     	this.couleurRobe=pCouleurRobe;
         this.estKidnappee= false;
     	super.setPosition(Position.MAISON);
-    	super.sePresenter();
+    	sePresenter();
 
     }
     //constructeur avec position
@@ -28,13 +28,27 @@ public class Dame extends Humain {
     	super(pNom, pPrenom,pSurnom, pPosition, pAge);
         this.estKidnappee=false;
     	this.couleurRobe=pCouleurRobe;
-    	super.sePresenter();
+    	sePresenter();
     }
     
-
-    public void seFaireEnlever (Brigand brigand){
-    	this.estKidnappee = true;
-    	
-
+    @Override
+    public void sePresenter()
+    {
+        super.sePresenter();
+        talk("Je n'ai pas d'armes, mais moi au moins, j'ai une magnifique robe"+ this.couleurRobe);
     }
+    
+    public void seFaireEnlever (Homme brigand){
+    	this.estKidnappee = true;
+    	//Je pense qu'ici, en plus de dire qu'elle est kidnapée, on change enplus sa position en mettant la même que celle du brigand
+    }
+    
+    public void seFaireLiberer (Homme homme)
+    {
+        System.out.println("Oh, quel heros, "+homme.getPrenom()+"a reussi à me libérer de cette ordure, je l'en remercierai jamais assez");
+        super.setPosition(Position.MAISON);
+    }
+    
+    
 }
+

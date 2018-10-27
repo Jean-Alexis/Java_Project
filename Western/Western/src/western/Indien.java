@@ -14,7 +14,8 @@ public class Indien extends Homme {
     
     public Indien( String pNom, String pPrenom, String pSurnom, int pAge, String pArme, int pForce,boolean pSante, int pPlumes) {
         super(pNom, pPrenom, pSurnom, pAge, pArme, pForce, pSante);
-        this.plumes=pPlumes; 
+        this.plumes=pPlumes;
+        sePresenter();
         
     }
     
@@ -24,4 +25,8 @@ public class Indien extends Homme {
         talk("Tous les matins je brosse mes plumes ! "+plumes+" plumes à brosser tous les jours, ça prend du temps !");
     }
     
+    public void negocier(Homme homme)
+    {
+        // Afinir
+    }
 }

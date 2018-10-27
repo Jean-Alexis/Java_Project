@@ -20,7 +20,7 @@ public abstract class Homme extends Humain {
         this.arme=pArme;
         this.force=pForce;
         this.sante=pSante;
-        super.sePresenter();
+        
     }
     //constructeur sans position
     public Homme(String pNom, String pPrenom,String pSurnom, int pAge, String pArme, int pForce, boolean pSante) {
@@ -28,7 +28,7 @@ public abstract class Homme extends Humain {
         this.arme = pArme;
         this.force = pForce;
         this.sante = pSante;
-        super.sePresenter();
+        
     }
     
     
@@ -44,6 +44,7 @@ public abstract class Homme extends Humain {
     }
 
     public int getForce(){return this.force;}
+    
     public void setForce(int force){
         if((force<0) || (force>10)){
             System.out.println("valeur de force invalide");
@@ -54,6 +55,7 @@ public abstract class Homme extends Humain {
     public String getArme(){return this.arme;}
     
     public boolean getSante(){return this.sante;}
+    
     public void setSante(boolean sante){this.sante=sante;}
     
     

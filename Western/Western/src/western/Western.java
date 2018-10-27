@@ -34,7 +34,7 @@ public class Western {
         Indien robin =new Indien("Ghys","Robin","Beau-goss",20,"Tokarev",5,true,19);
         Indien ja =new Indien("Hermel","JA","dieu",21,"pistolet",9,true,17);
         Indien leo = new Indien("denden","Leo","MichelT", 21, "pistolet a eau",5, true, 3);
-        //Dame robinne = new Dame("Ghyse","Robinne",20,"bleu");
+        Dame robinne = new Dame("Ghyse","Robinne", "BellaCiao",20,"bleu");
         System.out.println("");
         
         
