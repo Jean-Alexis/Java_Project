@@ -47,8 +47,9 @@ public abstract class Humain {
     public int getAge(){return this.age;}
     public void setAge(int age){this.age=age;}
     
+    //protected car on ne peut faire se déplacer un indien
     public Position getPosition(){return this.position;}
-    public void setPosition(Position position){this.position=position;}
+    protected void setPosition(Position position){this.position=position;}
     
     
     //fonction inhérentes à la classe humain

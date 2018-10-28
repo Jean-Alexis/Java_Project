@@ -12,9 +12,11 @@ package western;
 public class Indien extends Homme {
     private int plumes;
     
+    //l'indien spawn automatiquement au campement et ne peut pas se déplacer
     public Indien( String pNom, String pPrenom, String pSurnom, int pAge, String pArme, int pForce,boolean pSante, int pPlumes) {
         super(pNom, pPrenom, pSurnom, pAge, pArme, pForce, pSante);
         this.plumes=pPlumes;
+        this.setPosition(Position.CAMPEMENT);
         sePresenter();
         
     }
@@ -25,8 +27,4 @@ public class Indien extends Homme {
         talk("Tous les matins je brosse mes plumes ! "+plumes+" plumes à brosser tous les jours, ça prend du temps !");
     }
     
-    public void negocier(Homme homme)
-    {
-        // Afinir
-    }
 }

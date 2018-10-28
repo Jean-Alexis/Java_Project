@@ -19,10 +19,13 @@ public class Western {
     
     /*######################   DOC   ########################################################
     
-    - Echelle de force: 1 à 9             1-tres faible     4-moyenne      9-invincible
+    - Echelle de force: 1 à 9             1-tres faible      4-moyenne      9-invincible
     - On peut initier un combat avec combat(perso1,perso2) - c'est le perso1 qui l'initie -
-    - a l'issue d'un combat, la personne tuée va au cimmetiere
+    - a l'issue d'un combat, la personne tuée va au cimmetiere, on peut voir les personnes 
+      au cimmetiere avec afficherCimmetiere()
+    
     - On peut faire renaitre un perso avec jesusDeNazareth(perso)
+    - un personnage créé dans position spawn dans la RUE
     
     #######################################################################################*/
     
@@ -39,28 +42,24 @@ public class Western {
         
         
         combat(ja, leo);
-        
         combat(ja, robin);
         combat(robin,leo);
-        System.out.println("personnes mortes :");
-        for (int i = 0; i <cimmetiere.size(); i++) {
-         
-            System.out.println(cimmetiere.get(i).getPrenom());
-        }
+        
+        afficherCimmetiere();
+        
         jesusDeNazareth(leo);
         
-       
-       
-        //afficher cimmetiere
-        System.out.println("personnes mortes :");
-        for (int i = 0; i <cimmetiere.size(); i++) {
-         
-            System.out.println(cimmetiere.get(i).getPrenom());
-        }
-       
-        
+        afficherCimmetiere();
        
     }
+    
+    public static void afficherCimmetiere (){
+        System.out.println("personnes mortes :");
+        for (int i = 0; i <cimmetiere.size(); i++) {
+            System.out.println(cimmetiere.get(i).getPrenom());
+        }
+    }
+    
     public static void combat (Homme homme1,Homme homme2){
         int combat = homme1.tirer(homme2);
         if (combat==1){cimmetiere.add(homme2);}

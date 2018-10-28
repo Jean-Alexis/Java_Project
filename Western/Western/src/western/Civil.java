@@ -11,13 +11,21 @@ package western;
  */
 public class Civil extends Homme {
     private int argent;
-    public Civil(String pNom, String pPrenom,Position pPosition, String pSurnom, int pAge, String pArme, int pForce, boolean pSante, int pArgent ){
+    
+    //constructeur avec tous les champs du constructeur homme
+    public Civil(String pNom, String pPrenom, String pSurnom,Position pPosition, int pAge,String pArme, int pForce, boolean pSante, int pArgent ){
+        super(pNom, pPrenom, pSurnom, pPosition, pAge, pArme, pForce, pSante);
+        this.argent=pArgent;
+    }
+
+    //constructeur sans position
+    public Civil(String pNom, String pPrenom, String pSurnom, int pAge, String pArme, int pForce, boolean pSante, int pArgent ){
         super(pNom, pPrenom, pSurnom, pAge, pArme, pForce, pSante);
         this.argent=pArgent;
     }
     
-    public void seDeplacer(Position position)
-    {
+    
+    public void seDeplacer(Position position){
         super.setPosition(position);
     }
 }

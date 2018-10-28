@@ -13,13 +13,15 @@ public abstract class Homme extends Humain {
     private String arme;
     private int force;
     private boolean sante;
+    private boolean aNegocie;
     
     //constructeur avec tout les champs du constructeur Humain
-    public Homme(String pNom, String pPrenom,Position pPosition, String pSurnom, int pAge, String pArme, int pForce, boolean pSante ){
+    public Homme(String pNom, String pPrenom, String pSurnom, Position pPosition, int pAge, String pArme, int pForce, boolean pSante ){
         super(pNom, pPrenom, pSurnom, pPosition, pAge);
         this.arme=pArme;
         this.force=pForce;
         this.sante=pSante;
+        this.aNegocie=false;
         
     }
     //constructeur sans position
@@ -28,6 +30,7 @@ public abstract class Homme extends Humain {
         this.arme = pArme;
         this.force = pForce;
         this.sante = pSante;
+        this.aNegocie= false;
         
     }
     
@@ -35,7 +38,7 @@ public abstract class Homme extends Humain {
     @Override
     public void sePresenter() {
         super.sePresenter();
-        talk(" Ca c'est bien un prénom de bonhomme ! En plus de ça, j'ai une "+
+        talk("Ca c'est bien un prénom de bonhomme ! En plus de ça, j'ai une "+
                 arme+", pas mal comme arme hein ! Regarde, j'ai "+ force + " de force, pas mal hein !");
     }
 
@@ -55,7 +58,6 @@ public abstract class Homme extends Humain {
     public String getArme(){return this.arme;}
     
     public boolean getSante(){return this.sante;}
-    
     public void setSante(boolean sante){this.sante=sante;}
     
     
@@ -111,5 +113,13 @@ public abstract class Homme extends Humain {
         }
         
     }// fin Tirer
+
+    //négocier entre deux hommes, tout dépend de la catégorie qui négocie
+    public void negocier(Homme homme){
+
+        if(homme instanceof Indien){   //si 
+
+        }
+    }
 
 } // fin classe humain
