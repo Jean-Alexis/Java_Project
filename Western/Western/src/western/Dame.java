@@ -32,21 +32,36 @@ public class Dame extends Humain {
     }
     
     @Override
-    public void sePresenter()
-    {
+    public void sePresenter(){
         super.sePresenter();
-        talk("Je n'ai pas d'armes, mais moi au moins, j'ai une magnifique robe "+ this.couleurRobe);
+        talk("Je n'ai pas d'armes, mais moi au moins, j'ai une magnifique robe "+ this.couleurRobe+"\n");
     }
     
     public void seFaireEnlever (Homme brigand){
-    	this.estKidnappee = true;
+        if(brigand.getSante()==false){
+            System.out.println("Un des personnages est déjà mort, ils ne peuvent intérragir !");
+        }
+        else if(this.getPosition()!= brigand.getPosition()){
+            System.out.println("Les personnages doivent se trouver au même endroit pour intérragir");
+        }
+        else{
+            this.estKidnappee = true;
+        }
     	//Je pense qu'ici, en plus de dire qu'elle est kidnapée, on change enplus sa position en mettant la même que celle du brigand
     }
     
-    public void seFaireLiberer (Homme homme)
-    {
-        System.out.println("Oh, quel heros, "+homme.getPrenom()+"a reussi à me libérer de cette ordure, je l'en remercierai jamais assez");
-        super.setPosition(Position.MAISON);
+    public void seFaireLiberer (Homme homme){
+        
+        if(homme.getSante()==false){
+            System.out.println("Un des personnages est déjà mort, ils ne peuvent intérragir !");
+        }
+        else if(this.getPosition()!= homme.getPosition()){
+            System.out.println("Les personnages doivent se trouver au même endroit pour intérragir");
+        }
+        else{
+            System.out.println("Oh, quel heros, "+homme.getPrenom()+"a reussi à me libérer de cette ordure, je ne l'en remercierai jamais assez");
+            super.setPosition(Position.MAISON);
+        }
     }
     
     

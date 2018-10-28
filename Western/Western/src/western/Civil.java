@@ -29,4 +29,7 @@ public class Civil extends Homme {
         System.out.println(this.getPrenom()+" se déplace de "+this.getPosition()+" à "+position);
         super.setPosition(position);
     }
+    
+    protected void setArgent(int argent){ this.argent=argent;}
+    public int getArgent(){ return this.argent;}
 }

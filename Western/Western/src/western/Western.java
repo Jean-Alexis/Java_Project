@@ -20,6 +20,7 @@ public class Western {
     /*######################   DOC   ########################################################
     
     - Echelle de force: 1 à 9             1-tres faible      4-moyenne      9-invincible.
+    - le barman ne peut se défendre si on lui tire dessus
     - On peut initier un combat avec combat(perso1,perso2), c'est le perso1 qui l'initie.
     - a l'issue d'un combat, la personne tuée va au cimmetiere, on peut voir les personnes 
       au cimmetiere avec afficherCimmetiere().
@@ -27,37 +28,46 @@ public class Western {
     - un personnage créé dans position spawn dans la RUE.
     - Le nombre de plumes d'un indien varie entre 1 et 20, son pouvoir d'augmentation de force est
       fonction de son nombre de plumes (+1 force si plume <13, +2 sinon), il y a 30% de chance que la négociation echoue.
+    - on peut ajouter des type Boisson à la carte du Barman
     
     #######################################################################################*/
     
     static ArrayList< Homme > cimmetiere = new ArrayList<>(); // tableau de personnes mortes
-    
+     
     public static void main(String[] args) {
         
+        //création de la carte du barman
+        Boisson leffe = new Boisson("Leffe", 0, 3);
+        Boisson wisky = new Boisson("Wisky", 10, 8);
+        Boisson cognac = new Boisson("cognac", 10, 8);
+        Boisson rhum = new Boisson("Rhum", 10, 8);
+         
         //Création des personnages
-        Indien robin =new Indien("Ghys","Robin","Beau-goss",20,"Tokarev",5,true,19);
-        Indien ja =new Indien("Hermel","JA","dieu",21,"pistolet",9,true,4);
+        Indien robin = new Indien("Ghys","Robin","Beau-goss",20,"Tokarev",5,true,19);
+        Indien ja = new Indien("Hermel","JA","dieu",21,"pistolet",9,true,4);
         Indien leo = new Indien("denden","Leo","MichelT", 21, "pistolet a eau",5, true, 3);
-        Dame robinne = new Dame("Ghyse","Robinne", "BellaCiao",20,"bleu");
-        Cowboy woody = new Cowboy("Allen","Woody", "Le Gentil", Position.CAMPEMENT, 30, "44.magnum", 6, true, 2000);
-        Cowboy bill = new Cowboy("Clinton","Bill", "le prez", 70, "revolver", 4, true, 200);
         
-        Barman bob= new Barman("Sauler","Bob","Bobby", Position.BAR, 25, "fourchette", 0, true, 1500,"Piano");
-        bob.ajouterBoisson(new Boisson("Leffe", 10, 3));
-        bob.ajouterBoisson(new Boisson("Wisky", 10, 8));
+        Dame robinne = new Dame("Ghyse","Robinne", "BellaCiao",20,"bleu");
+        
+        Cowboy rody = new Cowboy("Allen","Rody", "Le Gentil", Position.CAMPEMENT, 30, "44.magnum", 6, true, 9);
+        Cowboy bill = new Cowboy("Clinton","Bill", "le prez",Position.BAR ,70, "revolver", 4, true, 200);
+        
+        Barman bob= new Barman("Sauler","Bob","Bobby", 25, "fourchette", 0, true, 1500,"Piano");
+        bob.ajouterBoisson(leffe);   bob.ajouterBoisson(wisky);    bob.ajouterBoisson(cognac);   bob.ajouterBoisson(rhum);
         
         System.out.println("");
-           
-        ja.negocier(woody);
         
         
-        woody.negocier(robin);
-        bill.negocier(ja);
-        bill.seDeplacer(Position.CAMPEMENT);
-        bill.negocier(ja);
+        rody.demanderCarte(bob);
+       
+        rody.seDeplacer(Position.BAR);
+        rody.demanderCarte(bob);
+        rody.demanderBoisson(bob, leffe);
+        rody.demanderBoisson(bob, cognac);
         
-     
-        
+        bill.demanderBoisson(bob, cognac);
+        //rody.PayerBoisson(bob, 30);
+       
         
         /*
         combat(ja, leo);
@@ -66,15 +76,20 @@ public class Western {
         afficherCimmetiere();
         jesusDeNazareth(leo);
         afficherCimmetiere();
+         
+        woody.negocier(robin);
+        bill.negocier(ja);
+        bill.seDeplacer(Position.CAMPEMENT);
+        bill.negocier(ja);
+        
         */
         
-       
     }
     
     public static void afficherCimmetiere (){
-        System.out.println("personnes mortes :");
+        System.out.println("Liste des personnes au cimmetiere :");
         for (int i = 0; i <cimmetiere.size(); i++) {
-            System.out.println(cimmetiere.get(i).getPrenom());
+            System.out.println(cimmetiere.get(i).getPrenom()+"\n");
         }
     }
     
