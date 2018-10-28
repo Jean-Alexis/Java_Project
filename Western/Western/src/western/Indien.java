@@ -15,16 +15,22 @@ public class Indien extends Homme {
     //l'indien spawn automatiquement au campement et ne peut pas se déplacer
     public Indien( String pNom, String pPrenom, String pSurnom, int pAge, String pArme, int pForce,boolean pSante, int pPlumes) {
         super(pNom, pPrenom, pSurnom, pAge, pArme, pForce, pSante);
-        this.plumes=pPlumes;
+        if(pPlumes<1 || pPlumes >20){
+            System.out.println("Le nombre de plumes doit être compris entre 1 et 20");
+        }
+        else{ this.plumes=pPlumes;}
         this.setPosition(Position.CAMPEMENT);
         sePresenter();
         
     }
+
+    public int getPlumes(){return this.plumes;}
     
+
     @Override
     public void sePresenter() {
         super.sePresenter();
-        talk("Tous les matins je brosse mes plumes ! "+plumes+" plumes à brosser tous les jours, ça prend du temps !");
+        talk("Tous les matins je brosse mes plumes ! "+this.getPlumes()+" plumes à brosser tous les jours, ça prend du temps !");
     }
     
 }

@@ -59,6 +59,9 @@ public abstract class Homme extends Humain {
     
     public boolean getSante(){return this.sante;}
     public void setSante(boolean sante){this.sante=sante;}
+
+    public boolean getANegocie(){return this.aNegocie;}
+    public void setANegocie(boolean aNegocie){this.aNegocie=aNegocie;}
     
     
     // Tirer sur on personnage (un homme contre un homme), retourne vrai si le tireur gagne
@@ -117,9 +120,44 @@ public abstract class Homme extends Humain {
     //négocier entre deux hommes, tout dépend de la catégorie qui négocie
     public void negocier(Homme homme){
 
-        if(homme instanceof Indien){   //si 
+    	//############ COWBOY NEGOCIE ##########################################
+        if(this instanceof Cowboy){   //si celui qui negocie est un cowboy
 
-        }
-    }
+            if(homme instanceof Indien){ // si celui avec le cowboy negocie est un indien
+                if (this.getANegocie()==true || homme.getANegocie()==true){ 
+                    System.out.println("Un des personnage a déjà atteint son nombre de negocations maximal");
+                }
+                else{
+                    if(this.getPosition()!=Position.CAMPEMENT){
+                        System.out.println("Le cowboy "+this.getPrenom()+" doit aller au campement pour négocier avec l'Indien "+ homme.getPrenom());
+                    }
+                    else{
+                    	homme.setANegocie(true);
+                    	this.setANegocie(true);
+                        System.out.println("L'indien "+homme.getPrenom()+
+                            " va tenter une dance de la pluie pour augmenter la force de "+this.getPrenom()+ " !"); 
+                        int chance = 1 + (int)(Math.random() * ((100 - 1) + 1));
+                        if (chance<=30){  // 30 % de chance d'échouer
+                            System.out.println("Malheursement, la danse a échouée.");
+                       	}
+                        else if (chance>30){
+                            int ajoutForce=0;
+                            if( ((Indien)homme).getPlumes()>13 ){
+                                ajoutForce=2;
+                            }
+                            else if( ((Indien)homme).getPlumes()<=13){
+                                ajoutForce=1;
+                            }
+                            System.out.println("Succès ! La force de "+this.getPrenom()+" passe de "+
+                                    this.getForce()+" à "+(this.getForce()+ajoutForce));
+                            this.setForce(this.getForce()+ajoutForce);
+                        }
+                    }                    
+                }
+            } 
+
+        }//#################fin c'est le cowboy qui negocie #######################
+
+    }//fin neggocier
 
 } // fin classe humain

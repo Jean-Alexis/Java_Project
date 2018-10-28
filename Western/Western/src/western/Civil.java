@@ -26,6 +26,7 @@ public class Civil extends Homme {
     
     
     public void seDeplacer(Position position){
+        System.out.println(this.getPrenom()+" se déplace de "+this.getPosition()+" à "+position);
         super.setPosition(position);
     }
 }
