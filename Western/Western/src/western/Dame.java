@@ -45,9 +45,14 @@ public class Dame extends Humain {
             System.out.println("Les personnages doivent se trouver au même endroit pour intérragir");
         }
         else{
-            this.estKidnappee = true;
+            if (brigand instanceof Brigand){
+                this.estKidnappee = true;
+                brigand.setPosition(Position.DESERT);
+                this.setPosition(brigand.getPosition());
+                this.talk("A L'aiiiide, on me kidnappe !!");
+                System.err.println("Dame "+this.getPrenom()+" est enlevée jusqu'au désert par "+ brigand.getPrenom());
+            }
         }
-    	//Je pense qu'ici, en plus de dire qu'elle est kidnapée, on change enplus sa position en mettant la même que celle du brigand
     }
     
     public void seFaireLiberer (Homme homme){
