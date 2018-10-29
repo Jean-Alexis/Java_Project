@@ -50,16 +50,34 @@ public class Western {
         Dame robinne = new Dame("Ghyse","Robinne", "BellaCiao",20,"bleu");
         
         Cowboy rody = new Cowboy("Allen","Rody", "Le Gentil", Position.CAMPEMENT, 30, "44.magnum", 6, true, 9);
-        Cowboy bill = new Cowboy("Clinton","Bill", "le prez",Position.BAR ,70, "revolver", 4, true, 200);
+        Cowboy bill = new Cowboy("Clinton","Bill", "le prez",70, "revolver", 4, true, 200);
+        
+        Brigand joe = new Brigand("Dalton","Joe", "le Petit",Position.PRISON,35, "revolver", 6, true, 200);
         
         Barman bob= new Barman("Sauler","Bob","Bobby", 25, "fourchette", 0, true, 1500,"Piano");
         bob.ajouterBoisson(leffe);   bob.ajouterBoisson(wisky);    bob.ajouterBoisson(cognac);   bob.ajouterBoisson(rhum);
-        
         System.out.println("");
         
         
-        rody.demanderCarte(bob);
+        
+        // ZONE DE TEST
        
+        
+        joe.kidnapper(robinne);
+        joe.seDeplacer(Position.MAISON);
+        joe.kidnapper(robinne);
+        joe.kidnapper(ja);
+        
+        //ja.setPosition(Position.DESERT);
+        
+        //joe.kidnapper(rody);
+        
+       
+        
+        
+        /*
+       
+        rody.demanderCarte(bob);
         rody.seDeplacer(Position.BAR);
         rody.demanderCarte(bob);
         rody.demanderBoisson(bob, leffe);
@@ -68,8 +86,6 @@ public class Western {
         bill.demanderBoisson(bob, cognac);
         //rody.PayerBoisson(bob, 30);
        
-        
-        /*
         combat(ja, leo);
         combat(ja, robin);
         combat(robin,leo);

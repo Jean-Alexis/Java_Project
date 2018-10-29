@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  * @author JA
  */
-public class Barman extends Civil{
+public class Barman extends Civil implements SestFaitFaucher{
     
     private String instrument;
     private ArrayList<Boisson> stock = new ArrayList();

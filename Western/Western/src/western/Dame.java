@@ -48,9 +48,9 @@ public class Dame extends Humain {
             if (brigand instanceof Brigand){
                 this.estKidnappee = true;
                 brigand.setPosition(Position.DESERT);
-                this.setPosition(brigand.getPosition());
+                this.setPosition(brigand.getPosition()); //la dame se retrouve au desert
                 this.talk("A L'aiiiide, on me kidnappe !!");
-                System.err.println("Dame "+this.getPrenom()+" est enlevée jusqu'au désert par "+ brigand.getPrenom());
+                System.out.println("Dame "+this.getPrenom()+" est enlevée jusqu'au désert par "+ brigand.getPrenom());
             }
         }
     }
@@ -64,9 +64,14 @@ public class Dame extends Humain {
             System.out.println("Les personnages doivent se trouver au même endroit pour intérragir");
         }
         else{
-            System.out.println("Oh, quel heros, "+homme.getPrenom()+"a reussi à me libérer de cette ordure, je ne l'en remercierai jamais assez");
-            super.setPosition(Position.MAISON);
-        }
+            if (homme instanceof Brigand){
+                System.out.println("Le brigand "+homme.getPrenom()+" ne va quand même pas libérer "+this.getPrenom());
+            }
+            else{
+                System.out.println("Oh, quel heros, "+homme.getPrenom()+"a reussi à me libérer de cette ordure, je ne l'en remercierai jamais assez");
+                super.setPosition(Position.MAISON);
+            }
+        }   
     }
     
     

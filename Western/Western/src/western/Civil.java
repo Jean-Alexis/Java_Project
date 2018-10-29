@@ -26,8 +26,30 @@ public class Civil extends Homme {
     
     
     public void seDeplacer(Position position){
-        System.out.println(this.getPrenom()+" se déplace de "+this.getPosition()+" à "+position);
-        super.setPosition(position);
+        
+        if(this.getSante()==false){
+            System.out.println("Le personnage est déjà mort, il ne peut se déplacer !");
+        }
+        else if (this.getPosition().equals(position)){
+            System.out.println(this.getPrenom()+" se trouve déjà à "+position);
+        }
+        else{
+            if(this instanceof Brigand){ //si le brigang est en prison il ne peut pas se déplacer
+                if((this.getPosition()==Position.PRISON) && (((Brigand)this).getIsInJail()==true)){
+                    System.out.println("Le brigand "+this.getPrenom()+" est en prison, il ne peut pas se déplacer.");
+                    this.talk("LAISSEZ MOI SOOOORTIR !!");
+                }
+                else{
+                    System.out.println(this.getPrenom()+" se déplace de "+this.getPosition()+" à "+position);
+                    super.setPosition(position);
+                }
+            }
+
+            else{
+                System.out.println(this.getPrenom()+" se déplace de "+this.getPosition()+" à "+position);
+                super.setPosition(position);
+            }
+        }
     }
     
     protected void setArgent(int argent){ this.argent=argent;}

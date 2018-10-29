@@ -9,6 +9,6 @@ package western;
  *
  * @author ISEN
  */
-public class Banquier extends PeutBoireBar implements SestFaitFaucher{
+public interface SestFaitFaucher {
     
 }
