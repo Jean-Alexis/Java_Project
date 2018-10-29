@@ -37,6 +37,9 @@ public class Dame extends Humain {
         talk("Je n'ai pas d'armes, mais moi au moins, j'ai une magnifique robe "+ this.couleurRobe+"\n");
     }
     
+    public void setEstKidnappee(boolean estKidnappee){this.estKidnappee=estKidnappee;}
+    public boolean getEstKidnappee(){return this.estKidnappee;}
+    
     public void seFaireEnlever (Homme brigand){
         if(brigand.getSante()==false){
             System.out.println("Un des personnages est déjà mort, ils ne peuvent intérragir !");
@@ -50,7 +53,7 @@ public class Dame extends Humain {
                 brigand.setPosition(Position.DESERT);
                 this.setPosition(brigand.getPosition()); //la dame se retrouve au desert
                 this.talk("A L'aiiiide, on me kidnappe !!");
-                System.out.println("Dame "+this.getPrenom()+" est enlevée jusqu'au désert par "+ brigand.getPrenom());
+                System.out.println("Dame "+this.getPrenom()+" est enlevée jusqu'au désert par "+ brigand.getPrenom()+"\n");
             }
         }
     }
@@ -68,8 +71,9 @@ public class Dame extends Humain {
                 System.out.println("Le brigand "+homme.getPrenom()+" ne va quand même pas libérer "+this.getPrenom());
             }
             else{
-                System.out.println("Oh, quel heros, "+homme.getPrenom()+"a reussi à me libérer de cette ordure, je ne l'en remercierai jamais assez");
+                this.talk("Oh, quel heros, "+homme.getPrenom()+" a reussi à me libérer de cette ordure, je ne l'en remercierai jamais assez");
                 super.setPosition(Position.MAISON);
+                System.out.println(this.getPrenom()+" retourne à sa maison.\n");
             }
         }   
     }

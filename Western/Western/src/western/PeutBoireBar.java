@@ -70,26 +70,13 @@ public class PeutBoireBar extends Civil{
     
     public void PayerBoisson(Civil barman, int argent){
         
-        if(this.getSante()==false || barman.getSante()==false){
-            System.out.println("Un des personnages est déjà mort, ils ne peuvent intérragir !");
-        }
-        else if(!this.getPosition().equals(barman.getPosition())){
-            System.out.println("Les personnages doivent se trouver au même endroit pour intérragir");
+        if(barman instanceof Barman){
+            this.donnerArgent(barman, argent);
         }
         else{
-            if(barman instanceof Barman){ 
-                if(this.getArgent()< argent){
-                    System.out.println(this.getPrenom()+" est fauché, il ne peut pas payer");
-                }
-                else{
-                    this.talk("Merci bien ! Voilà les "+ argent+"€ que je vous dois.");
-                    System.out.println("L'argent du barman passe de "+barman.getArgent()+" à "+(barman.getArgent()+argent));
-                    System.out.println("L'argent de "+ this.getPrenom() +" passe de "+this.getArgent()+" à "+(this.getArgent()-argent));
-                    this.setArgent(this.getArgent()-argent);
-                    barman.setArgent(barman.getArgent()+argent);
-                }
-            }
+            System.out.println(this.getPrenom()+" ne peut payer sa boisson qu'au barman");
         }
+      
     }
     
     

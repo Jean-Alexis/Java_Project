@@ -29,4 +29,17 @@ public class Cowboy extends PeutBoireBar {
         talk("Cowboy, plus rapide que moi, y'a pas.\n");
     }
     
+    public void sauverDame(Dame dame){
+        if(this.getSante()==false){
+            System.out.println("Un des personnages est déjà mort, ils ne peuvent intérragir !");
+        }
+        else if(this.getPosition()!= dame.getPosition()){
+            System.out.println("Les personnages doivent se trouver au même endroit pour intérragir");
+        }
+        else{
+            this.talk("Me voici dame "+dame.getPrenom()+"! Je viens vous sauver !");
+            dame.seFaireLiberer(this);
+        }
+    }
+    
 }

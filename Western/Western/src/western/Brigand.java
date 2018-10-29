@@ -48,6 +48,9 @@ public class Brigand extends PeutBoireBar {
             else if(this.getPosition()!=personne.getPosition()){
                 System.out.println("Les personnages doivent se trouver au même endroit pour intérragir");
             }
+            else if( ((Dame) personne).getEstKidnappee()==true){
+                System.out.println(personne.getPrenom()+" s'est déjà fait kidnappée.");
+            }
             else{
                 this.talk("Viens la ma jolie Dame "+personne.getPrenom()+" !");
                 ((Dame) personne).seFaireEnlever(this);

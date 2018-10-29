@@ -49,7 +49,7 @@ public class Western {
         
         Dame robinne = new Dame("Ghyse","Robinne", "BellaCiao",20,"bleu");
         
-        Cowboy rody = new Cowboy("Allen","Rody", "Le Gentil", Position.CAMPEMENT, 30, "44.magnum", 6, true, 9);
+        Cowboy rody = new Cowboy("Allen","Rody", "Le Gentil", Position.CAMPEMENT, 30, "44.magnum", 6, true, 40);
         Cowboy bill = new Cowboy("Clinton","Bill", "le prez",70, "revolver", 4, true, 200);
         
         Brigand joe = new Brigand("Dalton","Joe", "le Petit",Position.PRISON,35, "revolver", 6, true, 200);
@@ -62,20 +62,32 @@ public class Western {
         
         // ZONE DE TEST
        
+        rody.demanderCarte(bob);
+        rody.seDeplacer(Position.BAR);
+        rody.demanderCarte(bob);
+        rody.demanderBoisson(bob, leffe);
+        rody.demanderBoisson(bob, cognac);
+        bill.seDeplacer(Position.BAR);
+        bill.demanderBoisson(bob, cognac);
         
-        joe.kidnapper(robinne);
-        joe.seDeplacer(Position.MAISON);
-        joe.kidnapper(robinne);
-        joe.kidnapper(ja);
+        bill.donnerArgent(rody, -30);
+      
         
-        //ja.setPosition(Position.DESERT);
-        
-        //joe.kidnapper(rody);
-        
-       
+        //bill.demanderBoisson(bob, cognac);
+        //rody.PayerBoisson(bob, 30);
         
         
         /*
+        
+         joe.kidnapper(robinne);
+        joe.seDeplacer(Position.MAISON);
+        joe.kidnapper(robinne);
+        robinne.seFaireLiberer(joe);
+        joe.kidnapper(robinne);
+        
+        rody.setPosition(Position.DESERT);
+        rody.sauverDame(robinne);
+        rody.seDeplacer(Position.BAR);
        
         rody.demanderCarte(bob);
         rody.seDeplacer(Position.BAR);
