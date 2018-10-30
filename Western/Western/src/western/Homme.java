@@ -91,45 +91,82 @@ public abstract class Homme extends Humain {
                 nombreAleatoireTireur = 1 + (int)(Math.random() * ((10 - 1) + 1));
                 vainqueurTireur = false;
                 vainqueurPersonnage = false;
+                
+                if (this instanceof Indien){ // si le perso qui tire est un indien
+                    if ((personnage instanceof Cowboy) || (personnage instanceof Brigand) ){ // il ne peut tirer que sur brigand ou cowboy
 
-                if (personnage instanceof Indien){ //si on tire sur un indien
-
-                    if ( nombreAleatoirePersonnage >= (10-personnage.getForce()) ){
-                        vainqueurPersonnage = true;
-                    }
-                    if ( nombreAleatoireTireur >= (10-this.getForce()) ){
-                        vainqueurTireur = true;
-                    }
-         
-                    if ( vainqueurPersonnage == vainqueurTireur){
-                        flag=false;
+                        if ( nombreAleatoirePersonnage >= (10-personnage.getForce()) ){
+                            vainqueurPersonnage = true;
+                        }
+                        if ( nombreAleatoireTireur >= (10-this.getForce()) ){
+                            vainqueurTireur = true;
+                        }
+                        if ( vainqueurPersonnage == vainqueurTireur){
+                            flag=false;
+                        }
+                        else{
+                            flag=true;
+                        }
                     }
                     else{
+                        System.out.println("Un indien ne tire que sur un Cowboy ou un Brigand.");
                         flag=true;
+                        return -1;
+                    }
+                } 
+                
+                else if (this instanceof Brigand){ //si on tire en tant que brigand sur un barman/banquier on gagne forcement           
+                    if((this instanceof Barman) || (this instanceof Banquier)){
+                        vainqueurTireur = true;
+                        flag=true;   
+                    }
+                    else{ //le brigand peut tirer sur n'importe quel homme
+                        if ( nombreAleatoirePersonnage >= (10-personnage.getForce()) ){
+                            vainqueurPersonnage = true;
+                        }
+                        if ( nombreAleatoireTireur >= (10-this.getForce()) ){
+                            vainqueurTireur = true;
+                        }
+                        if ( vainqueurPersonnage == vainqueurTireur){
+                            flag=false;
+                        }
+                        else{
+                            flag=true;
+                        }
                     }
                 }
                 
-                else if (personnage instanceof Barman){ //si on tire sur un barman on gagne forcement                    //##################A FINIR pour chaque perso qui tire sur un autre 
-                    vainqueurTireur = true;
-                    flag=true;   
-                }
-                else if (personnage instanceof Cowboy){
-                    flag=true;   
-                }
-                else if (personnage instanceof Brigand){
-                    flag=true;   
-                }
-                else if (personnage instanceof Banquier){
-                    flag=true;   
-                }
-                else if (personnage instanceof Sherif){
-                    flag=true;   
+                else if ((this instanceof Cowboy)||(this instanceof Sherif)){ // un cowboy ou sherif ne peut tirer que sur brigand
+                    if(personnage instanceof Brigand){ // cowboy ne tire que sur brigand
+                        if ( nombreAleatoirePersonnage >= (10-personnage.getForce()) ){
+                        vainqueurPersonnage = true;
+                        }
+                        if ( nombreAleatoireTireur >= (10-this.getForce()) ){
+                            vainqueurTireur = true;
+                        }
+                        if ( vainqueurPersonnage == vainqueurTireur){
+                            flag=false;
+                        }
+                        else{
+                            flag=true;
+                        }
+                    }
+                    else{ //si cowboy tire sur autre que brigand
+                        System.out.println("Un Cowboy/Sherif ne peut pas tirer sur les gentils !");
+                        flag=true;
+                        return -1;
+                    } 
                 }
                 
-              
-               
+                else if (this instanceof Barman || (this instanceof Banquier)){
+                    System.out.println("Un barman/banquier n'est pas assez méchant pour tirer sur quelqu'un !");
+                    flag=true;
+                    return -1;
+                }    
                 
-            }
+            } //fin du while
+            
+            
             if(vainqueurPersonnage==true){
                 System.out.println(this.getPrenom()+" a voulu tirer sur "+personnage.getPrenom()+ ", qui s'est défendu," +
                     " à l'issue du combat "+this.getPrenom()+" est mort !"); 
@@ -190,5 +227,16 @@ public abstract class Homme extends Humain {
             }//#################   fin c'est le cowboy qui negocie    #######################
         }//fin else si perso est mort
     }//fin neggocier
+    
+    
+    /*
+    cowboy négocie avec : indien FAIT 
+                          brigand (fait mourir le cowboy actuel pour créer un brigand du meme nom, je sais pas encore comment faire)
+    brigant négocie avec : Shérif (va en prison, faut pas l'pousser l'shérif)
+    indien négocie avec : brigand (argent)
+                        : cowboy (argent)
+    
+    le reste on s'occupe pas 
+    */
 
 } // fin classe humain

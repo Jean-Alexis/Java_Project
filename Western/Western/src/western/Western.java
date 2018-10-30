@@ -20,7 +20,6 @@ public class Western {
     /*######################   DOC   ########################################################
     
     - Echelle de force: 1 à 9             1-tres faible      4-moyenne      9-invincible.
-    - le barman ne peut se défendre si on lui tire dessus
     - On peut initier un combat avec combat(perso1,perso2), c'est le perso1 qui l'initie.
     - a l'issue d'un combat, la personne tuée va au cimmetiere, on peut voir les personnes 
       au cimmetiere avec afficherCimmetiere().
@@ -29,6 +28,12 @@ public class Western {
     - Le nombre de plumes d'un indien varie entre 1 et 20, son pouvoir d'augmentation de force est
       fonction de son nombre de plumes (+1 force si plume <13, +2 sinon), il y a 30% de chance que la négociation echoue.
     - on peut ajouter des type Boisson à la carte du Barman
+    - La fonction combat ne marche que pour certaines combinaisons de persos
+      (ex un invien ne tire que sur cowboy/brigand, un barman ne tire sur personne mais se défend).
+    - Un civil qui commande peut commander(et payer en meme temps) sa boisson, 
+      tout dépend de si toutes les conditions pour qu'il puissent boire soient remplies.
+    - les personnages Civils peuvent se donner de l'argent.
+
     
     #######################################################################################*/
     
@@ -62,19 +67,12 @@ public class Western {
         
         // ZONE DE TEST
        
-        rody.demanderCarte(bob);
-        rody.seDeplacer(Position.BAR);
-        rody.demanderCarte(bob);
-        rody.demanderBoisson(bob, leffe);
-        rody.demanderBoisson(bob, cognac);
-        bill.seDeplacer(Position.BAR);
-        bill.demanderBoisson(bob, cognac);
+       // leo.seDeplacer(Position.RUE);
+        bob.seDeplacer(Position.CAMPEMENT);
         
-        bill.donnerArgent(rody, -30);
-      
+        combat(leo, bob);
+        afficherCimmetiere();
         
-        //bill.demanderBoisson(bob, cognac);
-        //rody.PayerBoisson(bob, 30);
         
         
         /*
