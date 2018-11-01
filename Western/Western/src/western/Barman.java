@@ -18,15 +18,15 @@ public class Barman extends Civil implements SestFaitFaucher{
     boolean estBraque;
     
     //constructeur avec tous les champs renseignés
-    public Barman(String pNom, String pPrenom, String pSurnom,Position pPosition, int pAge,String pArme, int pForce, boolean pSante, int pArgent, String pInstrument ){
-        super(pNom, pPrenom, pSurnom, pPosition, pAge, pArme, pForce, pSante, pArgent);
+    public Barman(String pNom, String pPrenom, String pSurnom,Position pPosition, int pAge,String pArme, int pForce, int pArgent, String pInstrument ){
+        super(pNom, pPrenom, pSurnom, pPosition, pAge, pArme, pForce, pArgent);
         this.instrument=pInstrument;
         this.estBraque=false;
         sePresenter();
     }
     //constructeur sans position
-    public Barman(String pNom, String pPrenom, String pSurnom, int pAge,String pArme, int pForce, boolean pSante, int pArgent, String pInstrument ){
-        super(pNom, pPrenom, pSurnom, pAge, pArme, pForce, pSante, pArgent);
+    public Barman(String pNom, String pPrenom, String pSurnom, int pAge,String pArme, int pForce, int pArgent, String pInstrument ){
+        super(pNom, pPrenom, pSurnom, pAge, pArme, pForce, pArgent);
         this.instrument=pInstrument;
         this.estBraque=false;
         super.setPosition(Position.BAR);
@@ -34,6 +34,9 @@ public class Barman extends Civil implements SestFaitFaucher{
     }
     
     public String getInstrument(){return this.instrument;}
+    
+    public void setEstBraque(boolean estBraque){ this.estBraque=estBraque;}
+    public boolean getEstBraque(){ return this.estBraque;}
     
     @Override
     public void sePresenter() {
@@ -70,7 +73,26 @@ public class Barman extends Civil implements SestFaitFaucher{
             this.talk("Je n'ai plus de "+boisson.getType()+" voulez-vous autre chose ?");
             return false;
         }
-       
+    }
+    
+    @Override
+    public void seFaitBraquer(Brigand brigand){
+        this.setEstBraque(true);
+        this.talk("Vous ne vous en sortirez pas comme ça ! Mon bar c'est ma vie !");
+        System.out.println("L'argent de "+this.getPrenom()+" passe de "+ this.getArgent() +" à 0.");
+        this.setArgent(0);
+        this.depression();
+        
+    }
+    
+    @Override
+    public void depression(){
+        
+    }
+    
+    @Override
+    public void videReserveAlcool(){
+        
     }
  
 }

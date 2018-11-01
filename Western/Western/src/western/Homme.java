@@ -16,20 +16,26 @@ public abstract class Homme extends Humain {
     private boolean aNegocie;
     
     //constructeur avec tout les champs du constructeur Humain
-    public Homme(String pNom, String pPrenom, String pSurnom, Position pPosition, int pAge, String pArme, int pForce, boolean pSante ){
+    public Homme(String pNom, String pPrenom, String pSurnom, Position pPosition, int pAge, String pArme, int pForce ){
         super(pNom, pPrenom, pSurnom, pPosition, pAge);
+        this.sante=true;
         this.arme=pArme;
-        this.force=pForce;
-        this.sante=pSante;
+        if (pForce <0 || pForce>10){
+            System.out.println("Valeur de force incorrecte, doit être entre 0 et 10.");
+        }
+        else{ this.force=pForce;}
         this.aNegocie=false;
         
     }
     //constructeur sans position
-    public Homme(String pNom, String pPrenom,String pSurnom, int pAge, String pArme, int pForce, boolean pSante) {
+    public Homme(String pNom, String pPrenom,String pSurnom, int pAge, String pArme, int pForce) {
         super(pNom, pPrenom, pSurnom, pAge);
         this.arme = pArme;
-        this.force = pForce;
-        this.sante = pSante;
+        if (pForce <0 || pForce>10){
+            System.out.println("Valeur de force incorrecte, doit être entre 0 et 10.");
+        }
+        else{ this.force=pForce;}
+        this.sante = true;
         this.aNegocie= false;
         
     }

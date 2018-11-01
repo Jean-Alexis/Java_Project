@@ -13,8 +13,8 @@ public class Indien extends Homme {
     private int plumes;
     
     //l'indien spawn automatiquement au campement et ne peut pas se déplacer
-    public Indien( String pNom, String pPrenom, String pSurnom, int pAge, String pArme, int pForce,boolean pSante, int pPlumes) {
-        super(pNom, pPrenom, pSurnom, pAge, pArme, pForce, pSante);
+    public Indien( String pNom, String pPrenom, String pSurnom, int pAge, String pArme, int pForce, int pPlumes) {
+        super(pNom, pPrenom, pSurnom, pAge, pArme, pForce);
         if(pPlumes<1 || pPlumes >20){
             System.out.println("Le nombre de plumes doit être compris entre 1 et 20");
         }

@@ -13,8 +13,8 @@ public class Civil extends Homme {
     private int argent;
     
     //constructeur avec tous les champs du constructeur homme
-    public Civil(String pNom, String pPrenom, String pSurnom,Position pPosition, int pAge,String pArme, int pForce, boolean pSante, int pArgent ){
-        super(pNom, pPrenom, pSurnom, pPosition, pAge, pArme, pForce, pSante);
+    public Civil(String pNom, String pPrenom, String pSurnom,Position pPosition, int pAge,String pArme, int pForce, int pArgent ){
+        super(pNom, pPrenom, pSurnom, pPosition, pAge, pArme, pForce);
         if(pArgent<0){
             System.out.println("Vous avez entré une somme d'argent négative");
         }
@@ -25,8 +25,8 @@ public class Civil extends Homme {
     }
 
     //constructeur sans position
-    public Civil(String pNom, String pPrenom, String pSurnom, int pAge, String pArme, int pForce, boolean pSante, int pArgent ){
-        super(pNom, pPrenom, pSurnom, pAge, pArme, pForce, pSante);
+    public Civil(String pNom, String pPrenom, String pSurnom, int pAge, String pArme, int pForce, int pArgent ){
+        super(pNom, pPrenom, pSurnom, pAge, pArme, pForce);
         if(pArgent<0){
             System.out.println("Vous avez entré une somme d'argent négative");
         }
@@ -77,8 +77,8 @@ public class Civil extends Homme {
             System.out.println("Vous ne pouvez donner une somme d'argent négative.");
         }
         else{
-            if(argent<this.getArgent()){
-                this.talk("Tiens, voilà "+ argent+"€, fais-en bon usage.");
+            if(argent<=this.getArgent()){
+                this.talk("Tennez, voilà "+ argent+"€.");
                 System.out.println("L'argent de "+civil.getPrenom()+" passe de "+civil.getArgent()+" à "+(civil.getArgent()+argent));
                 System.out.println("L'argent de "+ this.getPrenom() +" passe de "+this.getArgent()+" à "+(this.getArgent()-argent));
                 this.setArgent(this.getArgent()-argent);
@@ -86,11 +86,29 @@ public class Civil extends Homme {
             }
             else{
                 System.out.println(this.getPrenom()+" n'a pas assez d'argent pour donner "+argent+"€.");
-            }
-            
+            }   
         }
-        
     }
+    
+    public void demanderPret(Banquier banquier, int argent){
+        if(this.getSante()==false || banquier.getSante()==false){
+            System.out.println("Un des personnages est déjà mort, ils ne peuvent intérragir !");
+        }
+        else if (this.getPosition()!=(banquier.getPosition())){
+            System.out.println("Les personnages doivent se trouver au même endroit pour intérragir");
+        }
+        else if(this.equals(banquier)){
+            System.out.println(this.getPrenom()+" ne peut se demander un prêt à lui même.");
+        }
+        else if(argent<0){
+            System.out.println("Vous ne pouvez demander une somme d'argent négative.");
+        }
+        else{
+           this.talk("Bonjour banquier "+banquier.getNom()+" serait-il possible de faire un prêt de "+argent+"€ ?");
+           banquier.accorderPret(this, argent);
+        }
+    }
+    
     
     protected void setArgent(int argent){ this.argent=argent;}
     public int getArgent(){ return this.argent;}

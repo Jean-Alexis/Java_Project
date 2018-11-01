@@ -22,7 +22,12 @@ public abstract class Humain {
         this.nom=pNom;
         this.prenom=pPrenom;
         this.surnom=pSurnom;
-        this.age=pAge;  
+        if(pAge<0){
+            System.out.println("Vous avez entré un age négatif");
+        }
+        else{
+            this.age=pAge;
+        }
         this.position=pPosition;  
     }
     //constructeur sans position -> position spawn = RUE
@@ -30,7 +35,12 @@ public abstract class Humain {
         this.nom=pNom;
         this.prenom=pPrenom;
         this.surnom=pSurnom;
-        this.age=pAge; 
+        if(pAge<0){
+            System.out.println("Vous avez entré un age négatif");
+        }
+        else{
+            this.age=pAge;
+        }
         this.position=Position.RUE;
     }
     

@@ -12,13 +12,13 @@ package western;
 public class PeutBoireBar extends Civil{
     
     //constructeur avec tous les champs du constructeur civil
-    public PeutBoireBar(String pNom, String pPrenom, String pSurnom,Position pPosition, int pAge,String pArme, int pForce, boolean pSante, int pArgent ){
-        super(pNom, pPrenom, pSurnom, pPosition, pAge, pArme, pForce, pSante, pArgent);
+    public PeutBoireBar(String pNom, String pPrenom, String pSurnom,Position pPosition, int pAge,String pArme, int pForce, int pArgent ){
+        super(pNom, pPrenom, pSurnom, pPosition, pAge, pArme, pForce, pArgent);
     }
     
     //constructeur sans position
-    public PeutBoireBar(String pNom, String pPrenom, String pSurnom, int pAge,String pArme, int pForce, boolean pSante, int pArgent ){
-        super(pNom, pPrenom, pSurnom, pAge, pArme, pForce, pSante, pArgent);
+    public PeutBoireBar(String pNom, String pPrenom, String pSurnom, int pAge,String pArme, int pForce, int pArgent ){
+        super(pNom, pPrenom, pSurnom, pAge, pArme, pForce, pArgent);
     }
     
     public void demanderCarte(Civil barman){

@@ -48,19 +48,23 @@ public class Western {
         Boisson rhum = new Boisson("Rhum", 10, 8);
          
         //Création des personnages
-        Indien robin = new Indien("Ghys","Robin","Beau-goss",20,"Tokarev",5,true,19);
-        Indien ja = new Indien("Hermel","JA","dieu",21,"pistolet",9,true,4);
-        Indien leo = new Indien("denden","Leo","MichelT", 21, "pistolet a eau",5, true, 3);
+        Indien robin = new Indien("Ghys","Robin","Beau-goss",20,"Tokarev",5,19);
+        Indien ja = new Indien("Hermel","JA","dieu",21,"pistolet",9,4);
+        Indien leo = new Indien("denden","Leo","MichelT", 21, "pistolet a eau",5, 3);
         
         Dame robinne = new Dame("Ghyse","Robinne", "BellaCiao",20,"bleu");
         
-        Cowboy rody = new Cowboy("Allen","Rody", "Le Gentil", Position.CAMPEMENT, 30, "44.magnum", 6, true, 40);
-        Cowboy bill = new Cowboy("Clinton","Bill", "le prez",70, "revolver", 4, true, 200);
+        Cowboy rody = new Cowboy("Allen","Rody", "Le Gentil", Position.CAMPEMENT, 30, "44.magnum", 6, 40);
+        Cowboy bill = new Cowboy("Clinton","Bill", "le prez",70, "revolver", 4, 200);
         
-        Brigand joe = new Brigand("Dalton","Joe", "le Petit",Position.PRISON,35, "revolver", 6, true, 200);
+        Brigand joe = new Brigand("Dalton","Joe", "le Petit",Position.PRISON,35, "revolver", 6, 400);
         
-        Barman bob= new Barman("Sauler","Bob","Bobby", 25, "fourchette", 0, true, 1500,"Piano");
+        Barman bob= new Barman("Sauler","Bob","Bobby", 25, "fourchette", 0, 1500,"Piano");
         bob.ajouterBoisson(leffe);   bob.ajouterBoisson(wisky);    bob.ajouterBoisson(cognac);   bob.ajouterBoisson(rhum);
+        
+        Banquier cresus= new Banquier("Roschild","Crésus","richou", 38, "papier", 0, 200);
+        
+        Sherif dave = new Sherif("Moloss", "Dave", "le kid", 52, "flingue", 7, 300);
         System.out.println("");
         
         
@@ -68,11 +72,17 @@ public class Western {
         // ZONE DE TEST
        
        // leo.seDeplacer(Position.RUE);
-        bob.seDeplacer(Position.CAMPEMENT);
-        
-        combat(leo, bob);
-        afficherCimmetiere();
-        
+      
+       joe.seDeplacer(Position.RUE); dave.seDeplacer(Position.RUE);
+       dave.emprisonner(joe);
+       joe.echapper();
+       
+       joe.seDeplacer(Position.DESERT);
+       dave.seDeplacer(Position.DESERT);
+       
+       combat(joe,dave);
+       afficherCimmetiere();
+       
         
         
         /*

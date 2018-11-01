@@ -11,4 +11,41 @@ package western;
  */
 public class Sherif extends PeutBoireBar{
     
+    //constructeur avec tous les champs du constructeur civil
+    public Sherif(String pNom, String pPrenom, String pSurnom,Position pPosition, int pAge,String pArme, int pForce, int pArgent ){
+        super(pNom, pPrenom, pSurnom, pPosition, pAge, pArme, pForce, pArgent);
+        sePresenter();
+    }
+    
+    //constructeur sans position
+    public Sherif(String pNom, String pPrenom, String pSurnom, int pAge,String pArme, int pForce, int pArgent ){
+        super(pNom, pPrenom, pSurnom, pAge, pArme, pForce, pArgent);
+        super.setPosition(Position.PRISON);
+        sePresenter();
+    }
+    
+    @Override
+    public void sePresenter() {
+        super.sePresenter();
+        talk("Oyez, messieurs dames, votre shérif est arrivé.\n");
+    }
+    
+    public void emprisonner(Brigand brigand){
+        if(this.getSante()==false || brigand.getSante()==false){
+            System.out.println("Un des personnages est déjà mort, ils ne peuvent intérragir !");
+        }    
+        else if(this.getPosition()!=brigand.getPosition()){
+            System.out.println("Les personnages doivent se trouver au même endroit pour intérragir");
+        }
+        else if (brigand.getIsInJail()== true){
+            System.out.println("Le brigand "+this.getPrenom()+" est déjà en prison");
+        }
+        else{
+            
+            this.talk("Tu as assez fait de bêtises comme ça "+ brigand.getPrenom()+ " il est temps pour toi de faire un tour derrière les barreaux !");
+            brigand.seFaireEmprisonner(this);
+            brigand.setIsInJail(true);
+        }
+    }
+    
 }
