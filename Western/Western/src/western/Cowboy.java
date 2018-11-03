@@ -29,6 +29,11 @@ public class Cowboy extends PeutBoireBar {
         talk("Cowboy, plus rapide que moi, y'a pas.\n");
     }
     
+    @Override
+    public String toString(){
+        return this.getNom()+" "+this.getPrenom()+" "+this.getSurnom()+" "+this.getAge()+" "+this.getPosition()+" "+this.getArme()+" "+this.getForce()+" "+this.getArgent();
+    }
+    
     public void sauverDame(Dame dame){
         if(this.getSante()==false){
             System.out.println("Un des personnages est déjà mort, ils ne peuvent intérragir !");

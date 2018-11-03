@@ -37,6 +37,11 @@ public class Dame extends Humain {
         talk("Je n'ai pas d'armes, mais moi au moins, j'ai une magnifique robe "+ this.couleurRobe+"\n");
     }
     
+    @Override
+    public String toString(){
+        return this.getNom()+" "+this.getPrenom()+" "+this.getSurnom()+" "+this.getAge()+" "+this.getPosition()+" "+this.couleurRobe;
+    }
+    
     public void setEstKidnappee(boolean estKidnappee){this.estKidnappee=estKidnappee;}
     public boolean getEstKidnappee(){return this.estKidnappee;}
     

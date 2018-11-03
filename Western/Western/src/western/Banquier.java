@@ -37,6 +37,11 @@ public class Banquier extends PeutBoireBar implements SestFaitFaucher{
         talk("Je suis le banquier, que puis-je faire pour vous ?\n");
     }
     
+    @Override
+    public String toString(){
+        return this.getNom()+" "+this.getPrenom()+" "+this.getSurnom()+" "+this.getAge()+" "+this.getPosition()+" "+this.getArme()+" "+this.getForce()+" "+this.getArgent();
+    }
+    
     public void accorderPret(Civil civil, int argent){   // cette fonction créer de la valeur (elle ne ponctionne pas l'argent du banquier mais rajoute qd meme au civil
         //les verifications de position, sante etc ont deja ete faite lors de l'appel demanderPret() dans Civil
         if( this.estBraque==true){
