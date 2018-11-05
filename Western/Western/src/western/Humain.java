@@ -77,5 +77,6 @@ public abstract class Humain {
     public void talk(String parole){
         System.out.println(this.prenom+" "+this.nom+" : "+parole);
     }
+    
 }
 

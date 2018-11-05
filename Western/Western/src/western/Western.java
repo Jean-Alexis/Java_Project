@@ -55,7 +55,9 @@ public class Western {
         Dame robinne = new Dame("Ghyse","Robinne", "BellaCiao",20,"bleu");
         
         Cowboy rody = new Cowboy("Allen","Rody", "Le Gentil", Position.CAMPEMENT, 30, "44.magnum", 6, 40);
+
         Cowboy bill = new Cowboy("Clinton","Bill", "le prez",70, "revolver", 4, 200);
+
         
         Brigand joe = new Brigand("Dalton","Joe", "le Petit",Position.PRISON,35, "revolver", 6, 400);
         
@@ -73,10 +75,34 @@ public class Western {
        
        // leo.seDeplacer(Position.RUE);
         //newCowboy("robert","paro" , "dede", 0, "arme", 3, 40);
-        help(robin);
-        help(bob);
-        help(dave);
-        System.out.println(rody);
+        //help(robin);
+        //System.out.println(rody);
+        joe.braquer(bob);
+        bob.annoncerPosition();
+        joe.seDeplacer(Position.BAR);
+        joe.braquer(bob);
+        joe.seDeplacer(Position.BANQUE);
+        joe.demanderPret(cresus, 200);
+        joe.braquer(cresus);
+        joe.seDeplacer(Position.MAISON);
+        joe.kidnapper(robinne);
+        robinne.annoncerPosition();
+        bill.seDeplacer(Position.RUE);
+        bill.PayerBoisson(bob, 3);
+        bill.seDeplacer(Position.BAR);
+        bill.demanderBoisson(bob, wisky);
+        bill.demanderBoisson(bob, wisky);
+        dave.seDeplacer(Position.BAR);
+        bill.demanderCarte(dave);
+        robin.annoncerArme();
+        robin.negocier(joe);
+        joe.seDeplacer(Position.CAMPEMENT);
+        joe.negocier(robin);
+        joe.negocier(joe);
+           
+
+
+        
         
         /*
         

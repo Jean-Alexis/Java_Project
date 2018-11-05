@@ -5,12 +5,13 @@
  */
 package western;
 
+import java.util.ArrayList;
 /**
  *
  * @author robin JA
  */
 public class Cowboy extends PeutBoireBar {
-   
+    
     //constructeur avec tous les champs du constructeur civil
     public Cowboy(String pNom, String pPrenom, String pSurnom,Position pPosition, int pAge,String pArme, int pForce, int pArgent ){
         super(pNom, pPrenom, pSurnom, pPosition, pAge, pArme, pForce, pArgent);

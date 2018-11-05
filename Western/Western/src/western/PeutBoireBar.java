@@ -33,6 +33,7 @@ public class PeutBoireBar extends Civil{
             if(barman instanceof Barman){
                 ((Barman) barman).presenterCarte();
             }
+            else System.out.println("Desole vieux, je ne suis pas un barman");
         }
     }
     

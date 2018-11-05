@@ -83,6 +83,10 @@ public class Dame extends Humain {
         }   
     }
     
+    public void annoncerPosition(){
+        talk("Où suis-je ? Je suis actuellement ici : "+this.getPosition());
+    }    
+    
     
 }
 

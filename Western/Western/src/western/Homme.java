@@ -49,7 +49,10 @@ public abstract class Homme extends Humain {
     }
 
     public void annoncerArme(){
-        talk("Attention ! Je suis en possession d'un " + this.arme);
+        if(this.sante==false){
+            System.out.println("Eh oh je suis mort, je peux pas parler lol");
+        }
+        else talk("Attention ! Je suis en possession d'un " + this.arme);
     }
 
     public int getForce(){return this.force;}
@@ -126,7 +129,7 @@ public abstract class Homme extends Humain {
                         vainqueurTireur = true;
                         flag=true;   
                     }
-                    else{ //le brigand peut tirer sur n'importe quel homme
+                    else{ //le brigand peut tirer sur n'importe quel cow-boy, brigand, indien
                         if ( nombreAleatoirePersonnage >= (10-personnage.getForce()) ){
                             vainqueurPersonnage = true;
                         }
@@ -193,7 +196,10 @@ public abstract class Homme extends Humain {
         if(this.sante==false || homme.sante==false){
             System.out.println("Un des personnages est déjà mort, ils ne peuvent négocier !");
         }
-        else{
+        else if(this.equals(homme))
+        {System.out.println("Je suis pas schyzophrène ahhhh ! Je ne peux pas négocier avec moi même !!");}
+        
+        else {
 
             //############ COWBOY NEGOCIE ##########################################
             if(this instanceof Cowboy){   //si celui qui negocie est un cowboy
@@ -229,8 +235,78 @@ public abstract class Homme extends Humain {
                             }
                         }                    
                     }
-                } 
+                }
+                if(homme instanceof Brigand){
+                    if (this.getANegocie()==true || homme.getANegocie()==true){ 
+                        System.out.println("Un des personnage a déjà atteint son nombre de negocations maximal");
+                    }
+                    else{  // si le perso n'a pas deja negocie
+                        if(this.getPosition()!= homme.getPosition()){
+                            System.out.println("Le cowboy "+this.getPrenom()+" doit rejoindre le brigand "+ homme.getPrenom());
+                        }
+                        else{
+                            talk("Ohla "+homme.getPrenom()+" , ne tire pas, je veux discuter avec toi ! \n Ca fait bien des jours que je t'observe et je souhaiterai te rejoindre ! \n"
+                                    + "Voler, Braquer, Enlever et semer la terreur ça m'interesse, je ne veux plus être un simple citoyen, je veux vivre comme un sauvage ! FAIS MOI DEVENIR UN BRIGAND !! \n");
+                            String nom = this.getNom();
+                            String prenom = this.getPrenom();
+                            String prenom2 = this.getPrenom();
+                            String surnom = this.getSurnom();
+                            String arme = this.getArme();
+                            int force = this.getForce();
+                            int argent = 100;
+                            int age = this.getAge();
+                            
+                            this.setSante(false);
+                            
+                            Brigand love = new Brigand(prenom,nom,surnom,age,arme,force,argent);
+                            System.out.println("Voila, un nouveau brigand est né, pressé de faire des bêtises ! ");
+                        }
+     
+                }
+                
             }//#################   fin c'est le cowboy qui negocie    #######################
+                else talk("Ohhla, je suis un cowboy, je ne négocie pas avec n'importe qui");
+            }
+            
+            if(this instanceof Brigand){
+                if(homme instanceof Sherif){
+                    System.out.println(homme.getPrenom()+", on va négocier min tchio");
+                }
+                if(homme instanceof Indien){ // si celui avec le cowboy negocie est un indien
+                    if (this.getANegocie()==true || homme.getANegocie()==true){ 
+                        System.out.println("Un des personnage a déjà atteint son nombre de negocations maximal");
+                    }
+                    else{  // si le perso n'a pas deja negocie
+                        if(this.getPosition()!=Position.CAMPEMENT){
+                            System.out.println("Le cowboy "+this.getPrenom()+" doit aller au campement pour négocier avec l'Indien "+ homme.getPrenom());
+                        }
+                        else{ //si le perso se trouve au meme endroit que l'indien
+                            homme.setANegocie(true);
+                            this.setANegocie(true);
+                            System.out.println("L'indien "+homme.getPrenom()+
+                                " va tenter une dance de la pluie pour augmenter la force de "+this.getPrenom()+ " !"); 
+                            int chance = 1 + (int)(Math.random() * ((100 - 1) + 1));
+                            if (chance<=30){  // 30 % de chance d'échouer
+                                System.out.println("Malheursement, la danse a échouée.");
+                            }
+                            else if (chance>30){
+                                int ajoutForce=0;
+                                if( ((Indien)homme).getPlumes()>13 ){
+                                    ajoutForce=2;
+                                }
+                                else if( ((Indien)homme).getPlumes()<=13){
+                                    ajoutForce=1;
+                                }
+                                System.out.println("Succès ! La force de "+this.getPrenom()+" passe de "+
+                                        this.getForce()+" à "+(this.getForce()+ajoutForce));
+                                this.setForce(this.getForce()+ajoutForce);
+                            }
+                        }                    
+                    }
+                }                
+                else talk("Je suis un brigand, la négociation, je connais pas sauf quand ma vie est en jeu, et toi, tu n'as pas l'air dangereux bougre d'âne !");
+            }
+            else talk("Pfiou, je ne sais pas négocier !");
         }//fin else si perso est mort
     }//fin neggocier
     
@@ -239,10 +315,14 @@ public abstract class Homme extends Humain {
     cowboy négocie avec : indien FAIT 
                           brigand (fait mourir le cowboy actuel pour créer un brigand du meme nom, je sais pas encore comment faire)
     brigant négocie avec : Shérif (va en prison, faut pas l'pousser l'shérif)
-    indien négocie avec : brigand (argent)
-                        : cowboy (argent)
     
     le reste on s'occupe pas 
     */
-
+    public void annoncerPosition(){
+        if(this.sante==false){
+            System.out.println("Eh oh je suis mort, je peux pas parler lol");
+        }
+        else
+        talk("Où suis-je ? Je suis actuellement ici : "+this.getPosition());
+    }
 } // fin classe humain

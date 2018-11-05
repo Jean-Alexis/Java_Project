@@ -22,6 +22,7 @@ public class Barman extends Civil implements SestFaitFaucher{
         super(pNom, pPrenom, pSurnom, pPosition, pAge, pArme, pForce, pArgent);
         this.instrument=pInstrument;
         this.estBraque=false;
+        this.setSante(true);
         sePresenter();
     }
     //constructeur sans position
@@ -30,6 +31,7 @@ public class Barman extends Civil implements SestFaitFaucher{
         this.instrument=pInstrument;
         this.estBraque=false;
         super.setPosition(Position.BAR);
+        this.setSante(true);
         sePresenter();
     }
     
@@ -50,15 +52,26 @@ public class Barman extends Civil implements SestFaitFaucher{
     }
     
     public void ajouterBoisson(Boisson boisson){
-        this.stock.add(boisson);
+        if(this.getSante()==false){
+            System.out.println("Eh oh je suis mort, je peux pas ajouter de bouteilles lol");
+        }
+        else this.stock.add(boisson);
     }
     
     public void jouerInstrument(){
+        if(this.getSante()==false){
+            System.out.println("Eh oh je suis mort, je peux pas jouer d'un instrument lol");
+        }
+        else
         System.out.println("Le barman "+this.getPrenom()+" se met à jouer du "+this.getInstrument()+" de façon divine !");
     }
     
     protected void presenterCarte(){
+        if(this.getSante()==false){
+            System.out.println("Eh oh je suis mort, je peux pas presenter ma carte lol");
+        }
         
+        else
         System.out.println("Voici la carte des boissons :");
         for(int i=0; i<this.stock.size();i++){
             System.out.println(stock.get(i).getType()+" au prix de "+stock.get(i).getPrix()+"€");
@@ -67,18 +80,19 @@ public class Barman extends Civil implements SestFaitFaucher{
     }
     
     protected boolean donnerBoisson(Boisson boisson){
-        
-        if (boisson.getQuantite()>0){
-            this.talk("Vous avez de la chance, il m'en reste "+boisson.getQuantite());
-            this.talk("Et voici votre boisson, un bon "+ boisson.getType()+", ça vous fera "+ boisson.getPrix()+"€" );
-            boisson.setQuantite(boisson.getQuantite()-1);
-            return true;
-        }
-        else{
-            this.talk("Je n'ai plus de "+boisson.getType()+" voulez-vous autre chose ?");
-            return false;
-        }
+
+            if (boisson.getQuantite()>0){
+                this.talk("Vous avez de la chance, il m'en reste "+boisson.getQuantite());
+                this.talk("Et voici votre boisson, un bon "+ boisson.getType()+", ça vous fera "+ boisson.getPrix()+"€" );
+                boisson.setQuantite(boisson.getQuantite()-1);
+                return true;
+            }
+            else{
+                this.talk("Je n'ai plus de "+boisson.getType()+" voulez-vous autre chose ?");
+                return false;
+            }
     }
+  
     
     //interface
     @Override

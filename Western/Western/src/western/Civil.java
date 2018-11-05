@@ -34,8 +34,7 @@ public class Civil extends Homme {
             this.argent=pArgent;
         }
     }
-    
-    
+        
     public void seDeplacer(Position position){
         
         if(this.getSante()==false){
