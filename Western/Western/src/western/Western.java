@@ -48,7 +48,7 @@ public class Western {
         Boisson rhum = new Boisson("Rhum", 10, 8);
          
         //Création des personnages
-        Indien robin = new Indien("Ghys","Robin","Beau-goss",20,"Tokarev",5,19);
+        Indien robin = new Indien("Ghys","Robin","Beau-goss",-5,"Tokarev",5,19);
         Indien ja = new Indien("Hermel","JA","dieu",21,"pistolet",9,4);
         Indien leo = new Indien("denden","Leo","MichelT", 21, "pistolet a eau",5, 3);
         

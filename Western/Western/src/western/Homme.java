@@ -20,10 +20,18 @@ public abstract class Homme extends Humain {
         super(pNom, pPrenom, pSurnom, pPosition, pAge);
         this.sante=true;
         this.arme=pArme;
-        if (pForce <0 || pForce>10){
-            System.out.println("Valeur de force incorrecte, doit être entre 0 et 10.");
+        try{
+            if(pForce <0 || pForce>10){
+                throw new Exception("La force d'un perso doit etre entre 0 et 10");
+            }
+            else{
+               this.force=pForce;;
+            }
         }
-        else{ this.force=pForce;}
+        catch(Exception e){
+            System.err.println(e.getMessage());
+        }
+       
         this.aNegocie=false;
         
     }
@@ -31,10 +39,17 @@ public abstract class Homme extends Humain {
     public Homme(String pNom, String pPrenom,String pSurnom, int pAge, String pArme, int pForce) {
         super(pNom, pPrenom, pSurnom, pAge);
         this.arme = pArme;
-        if (pForce <0 || pForce>10){
-            System.out.println("Valeur de force incorrecte, doit être entre 0 et 10.");
+        try{
+            if(pForce <0 || pForce>10){
+                throw new Exception("La force d'un perso doit etre entre 0 et 10");
+            }
+            else{
+               this.force=pForce;;
+            }
         }
-        else{ this.force=pForce;}
+        catch(Exception e){
+            System.err.println(e.getMessage());
+        }
         this.sante = true;
         this.aNegocie= false;
         
@@ -58,10 +73,17 @@ public abstract class Homme extends Humain {
     public int getForce(){return this.force;}
     
     public void setForce(int force){
-        if((force<0) || (force>10)){
-            System.out.println("valeur de force invalide (entre 1 et 10)");
+        try{
+            if(force <0 || force>10){
+                throw new Exception("La force d'un perso doit etre entre 0 et 10");
+            }
+            else{
+               this.force=force;;
+            }
         }
-        else{this.force=force;}
+        catch(Exception e){
+            System.err.println(e.getMessage());
+        }
     }
     
     public String getArme(){return this.arme;}

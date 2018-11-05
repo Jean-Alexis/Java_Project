@@ -15,11 +15,16 @@ public class Civil extends Homme {
     //constructeur avec tous les champs du constructeur homme
     public Civil(String pNom, String pPrenom, String pSurnom,Position pPosition, int pAge,String pArme, int pForce, int pArgent ){
         super(pNom, pPrenom, pSurnom, pPosition, pAge, pArme, pForce);
-        if(pArgent<0){
-            System.out.println("Vous avez entré une somme d'argent négative");
+        try{
+            if(pArgent<0){
+                throw new Exception("argent négatif");
+            }
+            else{
+                this.argent=pArgent;
+            }
         }
-        else{
-            this.argent=pArgent;
+        catch(Exception e){
+            System.err.println(e.getMessage());
         }
         
     }

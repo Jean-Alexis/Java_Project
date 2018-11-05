@@ -18,38 +18,45 @@ public abstract class Humain {
     
     
     //constructeur avec tous les champs renseignés
-    public Humain (String pNom, String pPrenom, String pSurnom, Position pPosition, int pAge){
+    public Humain (String pNom, String pPrenom, String pSurnom, Position pPosition, int pAge) {
+        
         this.nom=pNom;
         this.prenom=pPrenom;
         this.surnom=pSurnom;
-        if(pAge<0){
-            System.out.println("Vous avez entré un age négatif");
+        try{
+            if(pAge<0){
+                throw new Exception("age negatif");
+            }
+            else{
+                this.age=pAge;
+            }
         }
-        else{
-            this.age=pAge;
+        catch(Exception e){
+            System.err.println(e.getMessage());
         }
+            
         this.position=pPosition;  
+         
     }
     //constructeur sans position -> position spawn = RUE
     public Humain (String pNom, String pPrenom,String pSurnom, int pAge){
         this.nom=pNom;
         this.prenom=pPrenom;
         this.surnom=pSurnom;
-        if(pAge<0){
-            System.out.println("Vous avez entré un age négatif");
+        try{
+            if(pAge<0){
+                throw new Exception("age negatif");
+            }
+            else{
+                this.age=pAge;
+            }
         }
-        else{
-            this.age=pAge;
+        catch(Exception e){
+            System.err.println(e.getMessage());
         }
         this.position=Position.RUE;
     }
     
-    /*
-    @Override
-    public String toString(){
-        return nom+" "+prenom+" "+surnom+" "+age+" "+position;
-    }
-*/
     
     //mutateurs et accesseurs
     public String getNom(){return this.nom;}
