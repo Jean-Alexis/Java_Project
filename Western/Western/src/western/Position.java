@@ -24,10 +24,12 @@ public enum Position {
         this.position = position;
     }
     
+    
     @Override
     public String toString(){
     	return (position);
     }
+
 
 }
 

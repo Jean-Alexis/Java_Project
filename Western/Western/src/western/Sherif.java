@@ -30,6 +30,11 @@ public class Sherif extends PeutBoireBar{
         talk("Oyez, messieurs dames, votre shérif est arrivé.\n");
     }
     
+    @Override
+    public String toString(){
+        return this.getNom()+" "+this.getPrenom()+" "+this.getSurnom()+" "+this.getAge()+" "+this.getPosition()+" "+this.getArme()+" "+this.getForce()+" "+this.getArgent();
+    }
+    
     public void emprisonner(Brigand brigand){
         if(this.getSante()==false || brigand.getSante()==false){
             System.out.println("Un des personnages est déjà mort, ils ne peuvent intérragir !");
@@ -41,7 +46,6 @@ public class Sherif extends PeutBoireBar{
             System.out.println("Le brigand "+this.getPrenom()+" est déjà en prison");
         }
         else{
-            
             this.talk("Tu as assez fait de bêtises comme ça "+ brigand.getPrenom()+ " il est temps pour toi de faire un tour derrière les barreaux !");
             brigand.seFaireEmprisonner(this);
             brigand.setIsInJail(true);

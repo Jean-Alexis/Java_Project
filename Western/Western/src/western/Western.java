@@ -72,22 +72,15 @@ public class Western {
         // ZONE DE TEST
        
        // leo.seDeplacer(Position.RUE);
-      
-       joe.seDeplacer(Position.RUE); dave.seDeplacer(Position.RUE);
-       dave.emprisonner(joe);
-       joe.echapper();
-       
-       joe.seDeplacer(Position.DESERT);
-       dave.seDeplacer(Position.DESERT);
-       
-       combat(joe,dave);
-       afficherCimmetiere();
-       
-        
+        //newCowboy("robert","paro" , "dede", 0, "arme", 3, 40);
+        help(robin);
+        help(bob);
+        help(dave);
+        System.out.println(rody);
         
         /*
         
-         joe.kidnapper(robinne);
+        joe.kidnapper(robinne);
         joe.seDeplacer(Position.MAISON);
         joe.kidnapper(robinne);
         robinne.seFaireLiberer(joe);
@@ -144,6 +137,49 @@ public class Western {
             }
         }
     }
+    
+    public static Dame newDame(String nom, String prenom, String surnom, int age, String couleur){
+        return (new Dame(nom,prenom, surnom,age,couleur));
+    }
+    public static Cowboy newCowboy(String nom, String prenom, String surnom, int age, String arme, int force, int argent ){
+        return (new Cowboy(nom,prenom, surnom,age,arme,force,argent));
+    }
+    
+     
+    //fonction aide pour rappeler les commande disponibles sur un personnage
+    public static void help(Humain humain){
+        System.out.println("Commandes disponibles pour "+humain.getPrenom()+" :");
+        if ((humain instanceof Indien)){
+            System.out.println("sePresenter()\nannoncerArme()\ntirer(Homme)\nnegocier(Homme)\n");
+        }
+        else if ((humain instanceof Barman)){  
+            System.out.println("sePresenter()\nannoncerArme()\nseDeplacer(Position)\ndonnerArgent(Civil,Argent)\ndemanderPret(Banquier,argent)\n"
+                    +"ajouterBoisson(Boisson)\npresenterCarte()\njouerInstrument()\n");    
+        }   
+        else if ((humain instanceof Dame)){  
+            System.out.println("sePresenter()\n");    
+        }
+        else if ((humain instanceof Brigand)){  
+            System.out.println("sePresenter()\nannoncerArme()\ntirer(Homme)\nnegocier(Homme)\nseDeplacer(Position)\ndonnerArgent(Civil,Argent)\ndemanderPret(Banquier,argent)\n"
+                    +"demanderBoisson(civil, boisson)\npayerBoisson(Civil,argent)\ndemanderCarte(Civil)\nkidnapper(Humain)\nechapper()\nbraquer(Civil)\n");    
+        }
+        else if ((humain instanceof Sherif)){  
+            System.out.println("sePresenter()\nannoncerArme()\ntirer(Homme)\nseDeplacer(Position)\ndonnerArgent(Civil,Argent)\ndemanderPret(Banquier,argent)\n"
+                    +"demanderBoisson(civil, boisson)\npayerBoisson(Civil,argent)\ndemanderCarte(Civil)\nemprisonner()\nliberer(Homme)\nrecompenser(Civil)\n");    
+        }
+        else if ((humain instanceof Cowboy)){  
+            System.out.println("sePresenter()\nannoncerArme()\ntirer(Homme)\nseDeplacer(Position)\ndonnerArgent(Civil,Argent)\ndemanderPret(Banquier,argent)\n"
+                    +"demanderBoisson(civil, boisson)\npayerBoisson(Civil,argent)\ndemanderCarte(Civil)\nsauverDame(Humain)\n");    
+        }
+        else if ((humain instanceof Banquier)){  
+            System.out.println("sePresenter()\nannoncerArme())\nseDeplacer(Position)\ndonnerArgent(Civil,Argent)\ndemanderPret(Banquier,argent)\n"
+                    +"demanderBoisson(civil, boisson)\npayerBoisson(Civil,argent)\ndemanderCarte(Civil)\naccorderPret(\n");    
+        }
+        else{
+            System.out.println("Erreur de saisie type de personnage.");
+        }
+    }
+   
     
 
 }   

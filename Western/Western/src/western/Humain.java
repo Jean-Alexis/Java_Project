@@ -44,6 +44,12 @@ public abstract class Humain {
         this.position=Position.RUE;
     }
     
+    /*
+    @Override
+    public String toString(){
+        return nom+" "+prenom+" "+surnom+" "+age+" "+position;
+    }
+*/
     
     //mutateurs et accesseurs
     public String getNom(){return this.nom;}

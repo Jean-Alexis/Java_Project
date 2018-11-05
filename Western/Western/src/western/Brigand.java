@@ -33,6 +33,11 @@ public class Brigand extends PeutBoireBar {
         super.sePresenter();
         talk("Je suis le Brigand le plus recherché de l'Ouest, ma tête est mise à prix pour 5000€.\n");
     }
+    @Override
+    public String toString(){
+        return this.getNom()+" "+this.getPrenom()+" "+this.getSurnom()+" "+this.getAge()+" "+this.getPosition()+" "+this.getArme()+" "+this.getForce()+" "+this.getArgent();
+    }
+    
     
     public boolean getIsInJail(){return this.isInJail;}
     public void setIsInJail(boolean isInJail){this.isInJail=isInJail;}

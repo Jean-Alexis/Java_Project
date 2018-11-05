@@ -44,6 +44,11 @@ public class Barman extends Civil implements SestFaitFaucher{
         talk("Je suis un des meilleurs barman de la région, en plus de ça je suis musicien et joue du "+this.getInstrument()+"\n");
     }
     
+    @Override
+    public String toString(){
+        return this.getNom()+" "+this.getPrenom()+" "+this.getSurnom()+" "+this.getAge()+" "+this.getPosition()+" "+this.getArme()+" "+this.getForce()+" "+this.getArgent()+" "+this.instrument;
+    }
+    
     public void ajouterBoisson(Boisson boisson){
         this.stock.add(boisson);
     }
@@ -75,6 +80,7 @@ public class Barman extends Civil implements SestFaitFaucher{
         }
     }
     
+    //interface
     @Override
     public void seFaitBraquer(Brigand brigand){
         this.setEstBraque(true);
