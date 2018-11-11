@@ -60,6 +60,9 @@ public class Dame extends Humain {
                 this.talk("A L'aiiiide, on me kidnappe !!");
                 System.out.println("Dame "+this.getPrenom()+" est enlevée jusqu'au désert par "+ brigand.getPrenom()+"\n");
             }
+            else{
+                System.out.println("Il n'y qu'un brigand qui peut enlever une dame !");
+            }
         }
     }
     

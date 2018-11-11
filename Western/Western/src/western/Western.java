@@ -99,6 +99,7 @@ public class Western {
         joe.seDeplacer(Position.CAMPEMENT);
         joe.negocier(robin);
         joe.negocier(joe);
+        bob.negocier(joe);
            
 
 

@@ -1,0 +1,45 @@
+##############----DOCUMENTATION----################
+
+Généralités :
+- un personnage ne peut pas intérragir s'il ne se trouve pas au même endroit que l'autre personnage
+- un personnage ne peut interragir avec lui-même
+- un personnage doit être vivant pour faire une action
+- la force d'un personnage se trouve entre 0-10, 9 correspond à l'invicibilité
+- un combat entre deux personnages se fait avec la fonction combat(homme, homme)
+- à l'issue d'un combat, la personne tuée va au cimmetiere, on peut voir les personnes 
+  au cimmetiere avec afficherCimmetiere().
+- On peut faire renaitre un perso avec jesusDeNazareth(perso).
+- un personnage créé sans position spawn dans la RUE.
+- Un civil qui commande peut commander(et payer en meme temps) sa boisson, 
+  tout dépend de si toutes les conditions pour qu'il puissent boire soient remplies.
+- les personnages Civils peuvent se donner de l'argent.
+- un personnage ne peut négocier avec un autre qu'une seule fois
+
+
+
+Le barman :
+
+Il possède nom, prénom, surnom, age, position, arme, force, argent,
+stock de boissons, instrument.
+Il peut se présenter, se déplacer, il ne sait pas tirer ni négocier
+Il peut donner de l'argent et faire un prêt au banquier
+Il peut ajouter des boissons à son stock, présenter sa carte, donner une boisson, jouer un instrument
+il peut se faire braquer et perdre tout son argent, dans ce cas il peut vider sa réserve d'alcool et a plus 
+de chance de faire une depression
+Il peut décider de vider sa reserve d'alcool et a une faible chance de faire une depression
+
+
+L'indien :
+
+Il possède nom, prénom, surnom, age, position, arme, force, argent, plumes
+Il peut se présenter, il reste au campement, il ne peut tirer que que cowboy ou brigand, il ne peut initier une negociation
+Le nombre de plumes d'un indien varie entre 1 et 20, son pouvoir d'augmentation de force est
+fonction de son nombre de plumes (+1 force si plume <13, +2 sinon), il y a 30% de chance que la négociation echoue.
+
+Dame :
+
+Elle possède un nom, prénom, surnom, arge, position, couleur de robe
+Elle peut se présenter, se faire enlever par un brigand, se faire libérer par un homme, et se faire sauver par un
+cowboy ou sherif
+
+
