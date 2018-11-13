@@ -5,6 +5,8 @@
  */
 package western;
 
+import java.io.FileWriter;
+
 /**
  *
  * @author Robin
@@ -85,5 +87,19 @@ public abstract class Humain {
         System.out.println(this.prenom+" "+this.nom+" : "+parole);
     }
     
+    public static void ecrireFichier(String args){
+
+        try{
+
+        FileWriter fw = new FileWriter("C:/Users/Robin/Desktop/tmp.txt",true);
+        fw.write(args);
+        fw.close();
+            }
+       catch(Exception e)
+       {
+        System.err.println("ok");
+       }
+
+    }
 }
 

@@ -28,6 +28,8 @@ public class Sherif extends PeutBoireBar{
     public void sePresenter() {
         super.sePresenter();
         talk("Oyez, messieurs dames, votre shérif est arrivé.\n");
+        String far =this.getPrenom()+ " : Oyez, messieurs dames, votre shérif est arrivé.\n";
+        ecrireFichier(far);
     }
     
     @Override
