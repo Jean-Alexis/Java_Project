@@ -30,9 +30,7 @@ public class Indien extends Homme {
     @Override
     public void sePresenter() {
         super.sePresenter();
-        String far = "Tous les matins je brosse mes plumes ! "+this.getPlumes()+" plumes à brosser tous les jours, ça prend du temps !\n";
-        talk(far);
-        ecrireFichier(far);
+        this.talk("Tous les matins je brosse mes plumes ! "+this.getPlumes()+" plumes a brosser tous les jours, ça prend du temps !");
     }
     
     @Override

@@ -34,7 +34,7 @@ public class Dame extends Humain {
     @Override
     public void sePresenter(){
         super.sePresenter();
-        talk("Je n'ai pas d'armes, mais moi au moins, j'ai une magnifique robe "+ this.couleurRobe+"\n");
+        talk("Je n'ai pas d'armes, mais moi au moins, j'ai une magnifique robe "+ this.couleurRobe);
     }
     
     @Override
@@ -58,7 +58,9 @@ public class Dame extends Humain {
                 brigand.setPosition(Position.DESERT);
                 this.setPosition(brigand.getPosition()); //la dame se retrouve au desert
                 this.talk("A L'aiiiide, on me kidnappe !!");
-                System.out.println("Dame "+this.getPrenom()+" est enlevée jusqu'au désert par "+ brigand.getPrenom()+"\n");
+                String far = "Dame "+this.getPrenom()+" est enlevee jusqu'au désert par "+ brigand.getPrenom()+"\n";
+                System.out.println(far);
+                ecrireFichier(far);
             }
             else{
                 System.out.println("Il n'y qu'un brigand qui peut enlever une dame !");
@@ -79,7 +81,7 @@ public class Dame extends Humain {
                 System.out.println("Le brigand "+homme.getPrenom()+" ne va quand même pas libérer "+this.getPrenom());
             }
             else{
-                this.talk("Oh, quel heros, "+homme.getPrenom()+" a reussi à me libérer de cette ordure, je ne l'en remercierai jamais assez");
+                this.talk("Oh, quel heros, "+homme.getPrenom()+" a reussi à me liberer de cette ordure, je ne l'en remercierai jamais assez");
                 super.setPosition(Position.MAISON);
                 System.out.println(this.getPrenom()+" retourne à sa maison.\n");
             }
@@ -87,7 +89,7 @@ public class Dame extends Humain {
     }
     
     public void annoncerPosition(){
-        talk("Où suis-je ? Je suis actuellement ici : "+this.getPosition());
+        talk("Ou suis-je ? Je suis actuellement ici : "+this.getPosition());
     }    
     
     

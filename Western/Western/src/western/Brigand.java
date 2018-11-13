@@ -31,7 +31,7 @@ public class Brigand extends PeutBoireBar {
     @Override
     public void sePresenter() {
         super.sePresenter();
-        talk("Je suis le Brigand le plus recherché de l'Ouest, ma tête est mise à prix pour 5000€.\n");
+        this.talk("Je suis le Brigand le plus recherché de l'Ouest, ma tête est mise à prix pour 5000€.\n");
     }
     @Override
     public String toString(){
@@ -62,7 +62,9 @@ public class Brigand extends PeutBoireBar {
             }
         }
         else{
-            System.out.println("Le brigand n'est pas assez courageux pour kidnapper une personne autre qu'une Dame.");
+            String far = "Le brigand n'est pas assez courageux pour kidnapper une personne autre qu'une Dame.";
+            System.out.println(far);
+            ecrireFichier(far);
         }  
     }
     
@@ -109,14 +111,14 @@ public class Brigand extends PeutBoireBar {
     
     public void seFaireEmprisonner(Sherif sherif){
         
-        talk("Bien joué pour cette fois shérif "+sherif.getPrenom()+", mais je n'ai pas dit mon dernier mot !");
+        this.talk("Bien joue pour cette fois shérif "+sherif.getPrenom()+", mais je n'ai pas dit mon dernier mot !");
         this.setPosition(Position.PRISON);
         System.out.println(this.getPrenom()+" va en prison.");
       
     }
     
     public void echapper(){
-        talk("Pas très malin ce shérif qui oublies les clefs sur la serrure, à moi la liberté !");
+        this.talk("Pas tres malin ce shérif qui oublies les clefs sur la serrure, à moi la liberte !");
         this.setIsInJail(false);
         this.setPosition(Position.RUE);
         
