@@ -97,6 +97,8 @@ public class Western {
         robin.annoncerArme();
         robin.negocier(joe);
         joe.seDeplacer(Position.CAMPEMENT);
+        cresus.seDeplacer(Position.CAMPEMENT);
+        joe.negocier(cresus);
         joe.negocier(robin);
         joe.negocier(joe);
         bob.negocier(joe);

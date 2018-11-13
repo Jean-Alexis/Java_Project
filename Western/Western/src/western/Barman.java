@@ -43,7 +43,7 @@ public class Barman extends Civil implements SestFaitFaucher{
     @Override
     public void sePresenter() {
         super.sePresenter();
-        talk("Je suis un des meilleurs barman de la région, en plus de ça je suis musicien et joue du "+this.getInstrument()+"\n");
+        this.talk("Je suis un des meilleurs barman de la région, en plus de ça je suis musicien et joue du "+this.getInstrument());
     }
     
     @Override
@@ -63,7 +63,11 @@ public class Barman extends Civil implements SestFaitFaucher{
             System.out.println("Eh oh je suis mort, je peux pas jouer d'un instrument lol");
         }
         else
-        System.out.println("Le barman "+this.getPrenom()+" se met à jouer du "+this.getInstrument()+" de façon divine !");
+        {
+        String far = "Le barman "+this.getPrenom()+" se met à jouer du "+this.getInstrument()+" de façon divine !";
+        System.out.println(far);
+        ecrireFichier(far);
+        }
     }
     
     protected void presenterCarte(){
@@ -122,13 +126,13 @@ public class Barman extends Civil implements SestFaitFaucher{
         int chance = 1 + (int)(Math.random() * ((100 - 1) + 1));
         if(estBraque==true){
             if(this.getSante()==false){
-                System.out.println("Un des personnages est déjà mort, ils ne peuvent intérragir !");
+                System.out.println("Un des personnages est déjà mort, ils ne peuvent interragir !");
             }
             else if(this.getPosition()!= Position.BAR){
                 System.out.println("Le personnage doit se trouver au bar pour se saouler");
             }
             else{
-                this.talk("Après tout, une ptite bouteille ça n'a jamais fait de mal à personne !");
+                this.talk("Apres tout, une ptite bouteille ca n'a jamais fait de mal a personne !");
                 if (chance>50){ //50% de chance de faire une depression
                     this.depression();
                 }
@@ -136,7 +140,7 @@ public class Barman extends Civil implements SestFaitFaucher{
         }
             
         else{
-            this.talk("LA boisson c'est terminé pour moi je ne touche plus à ça.");
+            this.talk("LA boisson c'est termine pour moi je ne touche plus a ça.");
             if (chance>80){ //20% de chance de faire une depression
                 this.depression();
             }

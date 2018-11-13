@@ -56,17 +56,23 @@ public class Civil extends Homme {
         else{
             if(this instanceof Brigand){ //si le brigang est en prison il ne peut pas se déplacer
                 if((this.getPosition()==Position.PRISON) && (((Brigand)this).getIsInJail()==true)){
-                    System.out.println("Le brigand "+this.getPrenom()+" est en prison, il ne peut pas se déplacer.");
+                    String far = "Le brigand "+this.getPrenom()+" est en prison, il ne peut pas se déplacer.";
+                    System.out.println(far);
+                    ecrireFichier(far);
                     this.talk("LAISSEZ MOI SOOOORTIR !!");
                 }
                 else{
-                    System.out.println(this.getPrenom()+" se déplace de "+this.getPosition()+" à "+position);
+                    String far = this.getPrenom()+" se deplace de "+this.getPosition()+" a "+position;
+                    System.out.println(far);
+                    ecrireFichier(far);
                     super.setPosition(position);
                 }
             }
 
             else{
-                System.out.println(this.getPrenom()+" se déplace de "+this.getPosition()+" à "+position);
+                String far = this.getPrenom()+" se déplace de "+this.getPosition()+" à "+position;
+                System.out.println(far);
+                ecrireFichier(far);
                 super.setPosition(position);
             }
         }
@@ -88,8 +94,12 @@ public class Civil extends Homme {
         else{
             if(argent<=this.getArgent()){
                 this.talk("Tennez, voilà "+ argent+"€.");
-                System.out.println("L'argent de "+civil.getPrenom()+" passe de "+civil.getArgent()+" à "+(civil.getArgent()+argent));
-                System.out.println("L'argent de "+ this.getPrenom() +" passe de "+this.getArgent()+" à "+(this.getArgent()-argent));
+                String far = "L'argent de "+civil.getPrenom()+" passe de "+civil.getArgent()+" à "+(civil.getArgent()+argent);
+                System.out.println(far);
+                ecrireFichier(far);
+                String far2 = "L'argent de "+ this.getPrenom() +" passe de "+this.getArgent()+" à "+(this.getArgent()-argent);
+                System.out.println(far2);
+                ecrireFichier(far2);
                 this.setArgent(this.getArgent()-argent);
                 civil.setArgent(civil.getArgent()+argent);
             }

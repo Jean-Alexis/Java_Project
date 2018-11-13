@@ -79,12 +79,14 @@ public abstract class Humain {
     
     //fonction inhérentes à la classe humain
     public void sePresenter(){
-        talk(("Hey, salut, je suis "+ prenom +" "+ nom +", mais tu peux aussi m'appeler " + 
-                prenom + " THE " + surnom+ "!! Alors, regarde mon beau visage, pas mal pour quelqu'un de " + age +" ans, hein !!"));      
+        talk("Hey, salut, je suis "+ prenom +" "+ nom +", mais tu peux aussi m'appeler " + 
+                prenom + " THE " + surnom+ "!! Alors, regarde mon beau visage, pas mal pour quelqu'un de " + age +" ans, hein !!");   
+        
     }
     
     public void talk(String parole){
-        System.out.println(this.prenom+" "+this.nom+" : "+parole);
+        System.out.println(this.prenom+" "+this.nom+" : "+parole+"\n");
+        ecrireFichier(this.getPrenom()+ ": "+parole+"\n");
     }
     
     public static void ecrireFichier(String args){

@@ -59,7 +59,7 @@ public abstract class Homme extends Humain {
     @Override
     public void sePresenter() {
         super.sePresenter();
-        talk("Ca c'est bien un prénom de bonhomme ! En plus de ça, j'ai une "+
+        talk("Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une "+
                 arme+", pas mal comme arme hein ! Regarde, j'ai "+ force + " de force, pas mal hein !");
     }
 
@@ -67,7 +67,10 @@ public abstract class Homme extends Humain {
         if(this.sante==false){
             System.out.println("Eh oh je suis mort, je peux pas parler lol");
         }
-        else talk("Attention ! Je suis en possession d'un " + this.arme);
+        else { 
+            talk("Attention ! Je suis en possession d'un " + this.arme);
+            }
+        
     }
 
     public int getForce(){return this.force;}
@@ -98,15 +101,15 @@ public abstract class Homme extends Humain {
     // Tirer sur on personnage (un homme contre un homme), retourne vrai si le tireur gagne
     public int tirer(Homme personnage){
         if(this.sante==false || personnage.sante==false){
-            System.out.println("Un des personnages est déjà mort, ils ne peuvent se tirer dessus !");
+            System.out.println("Un des personnages est deja mort, ils ne peuvent se tirer dessus !");
             return -1;
         }
         else if(this.getPosition()!= personnage.getPosition() ){
-            System.out.println("Les deux personnages doivent se trouver au même endroit pour se tirer dessus");
+            System.out.println("Les deux personnages doivent se trouver au meme endroit pour se tirer dessus");
             return -1;
         }
         else if(this.equals(personnage)){
-            System.out.println("Un personnage ne peut pas se tirer sur lui-même");
+            System.out.println("Un personnage ne peut pas se tirer sur lui-meme");
             return -1;
         }
         else{
@@ -190,7 +193,7 @@ public abstract class Homme extends Humain {
                 }
                 
                 else if (this instanceof Barman || (this instanceof Banquier)){
-                    System.out.println("Un barman/banquier n'est pas assez méchant pour tirer sur quelqu'un !");
+                    System.out.println("Un barman/banquier n'est pas assez mechant pour tirer sur quelqu'un !");
                     flag=true;
                     return -1;
                 }    
@@ -199,14 +202,18 @@ public abstract class Homme extends Humain {
             
             
             if(vainqueurPersonnage==true){
-                System.out.println(this.getPrenom()+" a voulu tirer sur "+personnage.getPrenom()+ ", qui s'est défendu," +
-                    " à l'issue du combat "+this.getPrenom()+" est mort !"); 
+                String far = this.getPrenom()+" a voulu tirer sur "+personnage.getPrenom()+ ", qui s'est defendu," +
+                    " à l'issue du combat "+this.getPrenom()+" est mort !";
+                System.out.println(far); 
                 this.setSante(false);
+                ecrireFichier(far);
             }
             else if(vainqueurTireur==true){
-                System.out.println(this.getPrenom()+" a voulu tirer sur "+personnage.getPrenom()+ ", qui s'est défendu," +
-                    " à l'issue du combat "+personnage.getPrenom()+" est mort !");  
+                String far = this.getPrenom()+" a voulu tirer sur "+personnage.getPrenom()+ ", qui s'est defendu," +
+                    " à l'issue du combat "+personnage.getPrenom()+" est mort !";
+                System.out.println(far);  
                 personnage.setSante(false);
+                ecrireFichier(far);
             }
             return ((vainqueurTireur==true)? 1 :0);
         }
@@ -216,10 +223,10 @@ public abstract class Homme extends Humain {
     //négocier entre deux hommes, tout dépend de la catégorie qui négocie
     public void negocier(Homme homme){
         if(this.sante==false || homme.sante==false){
-            System.out.println("Un des personnages est déjà mort, ils ne peuvent négocier !");
+            System.out.println("Un des personnages est deja mort, ils ne peuvent negocier !");
         }
         else if(this.equals(homme))
-        {System.out.println("Je suis pas schyzophrène ahhhh ! Je ne peux pas négocier avec moi même !!");}
+        {System.out.println("Je suis pas schyzophrène ahhhh ! Je ne peux pas negocier avec moi meme !!");}
         
         else {
 
@@ -228,20 +235,24 @@ public abstract class Homme extends Humain {
 
                 if(homme instanceof Indien){ // si celui avec le cowboy negocie est un indien
                     if (this.getANegocie()==true || homme.getANegocie()==true){ 
-                        System.out.println("Un des personnage a déjà atteint son nombre de negocations maximal");
+                        System.out.println("Un des personnage a deja atteint son nombre de negocations maximal");
                     }
                     else{  // si le perso n'a pas deja negocie
                         if(this.getPosition()!=Position.CAMPEMENT){
-                            System.out.println("Le cowboy "+this.getPrenom()+" doit aller au campement pour négocier avec l'Indien "+ homme.getPrenom());
+                            String far = "Le cowboy "+this.getPrenom()+" doit aller au campement pour négocier avec l'Indien "+ homme.getPrenom();
+                            System.out.println(far);
+                            ecrireFichier(far);
                         }
                         else{ //si le perso se trouve au meme endroit que l'indien
                             homme.setANegocie(true);
                             this.setANegocie(true);
-                            System.out.println("L'indien "+homme.getPrenom()+
-                                " va tenter une dance de la pluie pour augmenter la force de "+this.getPrenom()+ " !"); 
+                            String far = "L'indien "+homme.getPrenom()+
+                                " va tenter une dance de la pluie pour augmenter la force de "+this.getPrenom()+ " !";
+                            System.out.println(far); 
+                            ecrireFichier(far);
                             int chance = 1 + (int)(Math.random() * ((100 - 1) + 1));
                             if (chance<=30){  // 30 % de chance d'échouer
-                                System.out.println("Malheursement, la danse a échouée.");
+                                System.out.println("Malheuresement, la danse a échouée.");
                             }
                             else if (chance>30){
                                 int ajoutForce=0;
@@ -251,8 +262,10 @@ public abstract class Homme extends Humain {
                                 else if( ((Indien)homme).getPlumes()<=13){
                                     ajoutForce=1;
                                 }
-                                System.out.println("Succès ! La force de "+this.getPrenom()+" passe de "+
-                                        this.getForce()+" à "+(this.getForce()+ajoutForce));
+                                String far2 = "Succes ! La force de "+this.getPrenom()+" passe de "+
+                                        this.getForce()+" à "+(this.getForce()+ajoutForce);
+                                System.out.println(far2);
+                                ecrireFichier(far2);
                                 this.setForce(this.getForce()+ajoutForce);
                             }
                         }                    
@@ -267,8 +280,8 @@ public abstract class Homme extends Humain {
                             System.out.println("Le cowboy "+this.getPrenom()+" doit rejoindre le brigand "+ homme.getPrenom());
                         }
                         else{
-                            talk("Ohla "+homme.getPrenom()+" , ne tire pas, je veux discuter avec toi ! \n Ca fait bien des jours que je t'observe et je souhaiterai te rejoindre ! \n"
-                                    + "Voler, Braquer, Enlever et semer la terreur ça m'interesse, je ne veux plus être un simple citoyen, je veux vivre comme un sauvage ! FAIS MOI DEVENIR UN BRIGAND !! \n");
+                            this.talk("Ohla "+homme.getPrenom()+" , ne tire pas, je veux discuter avec toi ! \n Ca fait bien des jours que je t'observe et je souhaiterai te rejoindre ! \n"
+                                    + "Voler, Braquer, Enlever et semer la terreur ça m'interesse, je ne veux plus être un simple citoyen, je veux vivre comme un sauvage ! FAIS MOI DEVENIR UN BRIGAND !!");
                             String nom = this.getNom();
                             String prenom = this.getPrenom();
                             String prenom2 = this.getPrenom();
@@ -287,7 +300,7 @@ public abstract class Homme extends Humain {
                 }
                 
             }//#################   fin c'est le cowboy qui negocie    #######################
-                else talk("Ohhla, je suis un cowboy, je ne négocie pas avec n'importe qui");
+                else this.talk("Ohhla, je suis un cowboy, je ne négocie pas avec n'importe qui");
             }
             
             if(this instanceof Brigand){
@@ -300,16 +313,20 @@ public abstract class Homme extends Humain {
                     }
                     else{  // si le perso n'a pas deja negocie
                         if(this.getPosition()!=Position.CAMPEMENT){
-                            System.out.println("Le cowboy "+this.getPrenom()+" doit aller au campement pour négocier avec l'Indien "+ homme.getPrenom());
+                            System.out.println("Le cowboy "+this.getPrenom()+" doit aller au campement pour negocier avec l'Indien "+ homme.getPrenom());
                         }
                         else{ //si le perso se trouve au meme endroit que l'indien
                             homme.setANegocie(true);
                             this.setANegocie(true);
-                            System.out.println("L'indien "+homme.getPrenom()+
-                                " va tenter une dance de la pluie pour augmenter la force de "+this.getPrenom()+ " !"); 
+                            String far = "L'indien "+homme.getPrenom()+
+                                " va tenter une dance de la pluie pour augmenter la force de "+this.getPrenom()+ " ! \n\n";
+                            System.out.println(far); 
+                            ecrireFichier(far);
                             int chance = 1 + (int)(Math.random() * ((100 - 1) + 1));
                             if (chance<=30){  // 30 % de chance d'échouer
-                                System.out.println("Malheursement, la danse a échouée.");
+                                String far2 = "Malheureusement la danse a echouee \n\n";
+                                System.out.println(far2);
+                                ecrireFichier(far2);
                             }
                             else if (chance>30){
                                 int ajoutForce=0;
@@ -319,16 +336,18 @@ public abstract class Homme extends Humain {
                                 else if( ((Indien)homme).getPlumes()<=13){
                                     ajoutForce=1;
                                 }
-                                System.out.println("Succès ! La force de "+this.getPrenom()+" passe de "+
-                                        this.getForce()+" à "+(this.getForce()+ajoutForce));
+                                String far3 = "Succes ! La force de "+this.getPrenom()+" passe de "+
+                                        this.getForce()+" a "+(this.getForce()+ajoutForce)+"\n\n";
+                                System.out.println(far3);
+                                ecrireFichier(far3);
                                 this.setForce(this.getForce()+ajoutForce);
                             }
                         }                    
                     }
                 }                
-                else talk("Je suis un brigand, la négociation, je connais pas sauf quand ma vie est en jeu, et toi, tu n'as pas l'air dangereux bougre d'âne !");
+                else this.talk("Je suis un brigand, la negociation, je connais pas sauf quand ma vie est en jeu, et toi, tu n'as pas l'air dangereux bougre d'ane !");
             }
-            else talk("Pfiou, je ne sais pas négocier !");
+            else this.talk("Pfiou, je ne sais pas negocier !");
         }//fin else si perso est mort
     }//fin neggocier
     
@@ -345,6 +364,9 @@ public abstract class Homme extends Humain {
             System.out.println("Eh oh je suis mort, je peux pas parler lol");
         }
         else
-        talk("Où suis-je ? Je suis actuellement ici : "+this.getPosition());
+        {
+            this.talk("Ou suis-je ? Je suis actuellement ici : "+this.getPosition());;
+
+                }
     }
 } // fin classe humain
