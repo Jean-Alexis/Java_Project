@@ -10,7 +10,7 @@ package western;
  * @author ISEN
  */
 public interface SestFaitFaucher {
-    public void depression();
+   public void depression();
     
    public void videReserveAlcool();
    

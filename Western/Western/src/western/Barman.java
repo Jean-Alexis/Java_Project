@@ -101,18 +101,46 @@ public class Barman extends Civil implements SestFaitFaucher{
         this.talk("Vous ne vous en sortirez pas comme ça ! Mon bar c'est ma vie !");
         System.out.println("L'argent de "+this.getPrenom()+" passe de "+ this.getArgent() +" à 0.");
         this.setArgent(0);
-        this.depression();
-        
+        int chance = 1 + (int)(Math.random() * ((100 - 1) + 1));
+        if (chance>50){ //50% de chance de faire une depression
+            this.videReserveAlcool();
+        }   
     }
     
     @Override
     public void depression(){
-        
+        if(this.getSante()==false){
+                System.out.println("Un des personnages est déjà mort, ils ne peuvent intérragir !");
+        }
+        else{
+            System.out.println("Vous savez, en ce moment ça va vraiment pas tiptop, j'avais vraiment pas besoin de ça, vraiment...mon bar c'est ma raison d'être");
+        }     
     }
     
     @Override
     public void videReserveAlcool(){
-        
+        int chance = 1 + (int)(Math.random() * ((100 - 1) + 1));
+        if(estBraque==true){
+            if(this.getSante()==false){
+                System.out.println("Un des personnages est déjà mort, ils ne peuvent intérragir !");
+            }
+            else if(this.getPosition()!= Position.BAR){
+                System.out.println("Le personnage doit se trouver au bar pour se saouler");
+            }
+            else{
+                this.talk("Après tout, une ptite bouteille ça n'a jamais fait de mal à personne !");
+                if (chance>50){ //50% de chance de faire une depression
+                    this.depression();
+                }
+            }
+        }
+            
+        else{
+            this.talk("LA boisson c'est terminé pour moi je ne touche plus à ça.");
+            if (chance>80){ //20% de chance de faire une depression
+                this.depression();
+            }
+        }  
     }
  
 }
