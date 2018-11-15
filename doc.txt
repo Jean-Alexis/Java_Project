@@ -1,8 +1,8 @@
 ##############----DOCUMENTATION----################ 
  
 Generalites : 
-- help(humain) 
-- un personnage ne peut pas interragir s'il ne se trouve pas au m?me endroit que l'autre personnage 
+- help(humain) pour accéder aux actions possibles d'un perso
+- un personnage ne peut pas interragir s'il ne se trouve pas au meme endroit que l'autre personnage 
 - un personnage ne peut interragir avec lui-meme 
 - un personnage doit etre vivant pour faire une action 
 - la force d'un personnage se trouve entre 0-10, 9 correspond a l'invicibilité 
@@ -10,7 +10,7 @@ Generalites :
 - a l'issue d'un combat, la personne tuee va au cimmetiere, on peut voir les personnes  
   au cimmetiere avec afficherCimmetiere(). 
 - On peut faire renaitre un perso avec jesusDeNazareth(perso). 
-- un personnage cree sans position spawn dans la RUE. 
+- un personnage cree sans position spawn dans la RUE, sauf personnage spécial. 
 - Un civil qui commande peut commander(et payer en meme temps) sa boisson,  
   tout depend de si toutes les conditions pour qu'il puissent boire soient remplies. 
 - les personnages Civils peuvent se donner de l'argent. 
@@ -36,14 +36,14 @@ L'indien :
  
 Il possede nom, prenom, surnom, age, position, arme, force, argent, plumes 
 Sa postion est le CAMPEMENT 
-Il peut se presenter, il reste au campement, il ne peut tirer que que cowboy ou brigand, il ne peut initier une negociation 
+Il peut se presenter, il reste au campement, il ne peut tirer que sur le cowboy ou brigand, il ne peut pas initier une negociation 
 Le nombre de plumes d'un indien varie entre 1 et 20, son pouvoir d'augmentation de force est 
 fonction de son nombre de plumes (+1 force si plume <13, +2 sinon), il y a 30% de chance que la negociation echoue. 
  
 La Dame : 
  
 Elle possede un nom, prenom, surnom, arge, position, couleur de robe 
-Sa poisiton de base est la MAISON 
+Sa positon de base est la MAISON 
 Elle peut se presenter, se faire enlever par un brigand, se faire liberer par un homme, et se faire sauver par un 
 cowboy ou sherif 
  
@@ -52,7 +52,7 @@ Le Brigand :
 Il possede nom, prenom, surnom, age, position, arme, force, argent 
 Sa position de base est le DESERT 
 Il peut se presenter, se deplacer, il peut tirer sur n'importe quel homme 
-il peut donner demander un pret au banquier, il peut donner de l'argent a un civil 
+il peut demander un pret au banquier, il peut donner de l'argent a un civil 
 il peut demander la carte au barman, commander/payer une boisson 
 il peut negocier une seule fois, avec un indien pour augmenter sa force, ou un sherif (il ira en prison) 
 Il peut kidnapper une dame, braquer un banquier ou barman (recupere 30% du butin), se faire 
@@ -64,7 +64,7 @@ Il possede nom, prenom, surnom, age, position, arme, force, argent
 Sa position de base est la BANQUE 
 Il peut se presenter, se deplacer, il ne sait pas tirer ni negocier 
 il peut accorder un pret a un civil (sous certaines conditions) 
-il peut donner demander un pret au banquier, il peut donner de l'argent a un civil 
+il peut demander un pret au banquier, il peut donner de l'argent a un civil 
 il peut demander la carte au barman, commander/payer une boisson 
 il peut se faire braquer et perdre tout son argent, dans ce cas il peut vider sa reserve d'alcool et a plus  
 de chance de faire une depression 
@@ -74,15 +74,15 @@ Le sherif :
  
 Il possede nom, prenom, surnom, age, position, arme, force, argent 
 Sa position de base est la PRISON 
-Il peut se presenter, se deplacer, il ne peut tirer que sur un brigand, il ne sait pas n?gocier 
-il peut donner demander un pret au banquier, il peut donner de l'argent a un civil 
+Il peut se presenter, se deplacer, il ne peut tirer que sur un brigand, il ne sait pas negocier 
+il peut demander un pret au banquier, il peut donner de l'argent a un civil 
 il peut demander la carte au barman, commander/payer une boisson 
 Il peut emprisonner un brigand 
  
  
 Le cowboy : 
  
-Il poss?de nom, prenom, surnom, age, position, arme, force, argent 
+Il possede nom, prenom, surnom, age, position, arme, force, argent 
 Sa position de base est la RUE 
 Il peut se presenter, se deplacer, il ne peut tirer que sur un brigand, il peut negocier avec l'indien pour augmenter sa force 
 il peut donner demander un pret au banquier, il peut donner de l'argent a un civil 

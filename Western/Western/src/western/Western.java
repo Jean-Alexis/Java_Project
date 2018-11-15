@@ -73,10 +73,7 @@ public class Western {
         
         // ZONE DE TEST
        
-       // leo.seDeplacer(Position.RUE);
-        //newCowboy("robert","paro" , "dede", 0, "arme", 3, 40);
-        //help(robin);
-        //System.out.println(rody);
+       
         joe.braquer(bob);
         bob.annoncerPosition();
         joe.seDeplacer(Position.BAR);
