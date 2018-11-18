@@ -85,7 +85,7 @@ public abstract class Humain {
     }
     
     public void talk(String parole){
-        System.out.println(this.prenom+" "+this.nom+" : "+parole+"\n");
+        System.out.println(this.prenom+" "+this.nom+" : "+parole+"");
         ecrireFichier(this.getPrenom()+ ": "+parole+"\n");
     }
     

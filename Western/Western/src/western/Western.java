@@ -17,25 +17,95 @@ public class Western {
      * @param args the command line arguments
      */
     
-    /*######################   DOC   ########################################################
+    /*##############----DOCUMENTATION----#######################################
+ 
+Generalites : 
+- help(humain) 
+- un personnage ne peut pas interragir s'il ne se trouve pas au meme endroit que l'autre personnage 
+- un personnage ne peut interragir avec lui-meme 
+- un personnage doit etre vivant pour faire une action 
+- la force d'un personnage se trouve entre 0-10, 9 correspond a l'invicibilité 
+- un combat entre deux personnages se fait avec la fonction combat(homme, homme) 
+- a l'issue d'un combat, la personne tuee va au cimmetiere, on peut voir les personnes  
+  au cimmetiere avec afficherCimmetiere(). 
+- On peut faire renaitre un perso avec jesusDeNazareth(perso). 
+- un personnage cree sans position spawn dans la RUE. 
+- Un civil qui commande peut commander(et payer en meme temps) sa boisson,  
+  tout depend de si toutes les conditions pour qu'il puissent boire soient remplies. 
+- les personnages Civils peuvent se donner de l'argent. 
+- un personnage ne peut negocier avec un autre qu'une seule fois 
+- Tous les personnages peuvent annoncer leur position 
+ 
+ 
+Le barman : 
+ 
+Il possede nom, prenom, surnom, age, position, arme, force, argent, 
+stock de boissons, instrument. 
+Sa position de base est le BAR 
+Il peut se presenter, se deplacer, il ne sait pas tirer ni negocier 
+Il peut donner de l'argent et faire un pret au banquier 
+Il peut ajouter des boissons a son stock, presenter sa carte, donner une boisson, jouer un instrument 
+il peut se faire braquer et perdre tout son argent, dans ce cas il peut vider sa reserve d'alcool et a plus  
+de chance de faire une depression 
+Il peut decider de vider sa reserve d'alcool et a une faible chance de faire une depression 
+ 
+L'indien : 
+ 
+Il possede nom, prenom, surnom, age, position, arme, force, argent, plumes 
+Sa postion est le CAMPEMENT 
+Il peut se presenter, il reste au campement, il ne peut tirer que que cowboy ou brigand, il ne peut initier une negociation 
+Le nombre de plumes d'un indien varie entre 1 et 20, son pouvoir d'augmentation de force est 
+fonction de son nombre de plumes (+1 force si plume <13, +2 sinon), il y a 30% de chance que la negociation echoue. 
+ 
+La Dame : 
+ 
+Elle possede un nom, prenom, surnom, arge, position, couleur de robe 
+Sa poisiton de base est la MAISON 
+Elle peut se presenter, se faire enlever par un brigand, se faire liberer par un homme, et se faire sauver par un 
+cowboy ou sherif 
+ 
+Le Brigand : 
+ 
+Il possede nom, prenom, surnom, age, position, arme, force, argent 
+Sa position de base est le DESERT 
+Il peut se presenter, se deplacer, il peut tirer sur n'importe quel homme 
+il peut donner demander un pret au banquier, il peut donner de l'argent a un civil 
+il peut demander la carte au barman, commander/payer une boisson 
+il peut negocier une seule fois, avec un indien pour augmenter sa force, ou un sherif (il ira en prison) 
+Il peut kidnapper une dame, braquer un banquier ou barman (recupere 30% du butin), se faire 
+emprisonner par le sherif (va en prison), peut s'echapper de prison (se retrouve a RUE) 
+ 
+Le Banquier : 
+ 
+Il possede nom, prenom, surnom, age, position, arme, force, argent 
+Sa position de base est la BANQUE 
+Il peut se presenter, se deplacer, il ne sait pas tirer ni negocier 
+il peut accorder un pret a un civil (sous certaines conditions) 
+il peut donner demander un pret au banquier, il peut donner de l'argent a un civil 
+il peut demander la carte au barman, commander/payer une boisson 
+il peut se faire braquer et perdre tout son argent, dans ce cas il peut vider sa reserve d'alcool et a plus  
+de chance de faire une depression 
+Il peut decider de vider sa reserve d'alcool et a une faible chance de faire une depression 
+ 
+Le sherif : 
+ 
+Il possede nom, prenom, surnom, age, position, arme, force, argent 
+Sa position de base est la PRISON 
+Il peut se presenter, se deplacer, il ne peut tirer que sur un brigand, il ne sait pas n?gocier 
+il peut donner demander un pret au banquier, il peut donner de l'argent a un civil 
+il peut demander la carte au barman, commander/payer une boisson 
+Il peut emprisonner un brigand 
+ 
+Le cowboy : 
+ 
+Il possede nom, prenom, surnom, age, position, arme, force, argent 
+Sa position de base est la RUE 
+Il peut se presenter, se deplacer, il ne peut tirer que sur un brigand, il peut negocier avec l'indien pour augmenter sa force 
+il peut donner demander un pret au banquier, il peut donner de l'argent a un civil 
+il peut demander la carte au barman, commander/payer une boisson 
+Il peut sauver une Dame 
     
-    - Echelle de force: 1 à 9             1-tres faible      4-moyenne      9-invincible.
-    - On peut initier un combat avec combat(perso1,perso2), c'est le perso1 qui l'initie.
-    - a l'issue d'un combat, la personne tuée va au cimmetiere, on peut voir les personnes 
-      au cimmetiere avec afficherCimmetiere().
-    - On peut faire renaitre un perso avec jesusDeNazareth(perso).
-    - un personnage créé dans position spawn dans la RUE.
-    - Le nombre de plumes d'un indien varie entre 1 et 20, son pouvoir d'augmentation de force est
-      fonction de son nombre de plumes (+1 force si plume <13, +2 sinon), il y a 30% de chance que la négociation echoue.
-    - on peut ajouter des type Boisson à la carte du Barman
-    - La fonction combat ne marche que pour certaines combinaisons de persos
-      (ex un invien ne tire que sur cowboy/brigand, un barman ne tire sur personne mais se défend).
-    - Un civil qui commande peut commander(et payer en meme temps) sa boisson, 
-      tout dépend de si toutes les conditions pour qu'il puissent boire soient remplies.
-    - les personnages Civils peuvent se donner de l'argent.
-
-    
-    #######################################################################################*/
+ #######################################################################################*/
     
     static ArrayList< Homme > cimmetiere = new ArrayList<>(); // tableau de personnes mortes
      
@@ -48,7 +118,7 @@ public class Western {
         Boisson rhum = new Boisson("Rhum", 10, 8);
          
         //Création des personnages
-        Indien robin = new Indien("Ghys","Robin","Beau-goss",-5,"Tokarev",5,19);
+        Indien robin = new Indien("Ghys","Robin","Beau-goss",5,"Tokarev",5,19);
         Indien ja = new Indien("Hermel","JA","dieu",21,"pistolet",9,4);
         Indien leo = new Indien("denden","Leo","MichelT", 21, "pistolet a eau",5, 3);
         
@@ -72,70 +142,18 @@ public class Western {
         
         
         // ZONE DE TEST
-       
-       
-        joe.braquer(bob);
-        bob.annoncerPosition();
-        joe.seDeplacer(Position.BAR);
-        joe.braquer(bob);
-        joe.seDeplacer(Position.BANQUE);
-        joe.demanderPret(cresus, 200);
-        joe.braquer(cresus);
+        
+        
         joe.seDeplacer(Position.MAISON);
         joe.kidnapper(robinne);
-        robinne.annoncerPosition();
-        bill.seDeplacer(Position.RUE);
-        bill.PayerBoisson(bob, 3);
-        bill.seDeplacer(Position.BAR);
-        bill.demanderBoisson(bob, wisky);
-        bill.demanderBoisson(bob, wisky);
-        dave.seDeplacer(Position.BAR);
-        bill.demanderCarte(dave);
-        robin.annoncerArme();
-        robin.negocier(joe);
-        joe.seDeplacer(Position.CAMPEMENT);
-        cresus.seDeplacer(Position.CAMPEMENT);
-        joe.negocier(cresus);
-        joe.negocier(robin);
-        joe.negocier(joe);
-        bob.negocier(joe);
-           
-
-
-        
+        rody.seDeplacer(Position.DESERT);
+        joe.annoncerArme();
+        combat(rody, joe);
+        rody.sauverDame(robinne);
+        afficherCimmetiere();
         
         /*
-        
-        joe.kidnapper(robinne);
-        joe.seDeplacer(Position.MAISON);
-        joe.kidnapper(robinne);
-        robinne.seFaireLiberer(joe);
-        joe.kidnapper(robinne);
-        
-        rody.setPosition(Position.DESERT);
-        rody.sauverDame(robinne);
-        rody.seDeplacer(Position.BAR);
        
-        rody.demanderCarte(bob);
-        rody.seDeplacer(Position.BAR);
-        rody.demanderCarte(bob);
-        rody.demanderBoisson(bob, leffe);
-        rody.demanderBoisson(bob, cognac);
-        
-        bill.demanderBoisson(bob, cognac);
-        //rody.PayerBoisson(bob, 30);
-       
-        combat(ja, leo);
-        combat(ja, robin);
-        combat(robin,leo);
-        afficherCimmetiere();
-        jesusDeNazareth(leo);
-        afficherCimmetiere();
-         
-        woody.negocier(robin);
-        bill.negocier(ja);
-        bill.seDeplacer(Position.CAMPEMENT);
-        bill.negocier(ja);
         
         */
         
