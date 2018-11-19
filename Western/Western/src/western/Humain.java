@@ -158,7 +158,7 @@ public abstract class Humain {
 
         try{
 
-        FileWriter fw = new FileWriter("D:/Bureau/tmp.txt",true);
+        FileWriter fw = new FileWriter("tmp.txt",true);
         fw.write(args);
         fw.close();
             }
