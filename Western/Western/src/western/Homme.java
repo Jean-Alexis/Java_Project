@@ -354,11 +354,9 @@ public abstract class Homme extends Humain {
                             Brigand love = new Brigand(prenom,nom,surnom,age,arme,force,argent);
                             System.out.println("Voila, un nouveau brigand est né, pressé de faire des bêtises ! ");
                         }
-     
-                }
+                    }
+                }//#################   fin c'est le cowboy qui negocie    #######################
                 
-            }//#################   fin c'est le cowboy qui negocie    #######################
-                else this.talk("Ohhla, je suis un cowboy, je ne négocie pas avec n'importe qui");
             }
             
             if(this instanceof Brigand){
@@ -377,7 +375,7 @@ public abstract class Homme extends Humain {
                             homme.setANegocie(true);
                             this.setANegocie(true);
                             String far = "L'indien "+homme.getPrenom()+
-                                " va tenter une dance de la pluie pour augmenter la force de "+this.getPrenom()+ " ! \n\n";
+                                " va tenter une danse de la pluie pour augmenter la force de "+this.getPrenom()+ " ! \n\n";
                             System.out.println(far); 
                             ecrireFichier(far);
                             int chance = 1 + (int)(Math.random() * ((100 - 1) + 1));
@@ -405,7 +403,7 @@ public abstract class Homme extends Humain {
                 }                
                 else this.talk("Je suis un brigand, la negociation, je connais pas sauf quand ma vie est en jeu, et toi, tu n'as pas l'air dangereux bougre d'ane !");
             }
-            else this.talk("Pfiou, je ne sais pas negocier !");
+            
         }//fin else si perso est mort
     }//fin neggocier
     

@@ -83,6 +83,10 @@ public class Banquier extends PeutBoireBar implements SestFaitFaucher{
      */
     public void accorderPret(Civil civil, int argent){   // cette fonction créer de la valeur (elle ne ponctionne pas l'argent du banquier mais rajoute qd meme au civil
         //les verifications de position, sante etc ont deja ete faite lors de l'appel demanderPret() dans Civil
+        
+       
+        
+       
         if( this.estBraque==true){
             
             this.talk("Nous nous sommes fait braque, nous ne pouvons rien faire pour vous.");

@@ -165,7 +165,7 @@ public class Brigand extends PeutBoireBar {
      * Methode permettant au Brigand de s'échapper de sa cellule
      */
     public void echapper(){
-        this.talk("Pas tres malin ce shérif qui oublies les clefs sur la serrure, à moi la liberte !");
+        this.talk("Pas tres malin ce shérif qui oublie les clefs sur la serrure, à moi la liberte !");
         this.setIsInJail(false);
         this.setPosition(Position.RUE);
         
