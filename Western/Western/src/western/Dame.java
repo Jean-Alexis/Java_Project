@@ -14,7 +14,14 @@ public class Dame extends Humain {
     private boolean estKidnappee;
    
 
-    //contructeur sans position -> de base spawn dans la maison
+    /**
+     * Contructeur de Dame sans position -> de base elle spawnera dans la maison
+     * @param pNom
+     * @param pPrenom
+     * @param pSurnom
+     * @param pAge
+     * @param pCouleurRobe 
+     */
     public Dame(String pNom, String pPrenom, String pSurnom, int pAge, String pCouleurRobe){
     	super(pNom, pPrenom, pSurnom, pAge);
     	this.couleurRobe=pCouleurRobe;
@@ -23,7 +30,15 @@ public class Dame extends Humain {
     	sePresenter();
 
     }
-    //constructeur avec position
+    /**
+     * Constructeur Dame avec position
+     * @param pNom
+     * @param pPrenom
+     * @param pSurnom
+     * @param pAge
+     * @param pPosition
+     * @param pCouleurRobe 
+     */
     public Dame(String pNom, String pPrenom,String pSurnom, int pAge,Position pPosition, String pCouleurRobe){
     	super(pNom, pPrenom,pSurnom, pPosition, pAge);
         this.estKidnappee=false;
@@ -31,20 +46,39 @@ public class Dame extends Humain {
     	sePresenter();
     }
     
+    /**
+     * Methode sePresenter() mise à jour Dame
+     */
     @Override
     public void sePresenter(){
         super.sePresenter();
         talk("Je n'ai pas d'armes, mais moi au moins, j'ai une magnifique robe "+ this.couleurRobe);
     }
     
+    /**
+     * Afficher informations Dame
+     * @return 
+     */
     @Override
     public String toString(){
         return this.getNom()+" "+this.getPrenom()+" "+this.getSurnom()+" "+this.getAge()+" "+this.getPosition()+" "+this.couleurRobe;
     }
     
+    /**
+     * Mutateur du booléen estKidnappee
+     * @param estKidnappee 
+     */
     public void setEstKidnappee(boolean estKidnappee){this.estKidnappee=estKidnappee;}
+    /**
+     * Accesseur du booléen estKidnapée
+     * @return 
+     */
     public boolean getEstKidnappee(){return this.estKidnappee;}
     
+    /**
+     * Méthode permettant à une Dame de se faire enlever
+     * @param brigand Le paramètre brigand correspond à la personne à l'origine de l'enlèvement
+     */
     public void seFaireEnlever (Homme brigand){
         if(brigand.getSante()==false){
             System.out.println("Un des personnages est déjà mort, ils ne peuvent intérragir !");
@@ -68,6 +102,10 @@ public class Dame extends Humain {
         }
     }
     
+    /**
+     * Methode permettant à la dame de se faire libérer par un Homme
+     * @param homme Paramètre correspondant à l'homme à l'origine de la libération
+     */
     public void seFaireLiberer (Homme homme){
         
         if(homme.getSante()==false){
@@ -87,7 +125,9 @@ public class Dame extends Humain {
             }
         }   
     }
-    
+    /**
+     * Méthode permettant à la femme d'annoncer sa position
+     */
     public void annoncerPosition(){
         talk("Ou suis-je ? Je suis actuellement ici : "+this.getPosition());
     }    

@@ -12,7 +12,17 @@ package western;
 public class Civil extends Homme {
     private int argent;
     
-    //constructeur avec tous les champs du constructeur homme
+    /**
+     * constructeur avec tous les champs du constructeur homme
+     * @param pNom
+     * @param pPrenom
+     * @param pSurnom
+     * @param pPosition
+     * @param pAge
+     * @param pArme
+     * @param pForce
+     * @param pArgent 
+     */
     public Civil(String pNom, String pPrenom, String pSurnom,Position pPosition, int pAge,String pArme, int pForce, int pArgent ){
         super(pNom, pPrenom, pSurnom, pPosition, pAge, pArme, pForce);
         try{
@@ -29,7 +39,16 @@ public class Civil extends Homme {
         
     }
 
-    //constructeur sans position
+    /**
+     * Constructeur Civil sans position
+     * @param pNom
+     * @param pPrenom
+     * @param pSurnom
+     * @param pAge
+     * @param pArme
+     * @param pForce
+     * @param pArgent 
+     */
     public Civil(String pNom, String pPrenom, String pSurnom, int pAge, String pArme, int pForce, int pArgent ){
         super(pNom, pPrenom, pSurnom, pAge, pArme, pForce);
         try{
@@ -44,7 +63,11 @@ public class Civil extends Homme {
             System.err.println(e.getMessage());
         }
     }
-        
+       
+    /**
+     * Methode permettant à un personnage de se déplacer
+     * @param position Paramètre correspondant à la position où le personnage se déplace
+     */
     public void seDeplacer(Position position){
         
         if(this.getSante()==false){
@@ -78,6 +101,11 @@ public class Civil extends Homme {
         }
     }
     
+    /**
+     * Methode permettant à un personnage de donner de l'argent à un autre
+     * @param civil Paramètre correspondant à la personne à qui est destinée l'argent
+     * @param argent Paramètre correspondant à la somme donnée
+     */
     public void donnerArgent(Civil civil, int argent){
         if(this.getSante()==false || civil.getSante()==false){
             System.out.println("Un des personnages est déjà mort, ils ne peuvent intérragir !");
@@ -109,6 +137,11 @@ public class Civil extends Homme {
         }
     }
     
+    /**
+     * Methode permettant à un personnage de demander un prêt à un banquier
+     * @param banquier Paramètre correspondant au banquier à qui nous demandons le prêt
+     * @param argent  Paramètre correspondant à la somme demandée en prêt
+     */
     public void demanderPret(Banquier banquier, int argent){
         if(this.getSante()==false || banquier.getSante()==false){
             System.out.println("Un des personnages est déjà mort, ils ne peuvent intérragir !");
@@ -128,7 +161,14 @@ public class Civil extends Homme {
         }
     }
     
-    
+    /**
+     * Mutateur d'argent
+     * @param argent 
+     */
     protected void setArgent(int argent){ this.argent=argent;}
+    /**
+     * Accesseur d'argent
+     * @return 
+     */
     public int getArgent(){ return this.argent;}
 }

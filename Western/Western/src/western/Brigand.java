@@ -13,14 +13,33 @@ public class Brigand extends PeutBoireBar {
     
     private boolean isInJail;
     
-    //constructeur avec tous les champs du constructeur civil
+    /**
+     * Constructeur d'un brigand avec une position indiquée
+     * @param pNom
+     * @param pPrenom
+     * @param pSurnom
+     * @param pPosition
+     * @param pAge
+     * @param pArme
+     * @param pForce
+     * @param pArgent 
+     */
     public Brigand(String pNom, String pPrenom, String pSurnom,Position pPosition, int pAge,String pArme, int pForce, int pArgent ){
         super(pNom, pPrenom, pSurnom, pPosition, pAge, pArme, pForce, pArgent);
         this.isInJail=false;
         sePresenter();
     }
     
-    //constructeur sans position
+    /**
+     * Constructeur d'un brigand sans position indiquée, il spawnera dans le désert
+     * @param pNom
+     * @param pPrenom
+     * @param pSurnom
+     * @param pAge
+     * @param pArme
+     * @param pForce
+     * @param pArgent 
+     */
     public Brigand(String pNom, String pPrenom, String pSurnom, int pAge,String pArme, int pForce, int pArgent ){
         super(pNom, pPrenom, pSurnom, pAge, pArme, pForce, pArgent);
         this.isInJail=false;
@@ -28,21 +47,38 @@ public class Brigand extends PeutBoireBar {
         sePresenter();
     }
     
+    /**
+     * Methode permettant à un brigand de se présenter
+     */
     @Override
     public void sePresenter() {
         super.sePresenter();
         this.talk("Je suis le Brigand le plus recherché de l'Ouest, ma tête est mise à prix pour 5000€.\n");
     }
+    /**
+     * Methode permettant d'obtenir des informations sur un brigand.
+     * @return 
+     */
     @Override
     public String toString(){
         return this.getNom()+" "+this.getPrenom()+" "+this.getSurnom()+" "+this.getAge()+" "+this.getPosition()+" "+this.getArme()+" "+this.getForce()+" "+this.getArgent();
     }
     
-    
+    /**
+     * Accesseur du booléen isInJail
+     * @return 
+     */
     public boolean getIsInJail(){return this.isInJail;}
+    /**
+     * Mutateur du booléen isInJail
+     * @param isInJail 
+     */
     public void setIsInJail(boolean isInJail){this.isInJail=isInJail;}
     
-    
+    /**
+     * Methode permettant au brigand de kidnapper un personnage
+     * @param personne Paramètre indiquant la personne qu'il souhaite kidnapper
+     */
     public void kidnapper(Humain personne){
         
         if(personne instanceof Dame){
@@ -68,6 +104,10 @@ public class Brigand extends PeutBoireBar {
         }  
     }
     
+    /**
+     * Methode permettant au Brigand de braquer quelqu'un
+     * @param victime Paramètre indiquant la personne que le Brigand va prendre pour cible pour son braquage
+     */
     public void braquer(Civil victime){
         
         if(this.getSante()==false || victime.getSante()==false){
@@ -109,6 +149,10 @@ public class Brigand extends PeutBoireBar {
         }   
     } // fin braquer  
     
+    /**
+     * Methode indiquant que le Brigand se fait emprisonner
+     * @param sherif Paramètre indiquant quel shérif arrive à emprisonner le brigand
+     */
     public void seFaireEmprisonner(Sherif sherif){
         
         this.talk("Bien joue pour cette fois shérif "+sherif.getPrenom()+", mais je n'ai pas dit mon dernier mot !");
@@ -117,6 +161,9 @@ public class Brigand extends PeutBoireBar {
       
     }
     
+    /**
+     * Methode permettant au Brigand de s'échapper de sa cellule
+     */
     public void echapper(){
         this.talk("Pas tres malin ce shérif qui oublies les clefs sur la serrure, à moi la liberte !");
         this.setIsInJail(false);

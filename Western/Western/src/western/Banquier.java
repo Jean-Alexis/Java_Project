@@ -13,14 +13,33 @@ public class Banquier extends PeutBoireBar implements SestFaitFaucher{
     
     private boolean estBraque;
     
-     //constructeur avec tous les champs du constructeur civil
+     /**
+      * Constrcuteur d'un Banquier avec une position précise
+      * @param pNom
+      * @param pPrenom
+      * @param pSurnom
+      * @param pPosition
+      * @param pAge
+      * @param pArme
+      * @param pForce
+      * @param pArgent 
+      */
     public Banquier(String pNom, String pPrenom, String pSurnom,Position pPosition, int pAge,String pArme, int pForce, int pArgent){
         super(pNom, pPrenom, pSurnom, pPosition, pAge, pArme, pForce, pArgent);
         this.estBraque=false;
         sePresenter();
     }
     
-    //constructeur sans position
+    /**
+     * Constructeur d'un banquier sans position précise, il spawnera donc dans sa banque
+     * @param pNom
+     * @param pPrenom
+     * @param pSurnom
+     * @param pAge
+     * @param pArme
+     * @param pForce
+     * @param pArgent 
+     */
     public Banquier(String pNom, String pPrenom, String pSurnom, int pAge,String pArme, int pForce, int pArgent ){
         super(pNom, pPrenom, pSurnom, pAge, pArme, pForce, pArgent);
         super.setPosition(Position.BANQUE);
@@ -28,20 +47,40 @@ public class Banquier extends PeutBoireBar implements SestFaitFaucher{
         sePresenter();
     }
     
+    /**
+     * Mutateur du booléen estBraque
+     * @param estBraque 
+     */
     public void setEstBraque(boolean estBraque){ this.estBraque=estBraque;}
+    /**
+     * Accesseur du booléen estBraque
+     * @return 
+     */
     public boolean getEstBraque(){ return this.estBraque;}
     
+    /**
+     * Methode permettant au Banquier de se présenter
+     */
     @Override
     public void sePresenter() {
         super.sePresenter();
         this.talk("Je suis le banquier, que puis-je faire pour vous ?");
     }
     
+    /**
+     * Méthode permettant d'afficher les informations d'un banquier
+     * @return 
+     */
     @Override
     public String toString(){
         return this.getNom()+" "+this.getPrenom()+" "+this.getSurnom()+" "+this.getAge()+" "+this.getPosition()+" "+this.getArme()+" "+this.getForce()+" "+this.getArgent();
     }
     
+    /**
+     * Methode permettant d'accorder un prêt ou non lorsque un personnage lui demande
+     * @param civil Paramètre indiquant la personne à qui nous acceptons ou non le prêt
+     * @param argent Paramètre indiquant la somme d'argent qu'on accepte ou non de prêter
+     */
     public void accorderPret(Civil civil, int argent){   // cette fonction créer de la valeur (elle ne ponctionne pas l'argent du banquier mais rajoute qd meme au civil
         //les verifications de position, sante etc ont deja ete faite lors de l'appel demanderPret() dans Civil
         if( this.estBraque==true){
@@ -64,6 +103,10 @@ public class Banquier extends PeutBoireBar implements SestFaitFaucher{
     
     
      //interface
+    /**
+     * Methode indiquant que le banquier se fait braquer - C'est une méthode de l'interface SestFaitFaucher
+     * @param brigand 
+     */
     @Override
     public void seFaitBraquer(Brigand brigand){
         this.setEstBraque(true);
@@ -73,7 +116,9 @@ public class Banquier extends PeutBoireBar implements SestFaitFaucher{
         this.depression();
     }
     
-   
+   /**
+    * Methode de l'interface SestFaitFaucher indiquant que le Banquier est en dépression
+    */
     @Override
     public void depression(){
         if(this.getSante()==false){
@@ -84,6 +129,9 @@ public class Banquier extends PeutBoireBar implements SestFaitFaucher{
         }     
     }
     
+    /**
+     *  Méthode de l'interface SestFaitFaucher, le banquier décide de boire un petit coup et de vider sa réserve d'alcool
+     */
     @Override
     public void videReserveAlcool(){
         int chance = 1 + (int)(Math.random() * ((100 - 1) + 1));

@@ -108,7 +108,10 @@ Il peut sauver une Dame
  #######################################################################################*/
     
     static ArrayList< Homme > cimmetiere = new ArrayList<>(); // tableau de personnes mortes
-     
+    /**
+     * 
+     * @param args 
+     */
     public static void main(String[] args) {
         
         //création de la carte du barman
@@ -159,19 +162,30 @@ Il peut sauver une Dame
         
     }
     
+    /**
+     * Fonction qui permet d'afficher les gens morts
+     */
     public static void afficherCimmetiere (){
         System.out.println("Liste des personnes au cimmetiere :");
         for (int i = 0; i <cimmetiere.size(); i++) {
             System.out.println(cimmetiere.get(i).getPrenom()+"\n");
         }
     }
-    
+    /**
+     * Methode appelée pour débuter un combat entre 2 hommes. C'est l'homme 1 qui décide de tirer sur l'homme 2.
+     * @param homme1 
+     * @param homme2 
+     */
     public static void combat (Homme homme1,Homme homme2){
         int combat = homme1.tirer(homme2);
         if (combat==1){cimmetiere.add(homme2);}
         else if(combat==0){cimmetiere.add(homme1);}
     }
     
+    /**
+     * Methode qui permet de faire renaître un homme du cimetière
+     * @param homme 
+     */
     public static void jesusDeNazareth (Homme homme){
         System.out.println(homme.getPrenom()+" renait de ses cendres.");
         homme.setSante(true);
@@ -190,7 +204,10 @@ Il peut sauver une Dame
     }
     
      
-    //fonction aide pour rappeler les commande disponibles sur un personnage
+    /**
+     * Methode aide pour rappeler les commandes disponibles sur un personnage
+     * @param humain 
+     */
     public static void help(Humain humain){
         System.out.println("Commandes disponibles pour "+humain.getPrenom()+" :");
         if ((humain instanceof Indien)){

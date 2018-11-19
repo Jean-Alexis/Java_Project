@@ -11,16 +11,39 @@ package western;
  */
 public class PeutBoireBar extends Civil{
     
-    //constructeur avec tous les champs du constructeur civil
+    /**
+     * Constructeur d'un personnage pouvant boire au bar avec une position indiquée
+     * @param pNom
+     * @param pPrenom
+     * @param pSurnom
+     * @param pPosition
+     * @param pAge
+     * @param pArme
+     * @param pForce
+     * @param pArgent 
+     */
     public PeutBoireBar(String pNom, String pPrenom, String pSurnom,Position pPosition, int pAge,String pArme, int pForce, int pArgent ){
         super(pNom, pPrenom, pSurnom, pPosition, pAge, pArme, pForce, pArgent);
     }
     
-    //constructeur sans position
+    /**
+     * Construction d'un personnage pouvant boire au bar sans position indiquée
+     * @param pNom
+     * @param pPrenom
+     * @param pSurnom
+     * @param pAge
+     * @param pArme
+     * @param pForce
+     * @param pArgent 
+     */
     public PeutBoireBar(String pNom, String pPrenom, String pSurnom, int pAge,String pArme, int pForce, int pArgent ){
         super(pNom, pPrenom, pSurnom, pAge, pArme, pForce, pArgent);
     }
     
+    /**
+     * Methode permettant de demander la carte des boissons à un barman
+     * @param barman Paramètre indiquant à quel barman la personne demande la carte
+     */
     public void demanderCarte(Civil barman){
         
         if(this.getSante()==false || barman.getSante()==false){
@@ -37,7 +60,11 @@ public class PeutBoireBar extends Civil{
         }
     }
     
-    
+    /**
+     * Méthode permettant de demander une boisson à un barman
+     * @param barman Paramètre indiquant à quel barman s'adresse la personne
+     * @param boisson Paramètre indiquant quelle boisson on demande
+     */
     public void demanderBoisson(Civil barman, Boisson boisson){
  
         if(this.getSante()==false || barman.getSante()==false){
@@ -69,6 +96,11 @@ public class PeutBoireBar extends Civil{
         }
     }
     
+    /**
+     * Methode permettant à une personne de payer sa boisson à un barman
+     * @param barman Paramètre indiquant à quel barman on paye la boisson
+     * @param argent Paramètre indiquant quelle somme le personnage donne
+     */
     public void PayerBoisson(Civil barman, int argent){
         
         if(barman instanceof Barman){

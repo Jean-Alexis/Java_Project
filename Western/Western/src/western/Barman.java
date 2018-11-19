@@ -17,7 +17,18 @@ public class Barman extends Civil implements SestFaitFaucher{
     private ArrayList<Boisson> stock = new ArrayList();
     boolean estBraque;
     
-    //constructeur avec tous les champs renseignés
+    /**
+     * Constructeur avec tous les champs renseignés notamment la Position
+     * @param pNom
+     * @param pPrenom
+     * @param pSurnom
+     * @param pPosition
+     * @param pAge
+     * @param pArme
+     * @param pForce
+     * @param pArgent
+     * @param pInstrument 
+     */
     public Barman(String pNom, String pPrenom, String pSurnom,Position pPosition, int pAge,String pArme, int pForce, int pArgent, String pInstrument ){
         super(pNom, pPrenom, pSurnom, pPosition, pAge, pArme, pForce, pArgent);
         this.instrument=pInstrument;
@@ -25,7 +36,17 @@ public class Barman extends Civil implements SestFaitFaucher{
         this.setSante(true);
         sePresenter();
     }
-    //constructeur sans position
+    /**
+     * Constructeur Barman sans position indiquée -> Spwanera dans son Bar
+     * @param pNom
+     * @param pPrenom
+     * @param pSurnom
+     * @param pAge
+     * @param pArme
+     * @param pForce
+     * @param pArgent
+     * @param pInstrument 
+     */
     public Barman(String pNom, String pPrenom, String pSurnom, int pAge,String pArme, int pForce, int pArgent, String pInstrument ){
         super(pNom, pPrenom, pSurnom, pAge, pArme, pForce, pArgent);
         this.instrument=pInstrument;
@@ -35,22 +56,45 @@ public class Barman extends Civil implements SestFaitFaucher{
         sePresenter();
     }
     
+    /**
+     * Accesseur d'instrument
+     * @return 
+     */
     public String getInstrument(){return this.instrument;}
     
+    /**
+     * Mutateur du booléen estBraque
+     * @param estBraque 
+     */
     public void setEstBraque(boolean estBraque){ this.estBraque=estBraque;}
+    /**
+     * Accesseur du booléen estBraque
+     * @return 
+     */
     public boolean getEstBraque(){ return this.estBraque;}
     
+    /**
+     * sePresenter() mis à jour Barman
+     */
     @Override
     public void sePresenter() {
         super.sePresenter();
         this.talk("Je suis un des meilleurs barman de la région, en plus de ça je suis musicien et joue du "+this.getInstrument());
     }
     
+    /**
+     * Affichage d'informations barman
+     * @return 
+     */
     @Override
     public String toString(){
         return this.getNom()+" "+this.getPrenom()+" "+this.getSurnom()+" "+this.getAge()+" "+this.getPosition()+" "+this.getArme()+" "+this.getForce()+" "+this.getArgent()+" "+this.instrument;
     }
     
+    /**
+     * Méthode permettant au barman d'ajouter une boisson dans son stock
+     * @param boisson Paramètre indiquant quel marque de boisson on ajoute
+     */
     public void ajouterBoisson(Boisson boisson){
         if(this.getSante()==false){
             System.out.println("Eh oh je suis mort, je peux pas ajouter de bouteilles lol");
@@ -58,6 +102,9 @@ public class Barman extends Civil implements SestFaitFaucher{
         else this.stock.add(boisson);
     }
     
+    /**
+     * Methode permettant au barman de jouer de son instrument
+     */
     public void jouerInstrument(){
         if(this.getSante()==false){
             System.out.println("Eh oh je suis mort, je peux pas jouer d'un instrument lol");
@@ -70,6 +117,9 @@ public class Barman extends Civil implements SestFaitFaucher{
         }
     }
     
+    /**
+     * Methode permettant au barman de présenter sa carte des boissons
+     */
     protected void presenterCarte(){
         if(this.getSante()==false){
             System.out.println("Eh oh je suis mort, je peux pas presenter ma carte lol");
@@ -83,6 +133,11 @@ public class Barman extends Civil implements SestFaitFaucher{
         System.out.println("");
     }
     
+    /**
+     * Methode permettant au barman de donner une boisson
+     * @param boisson Paramètre indiquant le type de boisson que donne le barman
+     * @return 
+     */
     protected boolean donnerBoisson(Boisson boisson){
 
             if (boisson.getQuantite()>0){
@@ -97,8 +152,12 @@ public class Barman extends Civil implements SestFaitFaucher{
             }
     }
   
+    //Interface
     
-    //interface
+    /**
+     * Methode indiquant que le barman se fait braquer - C'est une méthode de l'interface SestFaitFaucher
+     * @param brigand Paramètre indiquant quel Brigand braque le barman
+     */
     @Override
     public void seFaitBraquer(Brigand brigand){
         this.setEstBraque(true);
@@ -111,6 +170,9 @@ public class Barman extends Civil implements SestFaitFaucher{
         }   
     }
     
+    /**
+     * Methode de l'interface SestFaitFaucher indiquant que le Barman est en dépréssion
+     */
     @Override
     public void depression(){
         if(this.getSante()==false){
@@ -121,6 +183,9 @@ public class Barman extends Civil implements SestFaitFaucher{
         }     
     }
     
+    /**
+     * Méthode de l'interface SestFaitFaucher, le barman décide de boire un petit coup et de vider sa réserve d'alcool
+     */
     @Override
     public void videReserveAlcool(){
         int chance = 1 + (int)(Math.random() * ((100 - 1) + 1));

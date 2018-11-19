@@ -15,7 +15,17 @@ public abstract class Homme extends Humain {
     private boolean sante;
     private boolean aNegocie;
     
-    //constructeur avec tout les champs du constructeur Humain
+    
+    /**
+     * Constructeur Homme avec tout les champs du constructeur Humain
+     * @param pNom
+     * @param pPrenom
+     * @param pSurnom
+     * @param pPosition
+     * @param pAge
+     * @param pArme
+     * @param pForce 
+     */
     public Homme(String pNom, String pPrenom, String pSurnom, Position pPosition, int pAge, String pArme, int pForce ){
         super(pNom, pPrenom, pSurnom, pPosition, pAge);
         this.sante=true;
@@ -35,7 +45,15 @@ public abstract class Homme extends Humain {
         this.aNegocie=false;
         
     }
-    //constructeur sans position
+    /**
+     * Constructeur Homme sans position
+     * @param pNom
+     * @param pPrenom
+     * @param pSurnom
+     * @param pAge
+     * @param pArme
+     * @param pForce 
+     */
     public Homme(String pNom, String pPrenom,String pSurnom, int pAge, String pArme, int pForce) {
         super(pNom, pPrenom, pSurnom, pAge);
         this.arme = pArme;
@@ -55,7 +73,9 @@ public abstract class Homme extends Humain {
         
     }
     
-    
+    /**
+     * Methode sePresenter mis à jour pour un homme
+     */
     @Override
     public void sePresenter() {
         super.sePresenter();
@@ -63,6 +83,9 @@ public abstract class Homme extends Humain {
                 arme+", pas mal comme arme hein ! Regarde, j'ai "+ force + " de force, pas mal hein !");
     }
 
+    /**
+     * Methode permettant d'annoncer l'arme de la personne concernée
+     */
     public void annoncerArme(){
         if(this.sante==false){
             System.out.println("Eh oh je suis mort, je peux pas parler lol");
@@ -73,8 +96,16 @@ public abstract class Homme extends Humain {
         
     }
 
+    /**
+     * Accesseur permettant de renvoyer la force
+     * @return 
+     */
     public int getForce(){return this.force;}
     
+    /**
+     * Mutateur permettant de modifier la force d'un homme
+     * @param force 
+     */
     public void setForce(int force){
         try{
             if(force <0 || force>10){
@@ -88,17 +119,41 @@ public abstract class Homme extends Humain {
             System.err.println(e.getMessage());
         }
     }
-    
+    /**
+     * Accesseur d'Arme
+     * @return 
+     */
     public String getArme(){return this.arme;}
     
+    /**
+     * Accesseur de Sante
+     * @return 
+     */
     public boolean getSante(){return this.sante;}
+    /**
+     * Mutateur de sante
+     * @param sante 
+     */
     public void setSante(boolean sante){this.sante=sante;}
 
+    /**
+     * Acceseur du booleén aNegocie
+     * @return 
+     */
     public boolean getANegocie(){return this.aNegocie;}
+    /**
+     * Mutateur du booléen aNegocie
+     * @param aNegocie 
+     */
     public void setANegocie(boolean aNegocie){this.aNegocie=aNegocie;}
     
     
-    // Tirer sur on personnage (un homme contre un homme), retourne vrai si le tireur gagne
+    /**
+     * Methode permettant de tirer sur un personnage (un homme contre un homme)
+     * @param personnage personnage correspond à la personne qui va se faire tirer dessus ;
+     * @return Cette méthode retourne -1 si une erreur se produit lors de l'exécution de celle-ci; retourne 1 si celui-qui est à l'origine de l'appel de la fonction gagne ;
+     * retourne 0 si celui-qui a "subi" l'attaque/si personnage remporte le combat.
+     */
     public int tirer(Homme personnage){
         if(this.sante==false || personnage.sante==false){
             System.out.println("Un des personnages est deja mort, ils ne peuvent se tirer dessus !");
@@ -220,7 +275,10 @@ public abstract class Homme extends Humain {
         
     }// fin Tirer
 
-    //négocier entre deux hommes, tout dépend de la catégorie qui négocie
+    /**
+     * Methode qui permet de négocier entre deux hommes, le résultat de cette négociation dépend de qui est à l'origine de la négociation ET vers qui il négocie
+     * @param homme 
+     */
     public void negocier(Homme homme){
         if(this.sante==false || homme.sante==false){
             System.out.println("Un des personnages est deja mort, ils ne peuvent negocier !");

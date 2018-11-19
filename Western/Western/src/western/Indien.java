@@ -12,7 +12,16 @@ package western;
 public class Indien extends Homme {
     private int plumes;
     
-    //l'indien spawn automatiquement au campement et ne peut pas se déplacer
+    /**
+     * Constructeur Indien avec position initiale au Campement
+     * @param pNom
+     * @param pPrenom
+     * @param pSurnom
+     * @param pAge
+     * @param pArme
+     * @param pForce
+     * @param pPlumes 
+     */
     public Indien( String pNom, String pPrenom, String pSurnom, int pAge, String pArme, int pForce, int pPlumes) {
         super(pNom, pPrenom, pSurnom, pAge, pArme, pForce);
         if(pPlumes<1 || pPlumes >20){
@@ -24,15 +33,25 @@ public class Indien extends Homme {
         
     }
 
+    /**
+     * Accesseur du nombre de plumes
+     * @return 
+     */
     public int getPlumes(){return this.plumes;}
     
 
+    /**
+     * Se présenter mis à jour Indien
+     */
     @Override
     public void sePresenter() {
         super.sePresenter();
         this.talk("Tous les matins je brosse mes plumes ! "+this.getPlumes()+" plumes a brosser tous les jours, ça prend du temps !");
     }
-    
+    /**
+     * Afficher les caractéristiques de l'Indien
+     * @return 
+     */
     @Override
     public String toString(){
         return this.getNom()+" "+this.getPrenom()+" "+this.getSurnom()+" "+this.getAge()+" "+this.getPosition()+" "+this.getArme()+" "+this.getForce()+" "+this.getPlumes();
