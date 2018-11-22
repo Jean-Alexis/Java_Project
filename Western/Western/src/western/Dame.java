@@ -129,7 +129,7 @@ public class Dame extends Humain {
      * Méthode permettant à la femme d'annoncer sa position
      */
     public void annoncerPosition(){
-        talk("Ou suis-je ? Je suis actuellement ici : "+this.getPosition());
+        talk("Je suis actuellement dans le/la : "+this.getPosition());
     }    
     
     
