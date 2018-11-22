@@ -284,4 +284,516 @@ Bob: Vous avez de la chance, il m'en reste 10
 Bob: Et voici votre boisson, un bon cognac, ça vous fera 8€
 Dave: Tennez, voilà 8€.
 L'argent de Bob passe de 1508 à 1516L'argent de Dave passe de 300 à 292Joe: Pas tres malin ce shérif qui oublies les clefs sur la serrure, à moi la liberte !
-Joe se deplace de Rue a BarJoe a voulu tirer sur Dave, qui s'est defendu, à l'issue du combat Dave est mort !
+Joe se deplace de Rue a BarJoe a voulu tirer sur Dave, qui s'est defendu, à l'issue du combat Dave est mort !Leo: Hey, salut, je suis Leo denden, mais tu peux aussi m'appeler Leo THE MichelT!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 21 ans, hein !!
+Leo: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une pistolet a eau, pas mal comme arme hein ! Regarde, j'ai 5 de force, pas mal hein !
+Leo: Tous les matins je brosse mes plumes ! 3 plumes a brosser tous les jours, ça prend du temps !
+Robinne: Hey, salut, je suis Robinne Ghyse, mais tu peux aussi m'appeler Robinne THE BellaCiao!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 20 ans, hein !!
+Robinne: Je n'ai pas d'armes, mais moi au moins, j'ai une magnifique robe bleu
+Bill: Hey, salut, je suis Bill Clinton, mais tu peux aussi m'appeler Bill THE le prez!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 70 ans, hein !!
+Bill: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une revolver, pas mal comme arme hein ! Regarde, j'ai 4 de force, pas mal hein !
+Bill: Cowboy, plus rapide que moi, y'a pas.
+
+Joe: Hey, salut, je suis Joe Dalton, mais tu peux aussi m'appeler Joe THE le Petit!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 35 ans, hein !!
+Joe: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une revolver, pas mal comme arme hein ! Regarde, j'ai 6 de force, pas mal hein !
+Joe: Je suis le Brigand le plus recherché de l'Ouest, ma tête est mise à prix pour 5000€.
+
+Jack: Hey, salut, je suis Jack Dalton, mais tu peux aussi m'appeler Jack THE le Moyen!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 40 ans, hein !!
+Jack: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une carabine, pas mal comme arme hein ! Regarde, j'ai 5 de force, pas mal hein !
+Jack: Je suis le Brigand le plus recherché de l'Ouest, ma tête est mise à prix pour 5000€.
+
+Bob: Hey, salut, je suis Bob Sauler, mais tu peux aussi m'appeler Bob THE Bobby!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 25 ans, hein !!
+Bob: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une fourchette, pas mal comme arme hein ! Regarde, j'ai 0 de force, pas mal hein !
+Bob: Je suis un des meilleurs barman de la région, en plus de ça je suis musicien et joue du Piano
+Crésus: Hey, salut, je suis Crésus Roschild, mais tu peux aussi m'appeler Crésus THE richou!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 38 ans, hein !!
+Crésus: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une papier, pas mal comme arme hein ! Regarde, j'ai 0 de force, pas mal hein !
+Crésus: Je suis le banquier, que puis-je faire pour vous ?
+Dave: Hey, salut, je suis Dave Moloss, mais tu peux aussi m'appeler Dave THE le kid!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 52 ans, hein !!
+Dave: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une flingue, pas mal comme arme hein ! Regarde, j'ai 7 de force, pas mal hein !
+Dave: Oyez, messieurs dames, votre sherif est arrive.
+Bill: Hey, salut, je suis Bill Clinton, mais tu peux aussi m'appeler Bill THE le prez!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 70 ans, hein !!
+Bill: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une revolver, pas mal comme arme hein ! Regarde, j'ai 4 de force, pas mal hein !
+Bill: Cowboy, plus rapide que moi, y'a pas.
+
+Joe: Hey, salut, je suis Joe Dalton, mais tu peux aussi m'appeler Joe THE le Petit!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 35 ans, hein !!
+Joe: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une revolver, pas mal comme arme hein ! Regarde, j'ai 6 de force, pas mal hein !
+Joe: Je suis le Brigand le plus recherché de l'Ouest, ma tête est mise à prix pour 5000€.
+
+Jack: Hey, salut, je suis Jack Dalton, mais tu peux aussi m'appeler Jack THE le Moyen!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 40 ans, hein !!
+Jack: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une carabine, pas mal comme arme hein ! Regarde, j'ai 5 de force, pas mal hein !
+Jack: Je suis le Brigand le plus recherché de l'Ouest, ma tête est mise à prix pour 5000€.
+
+Robinne: Hey, salut, je suis Robinne Ghyse, mais tu peux aussi m'appeler Robinne THE BellaCiao!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 20 ans, hein !!
+Robinne: Je n'ai pas d'armes, mais moi au moins, j'ai une magnifique robe bleu
+Crésus: Hey, salut, je suis Crésus Roschild, mais tu peux aussi m'appeler Crésus THE richou!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 38 ans, hein !!
+Crésus: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une papier, pas mal comme arme hein ! Regarde, j'ai 0 de force, pas mal hein !
+Crésus: Je suis le banquier, que puis-je faire pour vous ?
+Dave: Hey, salut, je suis Dave Moloss, mais tu peux aussi m'appeler Dave THE le kid!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 52 ans, hein !!
+Dave: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une flingue, pas mal comme arme hein ! Regarde, j'ai 7 de force, pas mal hein !
+Dave: Oyez, messieurs dames, votre sherif est arrive.
+Jack se deplace de Desert a BanqueLeo: Hey, salut, je suis Leo denden, mais tu peux aussi m'appeler Leo THE MichelT!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 21 ans, hein !!
+Leo: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une pistolet a eau, pas mal comme arme hein ! Regarde, j'ai 5 de force, pas mal hein !
+Leo: Tous les matins je brosse mes plumes ! 3 plumes a brosser tous les jours, ça prend du temps !
+Robinne: Hey, salut, je suis Robinne Ghyse, mais tu peux aussi m'appeler Robinne THE BellaCiao!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 20 ans, hein !!
+Robinne: Je n'ai pas d'armes, mais moi au moins, j'ai une magnifique robe bleu
+Bill: Hey, salut, je suis Bill Clinton, mais tu peux aussi m'appeler Bill THE le prez!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 70 ans, hein !!
+Bill: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une revolver, pas mal comme arme hein ! Regarde, j'ai 4 de force, pas mal hein !
+Bill: Cowboy, plus rapide que moi, y'a pas.
+
+Joe: Hey, salut, je suis Joe Dalton, mais tu peux aussi m'appeler Joe THE le Petit!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 35 ans, hein !!
+Joe: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une revolver, pas mal comme arme hein ! Regarde, j'ai 6 de force, pas mal hein !
+Joe: Je suis le Brigand le plus recherché de l'Ouest, ma tête est mise à prix pour 5000€.
+
+Jack: Hey, salut, je suis Jack Dalton, mais tu peux aussi m'appeler Jack THE le Moyen!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 40 ans, hein !!
+Jack: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une carabine, pas mal comme arme hein ! Regarde, j'ai 5 de force, pas mal hein !
+Jack: Je suis le Brigand le plus recherché de l'Ouest, ma tête est mise à prix pour 5000€.
+
+Bob: Hey, salut, je suis Bob Sauler, mais tu peux aussi m'appeler Bob THE Bobby!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 25 ans, hein !!
+Bob: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une fourchette, pas mal comme arme hein ! Regarde, j'ai 0 de force, pas mal hein !
+Bob: Je suis un des meilleurs barman de la région, en plus de ça je suis musicien et joue du Piano
+Crésus: Hey, salut, je suis Crésus Roschild, mais tu peux aussi m'appeler Crésus THE richou!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 38 ans, hein !!
+Crésus: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une papier, pas mal comme arme hein ! Regarde, j'ai 0 de force, pas mal hein !
+Crésus: Je suis le banquier, que puis-je faire pour vous ?
+Dave: Hey, salut, je suis Dave Moloss, mais tu peux aussi m'appeler Dave THE le kid!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 52 ans, hein !!
+Dave: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une flingue, pas mal comme arme hein ! Regarde, j'ai 7 de force, pas mal hein !
+Dave: Oyez, messieurs dames, votre sherif est arrive.
+Joe: Hey, salut, je suis Joe Dalton, mais tu peux aussi m'appeler Joe THE le Petit!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 35 ans, hein !!
+Joe: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une revolver, pas mal comme arme hein ! Regarde, j'ai 6 de force, pas mal hein !
+Joe: Je suis le Brigand le plus recherché de l'Ouest, ma tête est mise à prix pour 5000€.
+
+Jack: Hey, salut, je suis Jack Dalton, mais tu peux aussi m'appeler Jack THE le Moyen!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 40 ans, hein !!
+Jack: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une carabine, pas mal comme arme hein ! Regarde, j'ai 5 de force, pas mal hein !
+Jack: Je suis le Brigand le plus recherché de l'Ouest, ma tête est mise à prix pour 5000€.
+
+Joe: Ou suis-je ? Je suis actuellement ici : Prison
+Jack: Ou suis-je ? Je suis actuellement ici : Desert
+Jack se deplace de Desert a BanqueCrésus: Hey, salut, je suis Crésus Roschild, mais tu peux aussi m'appeler Crésus THE richou!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 38 ans, hein !!
+Crésus: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une papier, pas mal comme arme hein ! Regarde, j'ai 0 de force, pas mal hein !
+Crésus: Je suis le banquier, que puis-je faire pour vous ?
+Jack: Bonjour banquier Roschild serait-il possible de faire un prêt de 200€ ?
+Crésus: Desole Monsieur Dalton vous demandez trop par rapport a ce que vous avez deja.
+Joe se deplace de Prison a BanqueJoe: Les mains en l'air Crésus ceci est un braquage !
+Crésus: Vous ne vous en sortirez pas comme ca ! Ma banque c'est ma vie !
+Crésus: Vous savez, en ce moment ca va vraiment pas tiptop, j'avais vraiment pas besoin de ça, vraiment...ma banque c'est ma raison d'etre
+Joe se deplace de Banque a CampementJack se deplace de Banque a CampementLeo: Hey, salut, je suis Leo denden, mais tu peux aussi m'appeler Leo THE MichelT!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 21 ans, hein !!
+Leo: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une pistolet a eau, pas mal comme arme hein ! Regarde, j'ai 5 de force, pas mal hein !
+Leo: Tous les matins je brosse mes plumes ! 3 plumes a brosser tous les jours, ça prend du temps !
+L'indien Leo va tenter une danse de la pluie pour augmenter la force de Joe ! 
+
+Succes ! La force de Joe passe de 6 a 7
+
+Dave: Hey, salut, je suis Dave Moloss, mais tu peux aussi m'appeler Dave THE le kid!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 52 ans, hein !!
+Dave: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une flingue, pas mal comme arme hein ! Regarde, j'ai 7 de force, pas mal hein !
+Dave: Oyez, messieurs dames, votre sherif est arrive.
+Dave: Ou suis-je ? Je suis actuellement ici : Prison
+Dave se déplace de Prison à BarBob: Hey, salut, je suis Bob Sauler, mais tu peux aussi m'appeler Bob THE Bobby!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 25 ans, hein !!
+Bob: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une fourchette, pas mal comme arme hein ! Regarde, j'ai 0 de force, pas mal hein !
+Bob: Je suis un des meilleurs barman de la région, en plus de ça je suis musicien et joue du Piano
+Bill: Hey, salut, je suis Bill Clinton, mais tu peux aussi m'appeler Bill THE le prez!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 70 ans, hein !!
+Bill: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une revolver, pas mal comme arme hein ! Regarde, j'ai 4 de force, pas mal hein !
+Bill: Cowboy, plus rapide que moi, y'a pas.
+
+Bill: Ou suis-je ? Je suis actuellement ici : Rue
+Bill se déplace de Rue à BarBill: Un Wisky siou'plaît m'sieur !
+Bob: Vous avez de la chance, il m'en reste 10
+Bob: Et voici votre boisson, un bon Wisky, ça vous fera 8€
+Bill: Tennez, voilà 8€.
+L'argent de Bob passe de 1500 à 1508L'argent de Bill passe de 200 à 192Dave: Un Rhum siou'plaît m'sieur !
+Bob: Vous avez de la chance, il m'en reste 10
+Bob: Et voici votre boisson, un bon Rhum, ça vous fera 8€
+Dave: Tennez, voilà 8€.
+L'argent de Bob passe de 1508 à 1516L'argent de Dave passe de 300 à 292Joe se deplace de Campement a RueRobinne: Hey, salut, je suis Robinne Ghyse, mais tu peux aussi m'appeler Robinne THE BellaCiao!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 20 ans, hein !!
+Robinne: Je n'ai pas d'armes, mais moi au moins, j'ai une magnifique robe bleu
+Joe: Ou suis-je ? Je suis actuellement ici : Rue
+Robinne: Ou suis-je ? Je suis actuellement ici : Maison
+Jack se deplace de Campement a BarJack se deplace de Bar a BanqueLeo: Hey, salut, je suis Leo denden, mais tu peux aussi m'appeler Leo THE MichelT!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 21 ans, hein !!
+Leo: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une pistolet a eau, pas mal comme arme hein ! Regarde, j'ai 5 de force, pas mal hein !
+Leo: Tous les matins je brosse mes plumes ! 3 plumes a brosser tous les jours, ça prend du temps !
+Robinne: Hey, salut, je suis Robinne Ghyse, mais tu peux aussi m'appeler Robinne THE BellaCiao!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 20 ans, hein !!
+Robinne: Je n'ai pas d'armes, mais moi au moins, j'ai une magnifique robe bleu
+Bill: Hey, salut, je suis Bill Clinton, mais tu peux aussi m'appeler Bill THE le prez!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 70 ans, hein !!
+Bill: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une revolver, pas mal comme arme hein ! Regarde, j'ai 4 de force, pas mal hein !
+Bill: Cowboy, plus rapide que moi, y'a pas.
+
+Joe: Hey, salut, je suis Joe Dalton, mais tu peux aussi m'appeler Joe THE le Petit!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 35 ans, hein !!
+Joe: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une revolver, pas mal comme arme hein ! Regarde, j'ai 6 de force, pas mal hein !
+Joe: Je suis le Brigand le plus recherché de l'Ouest, ma tête est mise à prix pour 5000€.
+
+Jack: Hey, salut, je suis Jack Dalton, mais tu peux aussi m'appeler Jack THE le Moyen!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 40 ans, hein !!
+Jack: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une carabine, pas mal comme arme hein ! Regarde, j'ai 5 de force, pas mal hein !
+Jack: Je suis le Brigand le plus recherché de l'Ouest, ma tête est mise à prix pour 5000€.
+
+Bob: Hey, salut, je suis Bob Sauler, mais tu peux aussi m'appeler Bob THE Bobby!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 25 ans, hein !!
+Bob: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une fourchette, pas mal comme arme hein ! Regarde, j'ai 0 de force, pas mal hein !
+Bob: Je suis un des meilleurs barman de la région, en plus de ça je suis musicien et joue du Piano
+Crésus: Hey, salut, je suis Crésus Roschild, mais tu peux aussi m'appeler Crésus THE richou!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 38 ans, hein !!
+Crésus: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une papier, pas mal comme arme hein ! Regarde, j'ai 0 de force, pas mal hein !
+Crésus: Je suis le banquier, que puis-je faire pour vous ?
+Dave: Hey, salut, je suis Dave Moloss, mais tu peux aussi m'appeler Dave THE le kid!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 52 ans, hein !!
+Dave: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une flingue, pas mal comme arme hein ! Regarde, j'ai 7 de force, pas mal hein !
+Dave: Oyez, messieurs dames, votre sherif est arrive.
+Joe: Hey, salut, je suis Joe Dalton, mais tu peux aussi m'appeler Joe THE le Petit!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 35 ans, hein !!
+Joe: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une revolver, pas mal comme arme hein ! Regarde, j'ai 6 de force, pas mal hein !
+Joe: Je suis le Brigand le plus recherché de l'Ouest, ma tête est mise à prix pour 5000€.
+
+Jack: Hey, salut, je suis Jack Dalton, mais tu peux aussi m'appeler Jack THE le Moyen!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 40 ans, hein !!
+Jack: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une carabine, pas mal comme arme hein ! Regarde, j'ai 5 de force, pas mal hein !
+Jack: Je suis le Brigand le plus recherché de l'Ouest, ma tête est mise à prix pour 5000€.
+
+Joe: Ou suis-je ? Je suis actuellement ici : Prison
+Jack: Ou suis-je ? Je suis actuellement ici : Desert
+Jack se deplace de Desert a BanqueCrésus: Hey, salut, je suis Crésus Roschild, mais tu peux aussi m'appeler Crésus THE richou!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 38 ans, hein !!
+Crésus: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une papier, pas mal comme arme hein ! Regarde, j'ai 0 de force, pas mal hein !
+Crésus: Je suis le banquier, que puis-je faire pour vous ?
+Jack: Bonjour banquier Roschild serait-il possible de faire un prêt de 200€ ?
+Crésus: Desole Monsieur Dalton vous demandez trop par rapport a ce que vous avez deja.
+Joe se deplace de Prison a BanqueJoe: Les mains en l'air Crésus ceci est un braquage !
+Crésus: Vous ne vous en sortirez pas comme ca ! Ma banque c'est ma vie !
+Crésus: Vous savez, en ce moment ca va vraiment pas tiptop, j'avais vraiment pas besoin de ça, vraiment...ma banque c'est ma raison d'etre
+Joe se deplace de Banque a CampementJack se deplace de Banque a CampementLeo: Hey, salut, je suis Leo denden, mais tu peux aussi m'appeler Leo THE MichelT!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 21 ans, hein !!
+Leo: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une pistolet a eau, pas mal comme arme hein ! Regarde, j'ai 5 de force, pas mal hein !
+Leo: Tous les matins je brosse mes plumes ! 3 plumes a brosser tous les jours, ça prend du temps !
+L'indien Leo va tenter une danse de la pluie pour augmenter la force de Joe ! 
+
+Succes ! La force de Joe passe de 6 a 7
+
+Dave: Hey, salut, je suis Dave Moloss, mais tu peux aussi m'appeler Dave THE le kid!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 52 ans, hein !!
+Dave: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une flingue, pas mal comme arme hein ! Regarde, j'ai 7 de force, pas mal hein !
+Dave: Oyez, messieurs dames, votre sherif est arrive.
+Dave: Ou suis-je ? Je suis actuellement ici : Prison
+Dave se déplace de Prison à BarBob: Hey, salut, je suis Bob Sauler, mais tu peux aussi m'appeler Bob THE Bobby!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 25 ans, hein !!
+Bob: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une fourchette, pas mal comme arme hein ! Regarde, j'ai 0 de force, pas mal hein !
+Bob: Je suis un des meilleurs barman de la région, en plus de ça je suis musicien et joue du Piano
+Bill: Hey, salut, je suis Bill Clinton, mais tu peux aussi m'appeler Bill THE le prez!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 70 ans, hein !!
+Bill: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une revolver, pas mal comme arme hein ! Regarde, j'ai 4 de force, pas mal hein !
+Bill: Cowboy, plus rapide que moi, y'a pas.
+
+Bill: Ou suis-je ? Je suis actuellement ici : Rue
+Bill se déplace de Rue à BarBill: Un Wisky siou'plaît m'sieur !
+Bob: Vous avez de la chance, il m'en reste 10
+Bob: Et voici votre boisson, un bon Wisky, ça vous fera 8€
+Bill: Tennez, voilà 8€.
+L'argent de Bob passe de 1500 à 1508L'argent de Bill passe de 200 à 192Dave: Un Rhum siou'plaît m'sieur !
+Bob: Vous avez de la chance, il m'en reste 10
+Bob: Et voici votre boisson, un bon Rhum, ça vous fera 8€
+Dave: Tennez, voilà 8€.
+L'argent de Bob passe de 1508 à 1516L'argent de Dave passe de 300 à 292Joe se deplace de Campement a RueRobinne: Hey, salut, je suis Robinne Ghyse, mais tu peux aussi m'appeler Robinne THE BellaCiao!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 20 ans, hein !!
+Robinne: Je n'ai pas d'armes, mais moi au moins, j'ai une magnifique robe bleu
+Joe se deplace de Rue a MaisonJoe: Viens la ma jolie Dame Robinne !
+Robinne: A L'aiiiide, on me kidnappe !!
+Dame Robinne est enlevee jusqu'au désert par Joe
+Joe: Ou suis-je ? Je suis actuellement ici : Desert
+Robinne: Ou suis-je ? Je suis actuellement ici : Desert
+Jack se deplace de Campement a BarJack se deplace de Bar a BanqueLeo: Hey, salut, je suis Leo denden, mais tu peux aussi m'appeler Leo THE MichelT!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 21 ans, hein !!
+Leo: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une pistolet a eau, pas mal comme arme hein ! Regarde, j'ai 5 de force, pas mal hein !
+Leo: Tous les matins je brosse mes plumes ! 3 plumes a brosser tous les jours, ça prend du temps !
+Robinne: Hey, salut, je suis Robinne Ghyse, mais tu peux aussi m'appeler Robinne THE BellaCiao!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 20 ans, hein !!
+Robinne: Je n'ai pas d'armes, mais moi au moins, j'ai une magnifique robe bleu
+Bill: Hey, salut, je suis Bill Clinton, mais tu peux aussi m'appeler Bill THE le prez!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 70 ans, hein !!
+Bill: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une revolver, pas mal comme arme hein ! Regarde, j'ai 4 de force, pas mal hein !
+Bill: Cowboy, plus rapide que moi, y'a pas.
+
+Joe: Hey, salut, je suis Joe Dalton, mais tu peux aussi m'appeler Joe THE le Petit!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 35 ans, hein !!
+Joe: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une revolver, pas mal comme arme hein ! Regarde, j'ai 6 de force, pas mal hein !
+Joe: Je suis le Brigand le plus recherché de l'Ouest, ma tête est mise à prix pour 5000€.
+
+Jack: Hey, salut, je suis Jack Dalton, mais tu peux aussi m'appeler Jack THE le Moyen!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 40 ans, hein !!
+Jack: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une carabine, pas mal comme arme hein ! Regarde, j'ai 5 de force, pas mal hein !
+Jack: Je suis le Brigand le plus recherché de l'Ouest, ma tête est mise à prix pour 5000€.
+
+Bob: Hey, salut, je suis Bob Sauler, mais tu peux aussi m'appeler Bob THE Bobby!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 25 ans, hein !!
+Bob: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une fourchette, pas mal comme arme hein ! Regarde, j'ai 0 de force, pas mal hein !
+Bob: Je suis un des meilleurs barman de la région, en plus de ça je suis musicien et joue du Piano
+Crésus: Hey, salut, je suis Crésus Roschild, mais tu peux aussi m'appeler Crésus THE richou!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 38 ans, hein !!
+Crésus: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une papier, pas mal comme arme hein ! Regarde, j'ai 0 de force, pas mal hein !
+Crésus: Je suis le banquier, que puis-je faire pour vous ?
+Dave: Hey, salut, je suis Dave Moloss, mais tu peux aussi m'appeler Dave THE le kid!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 52 ans, hein !!
+Dave: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une flingue, pas mal comme arme hein ! Regarde, j'ai 7 de force, pas mal hein !
+Dave: Oyez, messieurs dames, votre sherif est arrive.
+Joe: Hey, salut, je suis Joe Dalton, mais tu peux aussi m'appeler Joe THE le Petit!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 35 ans, hein !!
+Joe: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une revolver, pas mal comme arme hein ! Regarde, j'ai 6 de force, pas mal hein !
+Joe: Je suis le Brigand le plus recherché de l'Ouest, ma tête est mise à prix pour 5000€.
+
+Jack: Hey, salut, je suis Jack Dalton, mais tu peux aussi m'appeler Jack THE le Moyen!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 40 ans, hein !!
+Jack: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une carabine, pas mal comme arme hein ! Regarde, j'ai 5 de force, pas mal hein !
+Jack: Je suis le Brigand le plus recherché de l'Ouest, ma tête est mise à prix pour 5000€.
+
+Joe: Ou suis-je ? Je suis actuellement ici : Prison
+Jack: Ou suis-je ? Je suis actuellement ici : Desert
+Jack se deplace de Desert a BanqueCrésus: Hey, salut, je suis Crésus Roschild, mais tu peux aussi m'appeler Crésus THE richou!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 38 ans, hein !!
+Crésus: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une papier, pas mal comme arme hein ! Regarde, j'ai 0 de force, pas mal hein !
+Crésus: Je suis le banquier, que puis-je faire pour vous ?
+Jack: Bonjour banquier Roschild serait-il possible de faire un prêt de 200€ ?
+Crésus: Desole Monsieur Dalton vous demandez trop par rapport a ce que vous avez deja.
+Joe se deplace de Prison a BanqueJoe: Les mains en l'air Crésus ceci est un braquage !
+Crésus: Vous ne vous en sortirez pas comme ca ! Ma banque c'est ma vie !
+Crésus: Vous savez, en ce moment ca va vraiment pas tiptop, j'avais vraiment pas besoin de ça, vraiment...ma banque c'est ma raison d'etre
+Joe se deplace de Banque a CampementJack se deplace de Banque a CampementLeo: Hey, salut, je suis Leo denden, mais tu peux aussi m'appeler Leo THE MichelT!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 21 ans, hein !!
+Leo: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une pistolet a eau, pas mal comme arme hein ! Regarde, j'ai 5 de force, pas mal hein !
+Leo: Tous les matins je brosse mes plumes ! 3 plumes a brosser tous les jours, ça prend du temps !
+L'indien Leo va tenter une danse de la pluie pour augmenter la force de Joe ! 
+
+Malheureusement la danse a echouee 
+
+Dave: Hey, salut, je suis Dave Moloss, mais tu peux aussi m'appeler Dave THE le kid!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 52 ans, hein !!
+Dave: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une flingue, pas mal comme arme hein ! Regarde, j'ai 7 de force, pas mal hein !
+Dave: Oyez, messieurs dames, votre sherif est arrive.
+Dave: Ou suis-je ? Je suis actuellement ici : Prison
+Dave se déplace de Prison à BarBob: Hey, salut, je suis Bob Sauler, mais tu peux aussi m'appeler Bob THE Bobby!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 25 ans, hein !!
+Bob: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une fourchette, pas mal comme arme hein ! Regarde, j'ai 0 de force, pas mal hein !
+Bob: Je suis un des meilleurs barman de la région, en plus de ça je suis musicien et joue du Piano
+Bill: Hey, salut, je suis Bill Clinton, mais tu peux aussi m'appeler Bill THE le prez!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 70 ans, hein !!
+Bill: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une revolver, pas mal comme arme hein ! Regarde, j'ai 4 de force, pas mal hein !
+Bill: Cowboy, plus rapide que moi, y'a pas.
+
+Bill: Ou suis-je ? Je suis actuellement ici : Rue
+Bill se déplace de Rue à BarBill: Un Wisky siou'plaît m'sieur !
+Bob: Vous avez de la chance, il m'en reste 10
+Bob: Et voici votre boisson, un bon Wisky, ça vous fera 8€
+Bill: Tennez, voilà 8€.
+L'argent de Bob passe de 1500 à 1508L'argent de Bill passe de 200 à 192Dave: Un Rhum siou'plaît m'sieur !
+Bob: Vous avez de la chance, il m'en reste 10
+Bob: Et voici votre boisson, un bon Rhum, ça vous fera 8€
+Dave: Tennez, voilà 8€.
+L'argent de Bob passe de 1508 à 1516L'argent de Dave passe de 300 à 292Joe se deplace de Campement a RueRobinne: Hey, salut, je suis Robinne Ghyse, mais tu peux aussi m'appeler Robinne THE BellaCiao!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 20 ans, hein !!
+Robinne: Je n'ai pas d'armes, mais moi au moins, j'ai une magnifique robe bleu
+Joe se deplace de Rue a MaisonJoe: Viens la ma jolie Dame Robinne !
+Robinne: A L'aiiiide, on me kidnappe !!
+Dame Robinne est enlevee jusqu'au désert par Joe
+Joe: Ou suis-je ? Je suis actuellement ici : Desert
+Robinne: Ou suis-je ? Je suis actuellement ici : Desert
+Jack se deplace de Campement a DesertBill se déplace de Bar à DesertDave se déplace de Bar à DesertBill a voulu tirer sur Joe, qui s'est defendu, à l'issue du combat Bill est mort !Joe a voulu tirer sur Dave, qui s'est defendu, à l'issue du combat Dave est mort !Leo: Hey, salut, je suis Leo denden, mais tu peux aussi m'appeler Leo THE MichelT!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 21 ans, hein !!
+Leo: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une pistolet a eau, pas mal comme arme hein ! Regarde, j'ai 5 de force, pas mal hein !
+Leo: Tous les matins je brosse mes plumes ! 3 plumes a brosser tous les jours, ça prend du temps !
+Robinne: Hey, salut, je suis Robinne Ghyse, mais tu peux aussi m'appeler Robinne THE BellaCiao!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 20 ans, hein !!
+Robinne: Je n'ai pas d'armes, mais moi au moins, j'ai une magnifique robe bleu
+Bill: Hey, salut, je suis Bill Clinton, mais tu peux aussi m'appeler Bill THE le prez!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 70 ans, hein !!
+Bill: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une revolver, pas mal comme arme hein ! Regarde, j'ai 4 de force, pas mal hein !
+Bill: Cowboy, plus rapide que moi, y'a pas.
+
+Joe: Hey, salut, je suis Joe Dalton, mais tu peux aussi m'appeler Joe THE le Petit!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 35 ans, hein !!
+Joe: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une revolver, pas mal comme arme hein ! Regarde, j'ai 6 de force, pas mal hein !
+Joe: Je suis le Brigand le plus recherché de l'Ouest, ma tête est mise à prix pour 5000€.
+
+Jack: Hey, salut, je suis Jack Dalton, mais tu peux aussi m'appeler Jack THE le Moyen!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 40 ans, hein !!
+Jack: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une carabine, pas mal comme arme hein ! Regarde, j'ai 5 de force, pas mal hein !
+Jack: Je suis le Brigand le plus recherché de l'Ouest, ma tête est mise à prix pour 5000€.
+
+Bob: Hey, salut, je suis Bob Sauler, mais tu peux aussi m'appeler Bob THE Bobby!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 25 ans, hein !!
+Bob: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une fourchette, pas mal comme arme hein ! Regarde, j'ai 0 de force, pas mal hein !
+Bob: Je suis un des meilleurs barman de la région, en plus de ça je suis musicien et joue du Piano
+Crésus: Hey, salut, je suis Crésus Roschild, mais tu peux aussi m'appeler Crésus THE richou!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 38 ans, hein !!
+Crésus: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une papier, pas mal comme arme hein ! Regarde, j'ai 0 de force, pas mal hein !
+Crésus: Je suis le banquier, que puis-je faire pour vous ?
+Dave: Hey, salut, je suis Dave Moloss, mais tu peux aussi m'appeler Dave THE le kid!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 52 ans, hein !!
+Dave: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une flingue, pas mal comme arme hein ! Regarde, j'ai 7 de force, pas mal hein !
+Dave: Oyez, messieurs dames, votre sherif est arrive.
+Joe: Hey, salut, je suis Joe Dalton, mais tu peux aussi m'appeler Joe THE le Petit!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 35 ans, hein !!
+Joe: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une revolver, pas mal comme arme hein ! Regarde, j'ai 6 de force, pas mal hein !
+Joe: Je suis le Brigand le plus recherché de l'Ouest, ma tête est mise à prix pour 5000€.
+
+Jack: Hey, salut, je suis Jack Dalton, mais tu peux aussi m'appeler Jack THE le Moyen!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 40 ans, hein !!
+Jack: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une carabine, pas mal comme arme hein ! Regarde, j'ai 5 de force, pas mal hein !
+Jack: Je suis le Brigand le plus recherché de l'Ouest, ma tête est mise à prix pour 5000€.
+
+Joe: Ou suis-je ? Je suis actuellement ici : Prison
+Jack: Ou suis-je ? Je suis actuellement ici : Desert
+Jack se deplace de Desert a BanqueCrésus: Hey, salut, je suis Crésus Roschild, mais tu peux aussi m'appeler Crésus THE richou!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 38 ans, hein !!
+Crésus: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une papier, pas mal comme arme hein ! Regarde, j'ai 0 de force, pas mal hein !
+Crésus: Je suis le banquier, que puis-je faire pour vous ?
+Jack: Bonjour banquier Roschild serait-il possible de faire un prêt de 200€ ?
+Crésus: Desole Monsieur Dalton vous demandez trop par rapport a ce que vous avez deja.
+Joe se deplace de Prison a BanqueJoe: Les mains en l'air Crésus ceci est un braquage !
+Crésus: Vous ne vous en sortirez pas comme ca ! Ma banque c'est ma vie !
+Crésus: Vous savez, en ce moment ca va vraiment pas tiptop, j'avais vraiment pas besoin de ça, vraiment...ma banque c'est ma raison d'etre
+Joe se deplace de Banque a CampementJack se deplace de Banque a CampementLeo: Hey, salut, je suis Leo denden, mais tu peux aussi m'appeler Leo THE MichelT!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 21 ans, hein !!
+Leo: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une pistolet a eau, pas mal comme arme hein ! Regarde, j'ai 5 de force, pas mal hein !
+Leo: Tous les matins je brosse mes plumes ! 3 plumes a brosser tous les jours, ça prend du temps !
+L'indien Leo va tenter une danse de la pluie pour augmenter la force de Joe ! 
+
+Succes ! La force de Joe passe de 6 a 7
+
+Dave: Hey, salut, je suis Dave Moloss, mais tu peux aussi m'appeler Dave THE le kid!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 52 ans, hein !!
+Dave: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une flingue, pas mal comme arme hein ! Regarde, j'ai 7 de force, pas mal hein !
+Dave: Oyez, messieurs dames, votre sherif est arrive.
+Dave: Ou suis-je ? Je suis actuellement ici : Prison
+Dave se déplace de Prison à BarBob: Hey, salut, je suis Bob Sauler, mais tu peux aussi m'appeler Bob THE Bobby!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 25 ans, hein !!
+Bob: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une fourchette, pas mal comme arme hein ! Regarde, j'ai 0 de force, pas mal hein !
+Bob: Je suis un des meilleurs barman de la région, en plus de ça je suis musicien et joue du Piano
+Bill: Hey, salut, je suis Bill Clinton, mais tu peux aussi m'appeler Bill THE le prez!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 70 ans, hein !!
+Bill: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une revolver, pas mal comme arme hein ! Regarde, j'ai 4 de force, pas mal hein !
+Bill: Cowboy, plus rapide que moi, y'a pas.
+
+Bill: Ou suis-je ? Je suis actuellement ici : Rue
+Bill se déplace de Rue à BarBill: Un Wisky siou'plaît m'sieur !
+Bob: Vous avez de la chance, il m'en reste 10
+Bob: Et voici votre boisson, un bon Wisky, ça vous fera 8€
+Bill: Tennez, voilà 8€.
+L'argent de Bob passe de 1500 à 1508L'argent de Bill passe de 200 à 192Dave: Un Rhum siou'plaît m'sieur !
+Bob: Vous avez de la chance, il m'en reste 10
+Bob: Et voici votre boisson, un bon Rhum, ça vous fera 8€
+Dave: Tennez, voilà 8€.
+L'argent de Bob passe de 1508 à 1516L'argent de Dave passe de 300 à 292Joe se deplace de Campement a RueRobinne: Hey, salut, je suis Robinne Ghyse, mais tu peux aussi m'appeler Robinne THE BellaCiao!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 20 ans, hein !!
+Robinne: Je n'ai pas d'armes, mais moi au moins, j'ai une magnifique robe bleu
+Joe se deplace de Rue a MaisonJoe: Viens la ma jolie Dame Robinne !
+Robinne: A L'aiiiide, on me kidnappe !!
+Dame Robinne est enlevee jusqu'au désert par Joe
+Joe: Ou suis-je ? Je suis actuellement ici : Desert
+Robinne: Ou suis-je ? Je suis actuellement ici : Desert
+Jack se deplace de Campement a DesertBill se déplace de Bar à DesertDave se déplace de Bar à DesertBill a voulu tirer sur Joe, qui s'est defendu, à l'issue du combat Bill est mort !Joe a voulu tirer sur Dave, qui s'est defendu, à l'issue du combat Dave est mort !Leo: Hey, salut, je suis Leo denden, mais tu peux aussi m'appeler Leo THE MichelT!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 21 ans, hein !!
+Leo: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une pistolet a eau, pas mal comme arme hein ! Regarde, j'ai 5 de force, pas mal hein !
+Leo: Tous les matins je brosse mes plumes ! 3 plumes a brosser tous les jours, ça prend du temps !
+Robinne: Hey, salut, je suis Robinne Ghyse, mais tu peux aussi m'appeler Robinne THE BellaCiao!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 20 ans, hein !!
+Robinne: Je n'ai pas d'armes, mais moi au moins, j'ai une magnifique robe bleu
+Bill: Hey, salut, je suis Bill Clinton, mais tu peux aussi m'appeler Bill THE le prez!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 70 ans, hein !!
+Bill: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une revolver, pas mal comme arme hein ! Regarde, j'ai 4 de force, pas mal hein !
+Bill: Cowboy, plus rapide que moi, y'a pas.
+
+Joe: Hey, salut, je suis Joe Dalton, mais tu peux aussi m'appeler Joe THE le Petit!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 35 ans, hein !!
+Joe: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une revolver, pas mal comme arme hein ! Regarde, j'ai 5 de force, pas mal hein !
+Joe: Je suis le Brigand le plus recherché de l'Ouest, ma tête est mise à prix pour 5000€.
+
+Jack: Hey, salut, je suis Jack Dalton, mais tu peux aussi m'appeler Jack THE le Moyen!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 40 ans, hein !!
+Jack: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une carabine, pas mal comme arme hein ! Regarde, j'ai 5 de force, pas mal hein !
+Jack: Je suis le Brigand le plus recherché de l'Ouest, ma tête est mise à prix pour 5000€.
+
+Bob: Hey, salut, je suis Bob Sauler, mais tu peux aussi m'appeler Bob THE Bobby!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 25 ans, hein !!
+Bob: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une fourchette, pas mal comme arme hein ! Regarde, j'ai 0 de force, pas mal hein !
+Bob: Je suis un des meilleurs barman de la région, en plus de ça je suis musicien et joue du Piano
+Crésus: Hey, salut, je suis Crésus Roschild, mais tu peux aussi m'appeler Crésus THE richou!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 38 ans, hein !!
+Crésus: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une papier, pas mal comme arme hein ! Regarde, j'ai 0 de force, pas mal hein !
+Crésus: Je suis le banquier, que puis-je faire pour vous ?
+Dave: Hey, salut, je suis Dave Moloss, mais tu peux aussi m'appeler Dave THE le kid!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 52 ans, hein !!
+Dave: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une flingue, pas mal comme arme hein ! Regarde, j'ai 7 de force, pas mal hein !
+Dave: Oyez, messieurs dames, votre sherif est arrive.
+Joe: Hey, salut, je suis Joe Dalton, mais tu peux aussi m'appeler Joe THE le Petit!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 35 ans, hein !!
+Joe: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une revolver, pas mal comme arme hein ! Regarde, j'ai 5 de force, pas mal hein !
+Joe: Je suis le Brigand le plus recherché de l'Ouest, ma tête est mise à prix pour 5000€.
+
+Jack: Hey, salut, je suis Jack Dalton, mais tu peux aussi m'appeler Jack THE le Moyen!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 40 ans, hein !!
+Jack: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une carabine, pas mal comme arme hein ! Regarde, j'ai 5 de force, pas mal hein !
+Jack: Je suis le Brigand le plus recherché de l'Ouest, ma tête est mise à prix pour 5000€.
+
+Joe: Ou suis-je ? Je suis actuellement ici : Prison
+Jack: Ou suis-je ? Je suis actuellement ici : Desert
+Jack se deplace de Desert a BanqueCrésus: Hey, salut, je suis Crésus Roschild, mais tu peux aussi m'appeler Crésus THE richou!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 38 ans, hein !!
+Crésus: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une papier, pas mal comme arme hein ! Regarde, j'ai 0 de force, pas mal hein !
+Crésus: Je suis le banquier, que puis-je faire pour vous ?
+Jack: Bonjour banquier Roschild serait-il possible de faire un prêt de 200€ ?
+Crésus: Desole Monsieur Dalton vous demandez trop par rapport a ce que vous avez deja.
+Joe se deplace de Prison a BanqueJoe: Les mains en l'air Crésus ceci est un braquage !
+Crésus: Vous ne vous en sortirez pas comme ca ! Ma banque c'est ma vie !
+Crésus: Vous savez, en ce moment ca va vraiment pas tiptop, j'avais vraiment pas besoin de ça, vraiment...ma banque c'est ma raison d'etre
+Joe se deplace de Banque a CampementJack se deplace de Banque a CampementLeo: Hey, salut, je suis Leo denden, mais tu peux aussi m'appeler Leo THE MichelT!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 21 ans, hein !!
+Leo: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une pistolet a eau, pas mal comme arme hein ! Regarde, j'ai 5 de force, pas mal hein !
+Leo: Tous les matins je brosse mes plumes ! 3 plumes a brosser tous les jours, ça prend du temps !
+L'indien Leo va tenter une danse de la pluie pour augmenter la force de Joe ! 
+
+Succes ! La force de Joe passe de 5 a 6
+
+Dave: Hey, salut, je suis Dave Moloss, mais tu peux aussi m'appeler Dave THE le kid!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 52 ans, hein !!
+Dave: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une flingue, pas mal comme arme hein ! Regarde, j'ai 7 de force, pas mal hein !
+Dave: Oyez, messieurs dames, votre sherif est arrive.
+Dave: Ou suis-je ? Je suis actuellement ici : Prison
+Dave se déplace de Prison à BarBob: Hey, salut, je suis Bob Sauler, mais tu peux aussi m'appeler Bob THE Bobby!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 25 ans, hein !!
+Bob: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une fourchette, pas mal comme arme hein ! Regarde, j'ai 0 de force, pas mal hein !
+Bob: Je suis un des meilleurs barman de la région, en plus de ça je suis musicien et joue du Piano
+Bill: Hey, salut, je suis Bill Clinton, mais tu peux aussi m'appeler Bill THE le prez!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 70 ans, hein !!
+Bill: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une revolver, pas mal comme arme hein ! Regarde, j'ai 4 de force, pas mal hein !
+Bill: Cowboy, plus rapide que moi, y'a pas.
+
+Bill: Ou suis-je ? Je suis actuellement ici : Rue
+Bill se déplace de Rue à BarBill: Un Wisky siou'plaît m'sieur !
+Bob: Vous avez de la chance, il m'en reste 10
+Bob: Et voici votre boisson, un bon Wisky, ça vous fera 8€
+Bill: Tennez, voilà 8€.
+L'argent de Bob passe de 1500 à 1508L'argent de Bill passe de 200 à 192Dave: Un Rhum siou'plaît m'sieur !
+Bob: Vous avez de la chance, il m'en reste 10
+Bob: Et voici votre boisson, un bon Rhum, ça vous fera 8€
+Dave: Tennez, voilà 8€.
+L'argent de Bob passe de 1508 à 1516L'argent de Dave passe de 300 à 292Joe se deplace de Campement a RueRobinne: Hey, salut, je suis Robinne Ghyse, mais tu peux aussi m'appeler Robinne THE BellaCiao!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 20 ans, hein !!
+Robinne: Je n'ai pas d'armes, mais moi au moins, j'ai une magnifique robe bleu
+Joe se deplace de Rue a MaisonJoe: Viens la ma jolie Dame Robinne !
+Robinne: A L'aiiiide, on me kidnappe !!
+Dame Robinne est enlevee jusqu'au désert par Joe
+Joe: Ou suis-je ? Je suis actuellement ici : Desert
+Robinne: Ou suis-je ? Je suis actuellement ici : Desert
+Jack se deplace de Campement a DesertBill se déplace de Bar à DesertDave se déplace de Bar à DesertBill a voulu tirer sur Joe, qui s'est defendu, à l'issue du combat Bill est mort !Joe a voulu tirer sur Dave, qui s'est defendu, à l'issue du combat Joe est mort !Leo: Hey, salut, je suis Leo denden, mais tu peux aussi m'appeler Leo THE MichelT!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 21 ans, hein !!
+Leo: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une pistolet a eau, pas mal comme arme hein ! Regarde, j'ai 5 de force, pas mal hein !
+Leo: Tous les matins je brosse mes plumes ! 3 plumes a brosser tous les jours, ça prend du temps !
+Robinne: Hey, salut, je suis Robinne Ghyse, mais tu peux aussi m'appeler Robinne THE BellaCiao!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 20 ans, hein !!
+Robinne: Je n'ai pas d'armes, mais moi au moins, j'ai une magnifique robe bleu
+Bill: Hey, salut, je suis Bill Clinton, mais tu peux aussi m'appeler Bill THE le prez!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 70 ans, hein !!
+Bill: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une revolver, pas mal comme arme hein ! Regarde, j'ai 4 de force, pas mal hein !
+Bill: Cowboy, plus rapide que moi, y'a pas.
+
+Joe: Hey, salut, je suis Joe Dalton, mais tu peux aussi m'appeler Joe THE le Petit!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 35 ans, hein !!
+Joe: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une revolver, pas mal comme arme hein ! Regarde, j'ai 5 de force, pas mal hein !
+Joe: Je suis le Brigand le plus recherché de l'Ouest, ma tête est mise à prix pour 5000€.
+
+Jack: Hey, salut, je suis Jack Dalton, mais tu peux aussi m'appeler Jack THE le Moyen!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 40 ans, hein !!
+Jack: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une carabine, pas mal comme arme hein ! Regarde, j'ai 5 de force, pas mal hein !
+Jack: Je suis le Brigand le plus recherché de l'Ouest, ma tête est mise à prix pour 5000€.
+
+Bob: Hey, salut, je suis Bob Sauler, mais tu peux aussi m'appeler Bob THE Bobby!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 25 ans, hein !!
+Bob: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une fourchette, pas mal comme arme hein ! Regarde, j'ai 0 de force, pas mal hein !
+Bob: Je suis un des meilleurs barman de la région, en plus de ça je suis musicien et joue du Piano
+Crésus: Hey, salut, je suis Crésus Roschild, mais tu peux aussi m'appeler Crésus THE richou!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 38 ans, hein !!
+Crésus: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une papier, pas mal comme arme hein ! Regarde, j'ai 0 de force, pas mal hein !
+Crésus: Je suis le banquier, que puis-je faire pour vous ?
+Dave: Hey, salut, je suis Dave Moloss, mais tu peux aussi m'appeler Dave THE le kid!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 52 ans, hein !!
+Dave: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une flingue, pas mal comme arme hein ! Regarde, j'ai 7 de force, pas mal hein !
+Dave: Oyez, messieurs dames, votre sherif est arrive.
+Joe: Hey, salut, je suis Joe Dalton, mais tu peux aussi m'appeler Joe THE le Petit!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 35 ans, hein !!
+Joe: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une revolver, pas mal comme arme hein ! Regarde, j'ai 5 de force, pas mal hein !
+Joe: Je suis le Brigand le plus recherché de l'Ouest, ma tête est mise à prix pour 5000€.
+
+Jack: Hey, salut, je suis Jack Dalton, mais tu peux aussi m'appeler Jack THE le Moyen!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 40 ans, hein !!
+Jack: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une carabine, pas mal comme arme hein ! Regarde, j'ai 5 de force, pas mal hein !
+Jack: Je suis le Brigand le plus recherché de l'Ouest, ma tête est mise à prix pour 5000€.
+
+Joe: Ou suis-je ? Je suis actuellement ici : Prison
+Jack: Ou suis-je ? Je suis actuellement ici : Desert
+Jack se deplace de Desert a BanqueCrésus: Hey, salut, je suis Crésus Roschild, mais tu peux aussi m'appeler Crésus THE richou!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 38 ans, hein !!
+Crésus: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une papier, pas mal comme arme hein ! Regarde, j'ai 0 de force, pas mal hein !
+Crésus: Je suis le banquier, que puis-je faire pour vous ?
+Jack: Bonjour banquier Roschild serait-il possible de faire un prêt de 200€ ?
+Crésus: Desole Monsieur Dalton vous demandez trop par rapport a ce que vous avez deja.
+Joe se deplace de Prison a BanqueJoe: Les mains en l'air Crésus ceci est un braquage !
+Crésus: Vous ne vous en sortirez pas comme ca ! Ma banque c'est ma vie !
+Crésus: Vous savez, en ce moment ca va vraiment pas tiptop, j'avais vraiment pas besoin de ça, vraiment...ma banque c'est ma raison d'etre
+Joe se deplace de Banque a CampementJack se deplace de Banque a CampementLeo: Hey, salut, je suis Leo denden, mais tu peux aussi m'appeler Leo THE MichelT!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 21 ans, hein !!
+Leo: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une pistolet a eau, pas mal comme arme hein ! Regarde, j'ai 5 de force, pas mal hein !
+Leo: Tous les matins je brosse mes plumes ! 3 plumes a brosser tous les jours, ça prend du temps !
+L'indien Leo va tenter une danse de la pluie pour augmenter la force de Joe ! 
+
+Malheureusement la danse a echouee 
+
+Dave: Hey, salut, je suis Dave Moloss, mais tu peux aussi m'appeler Dave THE le kid!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 52 ans, hein !!
+Dave: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une flingue, pas mal comme arme hein ! Regarde, j'ai 7 de force, pas mal hein !
+Dave: Oyez, messieurs dames, votre sherif est arrive.
+Dave: Ou suis-je ? Je suis actuellement ici : Prison
+Dave se déplace de Prison à BarBob: Hey, salut, je suis Bob Sauler, mais tu peux aussi m'appeler Bob THE Bobby!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 25 ans, hein !!
+Bob: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une fourchette, pas mal comme arme hein ! Regarde, j'ai 0 de force, pas mal hein !
+Bob: Je suis un des meilleurs barman de la région, en plus de ça je suis musicien et joue du Piano
+Bill: Hey, salut, je suis Bill Clinton, mais tu peux aussi m'appeler Bill THE le prez!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 70 ans, hein !!
+Bill: Ca c'est bien un prenom de bonhomme ! En plus de ca, j'ai une revolver, pas mal comme arme hein ! Regarde, j'ai 4 de force, pas mal hein !
+Bill: Cowboy, plus rapide que moi, y'a pas.
+
+Bill: Ou suis-je ? Je suis actuellement ici : Rue
+Bill se déplace de Rue à BarBill: Un Wisky siou'plaît m'sieur !
+Bob: Vous avez de la chance, il m'en reste 10
+Bob: Et voici votre boisson, un bon Wisky, ça vous fera 8€
+Bill: Tennez, voilà 8€.
+L'argent de Bob passe de 1500 à 1508L'argent de Bill passe de 200 à 192Dave: Un Rhum siou'plaît m'sieur !
+Bob: Vous avez de la chance, il m'en reste 10
+Bob: Et voici votre boisson, un bon Rhum, ça vous fera 8€
+Dave: Tennez, voilà 8€.
+L'argent de Bob passe de 1508 à 1516L'argent de Dave passe de 300 à 292Joe se deplace de Campement a RueRobinne: Hey, salut, je suis Robinne Ghyse, mais tu peux aussi m'appeler Robinne THE BellaCiao!! Alors, regarde mon beau visage, pas mal pour quelqu'un de 20 ans, hein !!
+Robinne: Je n'ai pas d'armes, mais moi au moins, j'ai une magnifique robe bleu
+Joe se deplace de Rue a MaisonJoe: Viens la ma jolie Dame Robinne !
+Robinne: A L'aiiiide, on me kidnappe !!
+Dame Robinne est enlevee jusqu'au désert par Joe
+Joe: Ou suis-je ? Je suis actuellement ici : Desert
+Robinne: Ou suis-je ? Je suis actuellement ici : Desert
+Jack se deplace de Campement a DesertBill se déplace de Bar à DesertDave se déplace de Bar à DesertBill a voulu tirer sur Joe, qui s'est defendu, à l'issue du combat Joe est mort !Bill: Me voici dame Robinne! Je viens vous sauver !
+Robinne: Oh, quel heros, Bill a reussi à me liberer de cette ordure, je ne l'en remercierai jamais assez

@@ -129,7 +129,8 @@ Il peut sauver une Dame
         
         Cowboy bill = new Cowboy("Clinton","Bill", "le prez",70, "revolver", 4, 200);
 
-        Brigand joe = new Brigand("Dalton","Joe", "le Petit",Position.PRISON,35, "revolver", 6, 400);
+        Brigand joe = new Brigand("Dalton","Joe", "le Petit",Position.PRISON,35, "revolver", 5, 400);
+        Brigand jack = new Brigand("Dalton", "Jack", "le Moyen", Position.DESERT,40,"carabine", 5, 150);
         
         Barman bob= new Barman("Sauler","Bob","Bobby", 25, "fourchette", 0, 1500,"Piano");
         bob.ajouterBoisson(leffe);   bob.ajouterBoisson(wisky);    bob.ajouterBoisson(cognac);   bob.ajouterBoisson(rhum);
@@ -190,6 +191,62 @@ Il peut sauver une Dame
                 else{ System.out.println("FIN");}
                 break;
             case 2:
+                
+                joe.sePresenter();
+                jack.sePresenter();
+                joe.annoncerPosition();
+                jack.annoncerPosition();
+                jack.seDeplacer(Position.BANQUE);
+                cresus.sePresenter();
+                jack.demanderPret(cresus, 200);
+                joe.seDeplacer(Position.BANQUE);
+                joe.braquer(cresus);
+                joe.seDeplacer(Position.CAMPEMENT);
+                jack.seDeplacer(Position.CAMPEMENT);
+                leo.sePresenter();
+                joe.negocier(leo);
+                jack.negocier(leo);
+                dave.sePresenter();
+                dave.annoncerPosition();
+                dave.seDeplacer(Position.BAR);
+                bob.sePresenter();
+                bill.sePresenter();
+                bill.annoncerPosition();
+                bill.seDeplacer(Position.BAR);
+                dave.demanderCarte(bob);
+                bill.demanderBoisson(bob, wisky);
+                dave.demanderBoisson(bob, rhum);
+                joe.seDeplacer(Position.RUE);
+                robinne.sePresenter();
+                joe.seDeplacer(Position.MAISON);
+                joe.kidnapper(robinne);
+                joe.annoncerPosition();
+                robinne.annoncerPosition();
+                jack.seDeplacer(Position.DESERT);
+                bill.seDeplacer(Position.DESERT);
+                dave.seDeplacer(Position.DESERT);
+                bill.tirer(joe);
+                if(joe.getSante()==false){
+                    dave.negocier(jack);
+                    bill.sauverDame(robinne);
+                }
+                
+                if(joe.getSante()==true){
+                    joe.tirer(dave);
+                    if(joe.getSante()==true){
+                        System.out.println("Tout le monde est mort, seul les brigands s'en sont sorti, cette dame ne sera jamais sauvé des méchants");
+                    }
+                    else{
+                        dave.negocier(jack);
+                        System.out.println("Tous les innoncents ont été sauvé, les brigands enfermés, l'histoire se termine ici");
+                    }
+                }
+                
+                    
+                
+
+                
+                
                 break;
             default:
                 System.out.println("Ce choix n'existe pas, relancez le programme.");
