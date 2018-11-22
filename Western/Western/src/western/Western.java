@@ -225,20 +225,21 @@ Il peut sauver une Dame
                 jack.seDeplacer(Position.DESERT);
                 bill.seDeplacer(Position.DESERT);
                 dave.seDeplacer(Position.DESERT);
-                bill.tirer(joe);
+                combat(bill,joe);
                 if(joe.getSante()==false){
-                    dave.negocier(jack);
+                    dave.emprisonner(jack);
                     bill.sauverDame(robinne);
+                    System.out.println("Tous les brigands ont été éliminé ou emprisonné et dame "+ robinne.getPrenom()+" a été sauvé ! Youpii ! \n FIN DE L'HISTOIRE.");
                 }
                 
                 if(joe.getSante()==true){
                     joe.tirer(dave);
                     if(joe.getSante()==true){
-                        System.out.println("Tout le monde est mort, seul les brigands s'en sont sorti, cette dame ne sera jamais sauvé des méchants");
+                        System.out.println("Tout le monde est mort, seul les brigands s'en sont sorti, cette dame ne sera jamais sauvé des méchants. \n FIN DE L'HISTOIRE");
                     }
                     else{
-                        dave.negocier(jack);
-                        System.out.println("Tous les innoncents ont été sauvé, les brigands enfermés, l'histoire se termine ici");
+                        dave.emprisonner(jack);
+                        System.out.println("Tous les innoncents ont été sauvé, les brigands enfermés ou tués, l'histoire se termine ici. Youpiii \n FIN DE L'HISTOIRE");
                     }
                 }
                 

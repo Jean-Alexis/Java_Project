@@ -421,7 +421,7 @@ public abstract class Homme extends Humain {
         }
         else
         {
-            this.talk("Ou suis-je ? Je suis actuellement ici : "+this.getPosition());;
+            this.talk("Je suis actuellement dans le/la : "+this.getPosition());;
 
                 }
     }
