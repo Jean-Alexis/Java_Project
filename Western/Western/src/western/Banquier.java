@@ -64,7 +64,7 @@ public class Banquier extends PeutBoireBar implements SestFaitFaucher{
     @Override
     public void sePresenter() {
         super.sePresenter();
-        this.talk("Je suis le banquier, que puis-je faire pour vous ?");
+        this.talk("Je suis le banquier, que puis-je faire pour vous ? \n");
     }
     
     /**
@@ -147,7 +147,7 @@ public class Banquier extends PeutBoireBar implements SestFaitFaucher{
                 System.out.println("Le personnage doit se trouver au bar pour se saouler");
             }
             else{
-                this.talk("Apres tout, une ptite bouteille ca n'a jamais fait de mal a personne, c'est la Banque qui paye !!");
+                this.talk("Apres tout, une ptite bouteille ca n'a jamais fait de mal a personne, ça me fera oublier mes soucis ...");
                 if (chance>50){ //50% de chance de faire une depression
                     this.depression();
                 }

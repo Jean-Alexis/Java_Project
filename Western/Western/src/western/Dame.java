@@ -52,7 +52,7 @@ public class Dame extends Humain {
     @Override
     public void sePresenter(){
         super.sePresenter();
-        talk("Je n'ai pas d'armes, mais moi au moins, j'ai une magnifique robe "+ this.couleurRobe);
+        talk("Je n'ai pas d'armes, mais moi au moins, j'ai une magnifique robe "+ this.couleurRobe+"\n");
     }
     
     /**

@@ -79,7 +79,7 @@ public class Barman extends Civil implements SestFaitFaucher{
     @Override
     public void sePresenter() {
         super.sePresenter();
-        this.talk("Je suis un des meilleurs barman de la région, en plus de ça je suis musicien et joue du "+this.getInstrument());
+        this.talk("Je suis un des meilleurs barman de la région, en plus de ça je suis musicien et joue du "+this.getInstrument()+"\n");
     }
     
     /**

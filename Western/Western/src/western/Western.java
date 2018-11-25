@@ -201,6 +201,8 @@ Il peut sauver une Dame
                 jack.demanderPret(cresus, 200);
                 joe.seDeplacer(Position.BANQUE);
                 joe.braquer(cresus);
+                cresus.seDeplacer(Position.BAR);
+                cresus.videReserveAlcool();
                 joe.seDeplacer(Position.CAMPEMENT);
                 jack.seDeplacer(Position.CAMPEMENT);
                 leo.sePresenter();
@@ -226,20 +228,23 @@ Il peut sauver une Dame
                 bill.seDeplacer(Position.DESERT);
                 dave.seDeplacer(Position.DESERT);
                 combat(bill,joe);
-                if(joe.getSante()==false){
+                if(joe.getSante()==false){ //si le premier brigand joe meurt
                     dave.emprisonner(jack);
                     bill.sauverDame(robinne);
+                    afficherCimmetiere();
                     System.out.println("Tous les brigands ont été éliminé ou emprisonné et dame "+ robinne.getPrenom()+" a été sauvé ! Youpii ! \n FIN DE L'HISTOIRE.");
                 }
                 
-                if(joe.getSante()==true){
-                    joe.tirer(dave);
+                if(joe.getSante()==true){ // si le brigand est vivant
+                    combat(joe,dave);
                     if(joe.getSante()==true){
+                        afficherCimmetiere();
                         System.out.println("Tout le monde est mort, seul les brigands s'en sont sorti, cette dame ne sera jamais sauvé des méchants. \n FIN DE L'HISTOIRE");
                     }
                     else{
                         dave.emprisonner(jack);
-                        System.out.println("Tous les innoncents ont été sauvé, les brigands enfermés ou tués, l'histoire se termine ici. Youpiii \n FIN DE L'HISTOIRE");
+                        afficherCimmetiere();
+                        System.out.println("Tous les innocents ont été sauvé, les brigands enfermés ou tués, l'histoire se termine ici. Youpiii \n FIN DE L'HISTOIRE");
                     }
                 }
                 

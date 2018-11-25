@@ -46,7 +46,7 @@ public class Indien extends Homme {
     @Override
     public void sePresenter() {
         super.sePresenter();
-        this.talk("Tous les matins je brosse mes plumes ! "+this.getPlumes()+" plumes a brosser tous les jours, ça prend du temps !");
+        this.talk("Tous les matins je brosse mes plumes ! "+this.getPlumes()+" plumes a brosser tous les jours, ça prend du temps !\n");
     }
     /**
      * Afficher les caractéristiques de l'Indien
